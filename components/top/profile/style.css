@@ -1,0 +1,32 @@
+.profile {
+    display: flex;
+    align-items: center;
+}
+.balance {
+    color: #D6B64A;
+    padding: 0 25px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    justify-self: flex-end;
+}
+.profile * {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: unset;
+    font-weight: bold;
+}
+.nickname {
+    color: #A1A7B5;
+    padding: 0 15px;
+}
+.profileIcon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./profile.png');
+}

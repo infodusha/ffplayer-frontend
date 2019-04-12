@@ -1,0 +1,8 @@
+.stories {
+    display: flex;
+    overflow-x: hidden;
+}
+.scroll {
+    margin-top: 8px;
+    margin: 8px 20px 0 20px;
+}

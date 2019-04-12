@@ -1,0 +1,22 @@
+.items {
+    padding: 0px;
+    margin: 0px;
+}
+.item {
+    display: inline;
+    line-height: normal;
+    text-align: center;
+    padding: 25px;
+}
+.item > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.active > a {
+    color: #FF4951;
+}
+@media (max-width: 725px) {
+    .items {
+        display: none;
+    }
+}

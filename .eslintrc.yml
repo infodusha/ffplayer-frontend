@@ -1,0 +1,155 @@
+env:
+  browser: true
+  es6: true
+globals:
+  React: readonly
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+parser: babel-eslint
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2019
+  sourceType: module
+plugins:
+  - react
+  - react-hooks
+settings:
+  react:
+    version: 16.8.6
+  linkComponents:
+    - Hyperlink
+    - name: Link
+      linkAttribute: href
+rules:
+  indent:
+    - error
+    - 4
+    - SwitchCase: 1
+  linebreak-style:
+    - error
+    - windows
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
+  no-extra-parens:
+    - error
+    - all
+    - ignoreJSX: all
+  block-scoped-var: error
+  no-alert:  error
+  no-caller: error
+  no-else-return: error
+  no-eval: error
+  no-extend-native: error
+  no-implicit-coercion: error
+  no-invalid-this: error
+  no-implied-eval: error
+  no-lone-blocks: error
+  no-labels: error
+  no-iterator: error
+  no-multi-spaces: error
+  no-multi-str: error
+  no-param-reassign: error
+  no-proto: error
+  no-return-assign: error
+  no-return-await: error
+  no-self-compare: error
+  no-sequences: error
+  no-throw-literal: error
+  no-void: error
+  no-useless-return: error
+  no-useless-catch: error
+  no-useless-call: error
+  no-with: error
+  prefer-promise-reject-errors: error
+  no-use-before-define: error
+  array-bracket-spacing:
+    - error
+    - never
+  camelcase: error
+  comma-style:
+    - error
+    - last
+  comma-spacing: error
+  comma-dangle:
+    - error
+    - always-multiline
+  consistent-this: error
+  eol-last: error
+  no-trailing-spaces: error
+  func-call-spacing: error
+  implicit-arrow-linebreak: error
+  jsx-quotes:
+    - error
+    - prefer-double
+  key-spacing:
+    - error
+    - afterColon: true
+  keyword-spacing:
+    - error
+    - overrides:
+        if:
+          before: false
+          after: false
+        switch:
+          before: false
+          after: false
+  lines-between-class-members: error
+  max-statements-per-line: error
+  multiline-ternary:
+    - error
+    - never
+  no-array-constructor: error
+  no-multiple-empty-lines: error
+  no-multi-assign: error
+  no-new-object: error
+  no-nested-ternary: error
+  no-tabs: error
+  no-whitespace-before-property: error
+  nonblock-statement-body-position:
+    - error
+    - below
+  prefer-object-spread: error
+  arrow-parens: error
+  arrow-spacing: error
+  no-duplicate-imports: error
+  no-var: error
+  object-shorthand: error
+  prefer-spread: error
+  no-eq-null: error
+  react/prop-types: warn
+  react/no-access-state-in-setstate: error
+  react/no-array-index-key: error
+  react/no-danger: error
+  react/no-danger-with-children: error
+  react/no-direct-mutation-state: error
+  react/no-render-return-value: error
+  react/no-unused-state: error
+  react/no-unused-prop-types: error
+  react/prefer-es6-class:
+    - error
+    - always
+  react/self-closing-comp:
+    - error
+    - component: true
+      html: false
+  react/forbid-prop-types:
+    - error
+    - forbid:
+      - any
+  react/jsx-no-undef:
+    - error
+    - allowGlobals: true
+  react/void-dom-elements-no-children: error
+  react/style-prop-object: error
+  react/jsx-key: error
+  react/jsx-tag-spacing: error
+  react/jsx-wrap-multilines: error
+  react/react-in-jsx-scope: off
+  react-hooks/rules-of-hooks: error
+  react-hooks/exhaustive-deps: warn

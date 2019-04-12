@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.page {
+    margin-top: 70px;
+}
