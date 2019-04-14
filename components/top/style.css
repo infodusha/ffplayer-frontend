@@ -1,11 +1,6 @@
-body {
-    background-color: #3C3F4E;
-}
-.nav * {
+.nav {
     font-size: 15px;
     letter-spacing: 0.15em;
-}
-.nav {
     position: fixed;
     top: 0;
     left: 0;
