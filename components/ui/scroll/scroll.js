@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import css from './style.css';
 import { useSize } from 'react-hook-size';
 
-const offset = parseInt(css.offset.replace('px', ''), 10);
+const offset = Number(css.offset.replace('px', ''));
 
 function Scroll({ length, value, onChange }) {
 
@@ -46,7 +46,7 @@ function Scroll({ length, value, onChange }) {
     }
 
     let style = {
-        left: isNaN(step) || width === null ? offset : Math.min(value / step + offset, width + offset),
+        left: isNaN(step) || isNaN(value) || width === null ? offset : Math.min(value / step + offset, width + offset),
     };
 
     return (
