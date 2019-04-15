@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const items = [
     { key: 'games', caption: 'Игры', href: '#' },
-    { key: 'store', caption: 'Магазин', href: '#' },
+    { key: 'store', caption: 'Маркет', href: '#' },
     { key: 'chat', caption: 'Чат', href: '#' },
 ];
 
@@ -14,7 +14,7 @@ function Nav({ selected }) {
         const className = cn(css.item, { [css.active]: selected === item.key });
         return (
             <li key={item.key} className={className}>
-                <Link href={item.href}>
+                <Link href={item.href} prefetch>
                     <a>{item.caption}</a>
                 </Link>
             </li>

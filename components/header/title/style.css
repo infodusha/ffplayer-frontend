@@ -1,17 +1,18 @@
 .title {
     display: flex;
     align-items: center;
-    justify-self: flex-start;
     width: 250px;
 }
 .burger {
-    font-weight: 200;
-    font-size: 70px;
-    padding: 0px 40px;
+    margin-left: 40px;
 }
 .burgerIcon {
     display: block;
     width: 28px;
     height: 13px;
     background-image: url('./burger.svg');
+}
+.label {
+    margin-left: 40px;
+    color: #ffffff;
 }
