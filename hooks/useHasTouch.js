@@ -8,23 +8,22 @@ export function useHasTouch() {
 
     useEffect(() => {
 
-        let noMove = false;
+        let prevScreenX;
+        let prevScreenY;
 
         function touch() {
-            noMove = true;
-            window.setTimeout(() => {
-                window.setTimeout(() => {
-                    noMove = false;
-                }, 0);
-            }, 0);
-            if(hasTouch)
-                return;
+            prevScreenX = undefined;
+            prevScreenY = undefined;
             setHasTouch(true);
             globalHasTouch = true;
         }
 
-        function move() {
-            if(noMove || !hasTouch)
+        function move({ screenX, screenY }) {
+            const movementX = prevScreenX ? screenX - prevScreenX: 0;
+            const movementY = prevScreenY ? screenY - prevScreenY: 0;
+            prevScreenX = screenX;
+            prevScreenY = screenY;
+            if(movementX === 0 && movementY === 0)
                 return;
             setHasTouch(false);
             globalHasTouch = false;
