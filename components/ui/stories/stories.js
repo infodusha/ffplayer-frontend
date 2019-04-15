@@ -12,6 +12,8 @@ function Stories({ users, selected }) {
     let [scroll, setScroll] = useState(0);
     let { width } = useSize(ref);
 
+    let length = (ref.current ? ref.current.scrollWidth : 0) - width;
+
     let hasTouch = useHasTouch();
 
     useEffect(() => {
@@ -26,14 +28,16 @@ function Stories({ users, selected }) {
         function start({ touches }) {
             if(touches.length !== 1)
                 return;
-            dtX = ref.current.scrollLeft;
+            dtX = 0;
             startX = touches[0].pageX;
         }
 
         function move({ touches }) {
             if(touches.length !== 1)
                 return;
-            setScroll(dtX + startX - touches[0].pageX);
+            let dtScroll = startX - touches[0].pageX;
+            setScroll((s) => Math.max(0, Math.min(s - dtX + dtScroll, length)));
+            dtX = dtScroll;
         }
 
         item.addEventListener('touchstart', start);
@@ -44,13 +48,11 @@ function Stories({ users, selected }) {
             item.removeEventListener('touchmove', move);
         };
 
-    }, [hasTouch]);
+    }, [hasTouch, length]);
 
     useLayoutEffect(() => {
         ref.current.scrollLeft = scroll;
     }, [scroll]);
-
-    let length = (ref.current ? ref.current.scrollWidth : 0) - width;
 
     let renderedUsers = users.map((user) => (
         <User
