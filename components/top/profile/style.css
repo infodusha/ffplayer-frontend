@@ -1,4 +1,5 @@
 .profile {
+    width: 250px;
     display: flex;
     align-items: center;
 }
@@ -12,8 +13,7 @@
     padding-right: 40px;
     justify-self: flex-end;
 }
-.profile * {
-    font-family: Roboto, sans-serif;
+.profile {
     font-style: normal;
     font-size: 14px;
     line-height: normal;

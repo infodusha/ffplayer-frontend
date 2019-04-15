@@ -17,4 +17,4 @@ Login.propTypes = {
     className: PropTypes.string,
 };
 
-export default Login;
+export default React.memo(Login);

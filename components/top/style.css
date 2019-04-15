@@ -1,4 +1,4 @@
-.nav {
+.top {
     font-size: 15px;
     letter-spacing: 0.15em;
     position: fixed;
@@ -11,22 +11,8 @@
     justify-content: space-between;
     align-items: center;
     transition: height 200ms;
+    background-color: #212530;
 }
 .scrolled {
     height: 45px;
-}
-.menu {
-    display: flex;
-    align-items: center;
-}
-.burger {
-    font-weight: 200;
-    font-size: 70px;
-    padding: 0px 40px;
-}
-.burgerIcon {
-    display: block;
-    width: 28px;
-    height: 13px;
-    background-image: url('./burger.svg');
 }
