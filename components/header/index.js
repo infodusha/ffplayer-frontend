@@ -7,10 +7,10 @@ import Login from './login';
 import Title from './title';
 import { useMaxScroll } from './useMaxScroll';
 
-function Top() {
+function Header() {
     let [isLoginned, setIsLoginned] = useState(false);
     let isScrolled = useMaxScroll(70);
-    let className = cn(css.top, { [css.scrolled]: isScrolled });
+    let className = cn(css.header, { [css.scrolled]: isScrolled });
     return (
         <nav className={className}>
             <Title />
@@ -20,4 +20,4 @@ function Top() {
     );
 }
 
-export default React.memo(Top);
+export default React.memo(Header);

@@ -1,4 +1,4 @@
-import Top from 'components/top';
+import Header from 'components/header';
 import Stories from 'ui/stories';
 import pic from '../avatar.png';
 
@@ -21,7 +21,7 @@ let users = [
 function Test() {
     return (
         <React.Fragment>
-            <Top />
+            <Header />
             <Stories users={users} selected={3} />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
