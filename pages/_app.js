@@ -1,7 +1,7 @@
-import App, { Container } from 'next/app';
-import Page from 'components/common/page';
+import NextApp, { Container } from 'next/app';
+import Page from 'components/page';
 
-export default class CustomApp extends App {
+export default class App extends NextApp {
 
     render() {
         const { Component, pageProps } = this.props;

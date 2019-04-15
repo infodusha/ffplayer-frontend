@@ -1,6 +1,6 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import NextDocument, { Head, Main, NextScript } from 'next/document';
 
-export default class CustomDocument extends Document {
+export default class Document extends NextDocument {
 
     render() {
         return (
