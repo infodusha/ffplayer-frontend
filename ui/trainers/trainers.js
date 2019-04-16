@@ -7,7 +7,7 @@ import { useSize } from 'react-hook-size';
 import { useHasTouch } from 'hooks/useHasTouch';
 import { useSwipeScroll } from './useSwipeScroll';
 
-function Stories({ users, selected }) {
+function Trainers({ users, selected }) {
 
     let ref = useRef();
     let [scroll, setScroll] = useState(0);
@@ -46,7 +46,7 @@ function Stories({ users, selected }) {
 
 const ID = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
 
-Stories.propTypes = {
+Trainers.propTypes = {
     users: PropTypes.arrayOf(PropTypes.shape({
         id: ID,
         pic: PropTypes.string,
@@ -56,4 +56,4 @@ Stories.propTypes = {
     selected: ID,
 };
 
-export default React.memo(Stories);
+export default React.memo(Trainers);
