@@ -11,6 +11,7 @@ module.exports = withImages(withCSS({
         importLoaders: 1,
         localIdentName: '[local]___[hash:base64:10]',
     },
+    poweredByHeader: false,
     webpack(config, { dev }) {
         if(!dev) {
             if(!Array.isArray(config.optimization.minimizer))
