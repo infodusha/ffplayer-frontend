@@ -1,12 +1,8 @@
 import { useState, useEffect } from 'react';
 
-let globalHasTouch;
+let globalHasTouch = 'ontouchstart' in window || navigator.MaxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 
 export function useHasTouch() {
-
-    useEffect(() => {
-        globalHasTouch = globalHasTouch ? globalHasTouch : 'ontouchstart' in window || navigator.MaxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
-    }, []);
 
     let [hasTouch, setHasTouch] = useState(globalHasTouch);
 
