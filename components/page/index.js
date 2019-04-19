@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import css from './style.css';
+import 'normalize.css';
 
 function Page({ title, children }) {
     return (

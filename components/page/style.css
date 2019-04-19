@@ -9,6 +9,11 @@ body {
     background-color: #1F232E;
 }
 
+a {
+    color: unset;
+    text-decoration: none;
+}
+
 .page {
     margin-top: 70px;
 }
