@@ -10,19 +10,15 @@ const items = [
 ];
 
 function Nav({ selected }) {
-    const menu = items.map((item) => {
-        const className = cn(css.item, { [css.selected]: selected === item.key });
-        return (
-            <li key={item.key} className={className}>
-                <Link href={item.href} prefetch>
-                    <a>{item.caption}</a>
-                </Link>
-            </li>
-        );
-    });
     return (
         <ul className={css.items}>
-            {menu}
+            {items.map((item) => (
+                <li key={item.key} className={cn(css.item, { [css.selected]: selected === item.key })}>
+                    <Link href={item.href} prefetch>
+                        <a>{item.caption}</a>
+                    </Link>
+                </li>
+            ))}
         </ul>
     );
 }
