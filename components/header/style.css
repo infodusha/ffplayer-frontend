@@ -12,6 +12,8 @@
     align-items: center;
     transition: height 200ms;
     background-color: #212530;
+    color: #ffffff;
+    z-index: 10;
 }
 .scrolled {
     height: 45px;
