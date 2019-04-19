@@ -1,0 +1,34 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    background-color: #191C25;
+    color: #51596D;
+    user-select: none;
+}
+.footer a:hover {
+    color: #ffffff;
+}
+.top {
+    display: flex;
+}
+.logo {
+    margin: 22px 50px;
+    width: 75px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #1F232E;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: bold;
+    font-size: 25px;
+}
+.nav {
+    margin: 35px 0 0 5px;
+}
+.pages {
+    margin: 20px 0 0 80px;
+}

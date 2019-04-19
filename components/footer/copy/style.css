@@ -1,0 +1,15 @@
+.copy {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.polytics, .copyrights {
+    margin: 25px 50px;
+}
+.copyrights {
+    display: flex;
+}
+.copyright {
+    margin-left: 40px;
+}

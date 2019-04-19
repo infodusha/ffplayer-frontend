@@ -1,4 +1,5 @@
 import Header from 'components/header';
+import Footer from 'components/footer';
 import Trainers from 'ui/trainers';
 import pic from '../avatar.png';
 
@@ -31,6 +32,7 @@ function Test() {
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <Footer />
         </React.Fragment>
     );
 

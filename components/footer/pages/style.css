@@ -1,0 +1,14 @@
+.pages {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 140px;
+}
+.item {
+    display: block;
+    line-height: normal;
+    margin: 15px 60px 0 0;
+    letter-spacing: 0.15em;
+}
