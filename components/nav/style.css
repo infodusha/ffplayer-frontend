@@ -7,13 +7,10 @@
     line-height: normal;
     text-align: center;
     padding: 25px;
+    letter-spacing: 0.15em;
 }
-.item > a {
-    color: #ffffff;
-    text-decoration: none;
-}
-.active > a {
-    color: #FF4951;
+.selected {
+    color: #F3CE44;
 }
 @media (max-width: 725px) {
     .items {

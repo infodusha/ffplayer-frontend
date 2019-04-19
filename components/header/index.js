@@ -2,7 +2,7 @@ import { useState } from 'react';
 import cn from 'classnames';
 import css from './style.css';
 import Profile from './profile';
-import Nav from './nav';
+import Nav from 'components/nav';
 import Login from './login';
 import Title from './title';
 import { useMaxScroll } from './useMaxScroll';

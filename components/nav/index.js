@@ -11,7 +11,7 @@ const items = [
 
 function Nav({ selected }) {
     const menu = items.map((item) => {
-        const className = cn(css.item, { [css.active]: selected === item.key });
+        const className = cn(css.item, { [css.selected]: selected === item.key });
         return (
             <li key={item.key} className={className}>
                 <Link href={item.href} prefetch>
