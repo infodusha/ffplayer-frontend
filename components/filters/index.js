@@ -33,6 +33,6 @@ function Filters({ selected, onSelect: handleSelect }) {
 Filters.propTypes = {
     selected: PropTypes.arrayOf(PropTypes.string),
     onSelect: PropTypes.func,
-}
+};
 
 export default React.memo(Filters);

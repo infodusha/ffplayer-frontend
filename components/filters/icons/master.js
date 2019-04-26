@@ -10,6 +10,6 @@ function MasterIcon({ color }) {
 
 MasterIcon.propTypes = {
     color: PropTypes.string.isRequired,
-}
+};
 
 export default React.memo(MasterIcon);

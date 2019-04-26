@@ -10,6 +10,6 @@ function StreamerIcon({ color }) {
 
 StreamerIcon.propTypes = {
     color: PropTypes.string.isRequired,
-}
+};
 
 export default React.memo(StreamerIcon);

@@ -11,6 +11,6 @@ function TopIcon({ color }) {
 
 TopIcon.propTypes = {
     color: PropTypes.string.isRequired,
-}
+};
 
 export default React.memo(TopIcon);

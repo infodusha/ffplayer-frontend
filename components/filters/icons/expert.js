@@ -13,6 +13,6 @@ function ExpertIcon({ color }) {
 
 ExpertIcon.propTypes = {
     color: PropTypes.string.isRequired,
-}
+};
 
 export default React.memo(ExpertIcon);
