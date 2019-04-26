@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import Header from 'components/header';
 import Footer from 'components/footer';
 import Trainers from 'ui/trainers';
 import pic from '../avatar.png';
+import Filters from 'components/filters';
 
 let users = [
     { id: 1, pic, name: 'Андрей', nickname: 'infodusha' },
@@ -20,10 +22,25 @@ let users = [
 ];
 
 function Test() {
+
+    let [selected, setSelected] = useState([]);
+
+    function handleSelect(key) {
+        setSelected((prevSelected) => {
+            let selected = prevSelected.slice();
+            if(selected.includes(key))
+                selected.splice(selected.indexOf(key), 1);
+            else
+                selected.push(key);
+            return selected;
+        });
+    }
+
     return (
         <React.Fragment>
             <Header />
             <Trainers users={users} selected={3} />
+            <Filters selected={selected} onSelect={handleSelect} />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

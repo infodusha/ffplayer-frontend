@@ -1,0 +1,18 @@
+.filter {
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 14px;
+    border: none;
+    margin: 5px;
+    align-items: center;
+}
+.selected {
+    color: #000000;
+}
+.unselected {
+    color: #BDC4D2;
+}
+.caption {
+    font-size: 13px;
+    margin-left: 6px;
+}
