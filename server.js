@@ -1,6 +1,7 @@
 /* eslint-disable */
 const Koa = require('koa');
 const next = require('next');
+const serve = require('koa-static');
 const Router = require('koa-router');
 const routes = require('./routes.json');
 
@@ -30,6 +31,8 @@ app.prepare().then(() => {
         ctx.res.statusCode = 200;
         await next();
     });
+
+    server.use(serve('static'));
 
     server.use(router.routes());
     server.listen(port, () => {
