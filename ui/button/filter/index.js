@@ -25,10 +25,15 @@ function ButtonFilter({ caption, icon: Icon, color, selected, onClick }) {
     );
 }
 
+function colorType(props, propName, componentName) {
+    if(!(/^#[0-9a-fA-F]{6}$/i).test(props[propName]))
+        return new Error(`Invalid prop '${propName}' supplied to '${componentName}': the prop is not a valid color`);
+}
+
 ButtonFilter.propTypes = {
     caption: PropTypes.string.isRequired,
     icon: PropTypes.elementType.isRequired,
-    color: PropTypes.string.isRequired,
+    color: colorType,
     selected: PropTypes.bool,
     onClick: PropTypes.func,
 };
