@@ -1,0 +1,30 @@
+.game {
+    user-select: none;
+    margin: 0 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 26vw;
+    height: 13vw;
+}
+.caption {
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+}
+.selected {
+    color: #F3CE44;
+}
+.arrow {
+    margin-left: 15px;
+    display: flex;
+    align-items: flex-end;
+}

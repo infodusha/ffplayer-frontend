@@ -1,0 +1,39 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    justify-content: space-evenly;
+    min-height: 500px;
+    max-height: 900px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line, .subline {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 1.3em;
+}
+.select {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: #798094;
+}
+.train {
+    color: #F3CE44;
+}
+.games {
+    display: flex;
+}
+@media (max-width: 950px) {
+    .subline {
+        display: none;
+    }
+}
