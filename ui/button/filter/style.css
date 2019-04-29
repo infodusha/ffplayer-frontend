@@ -5,6 +5,7 @@
     border: none;
     margin: 5px;
     align-items: center;
+    user-select: none;
 }
 .selected {
     color: #000000;

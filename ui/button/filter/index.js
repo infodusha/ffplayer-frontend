@@ -27,7 +27,7 @@ function ButtonFilter({ caption, icon: Icon, color, selected, onClick }) {
 
 ButtonFilter.propTypes = {
     caption: PropTypes.string.isRequired,
-    icon: PropTypes.any.isRequired,
+    icon: PropTypes.elementType.isRequired,
     color: PropTypes.string.isRequired,
     selected: PropTypes.bool,
     onClick: PropTypes.func,
