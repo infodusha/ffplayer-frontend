@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Page from 'components/page';
 import Header from 'components/header';
 import Footer from 'components/footer';
 import Trainers from 'ui/trainers';
@@ -37,7 +38,7 @@ function Test() {
     }
 
     return (
-        <React.Fragment>
+        <Page title="FPP">
             <Header />
             <Trainers users={users} selected={3} />
             <Filters selected={selected} onSelect={handleSelect} />
@@ -50,11 +51,9 @@ function Test() {
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <Footer />
-        </React.Fragment>
+        </Page>
     );
 
 }
-
-Test.title = 'FFP';
 
 export default Test;
