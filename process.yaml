@@ -12,10 +12,10 @@ deploy:
     key: E:/keys/ffplayer_rsa
     user: root
     host:
-      - 185.195.25.77
+      - ffplayer.pro
     ssh_options: StrictHostKeyChecking=no
     ref: origin/master
-    repo: ./.git
+    repo: git@github.com:infodusha/ffplayer-frontend.git
     path: /root/frontend
     pre-setup: apt-get install git -y; ls -la
     post-setup: ls -la
