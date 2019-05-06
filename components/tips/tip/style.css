@@ -1,0 +1,12 @@
+.tip {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+.caption {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
