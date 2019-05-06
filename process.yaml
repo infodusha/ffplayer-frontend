@@ -1,5 +1,5 @@
 apps:
-  - script: /root/frontend/source/server.js
+  - script: source/server.js
     name: frontend
     env:
       PORT: 3000
