@@ -1,6 +1,6 @@
 apps:
   - script: server.js
-    cwd: root/frontend/current/
+    cwd: current
     name: frontend
     env:
       PORT: 3000
