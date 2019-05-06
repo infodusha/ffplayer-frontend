@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "deploy": "pm2 deploy process.yaml production",
+    "deploy:setup": "pm2 deploy process.yaml production setup",
+    "deploy:revert": "pm2 deploy process.yaml production revert 1",
+    "deploy": "pm2 deploy process.yaml production update",
     "start": "set NODE_ENV=production&& node server.js",
     "pm2": "pm2 startOrRestart process.yaml --env production"
   },
