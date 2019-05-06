@@ -11,7 +11,7 @@
     "deploy:revert": "pm2 deploy process.yaml production revert 1",
     "deploy": "pm2 deploy process.yaml production",
     "start": "set NODE_ENV=production&& node server.js",
-    "pm2": "pm2 startOrRestart process.yaml --env production"
+    "start:pm2": "pm2 startOrRestart process.yaml --env production"
   },
   "author": "",
   "license": "ISC",
