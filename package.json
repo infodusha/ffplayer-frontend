@@ -7,8 +7,9 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
+    "deploy": "pm2 deploy process.yaml production",
     "start": "set NODE_ENV=production&& node server.js",
-    "pm2": "pm2 start process.yaml --env production"
+    "pm2": "pm2 startOrRestart process.yaml --env production"
   },
   "author": "",
   "license": "ISC",
@@ -31,7 +32,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0"
   }
 }
