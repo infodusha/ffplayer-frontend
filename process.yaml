@@ -17,7 +17,7 @@ deploy:
     ref: origin/master
     repo: ./.git
     path: /root/frontend
-    pre-setup: apt-get install git; ls -la
+    pre-setup: apt-get install git -y; ls -la
     post-setup: ls -la
     pre-deploy-local: echo 'This is a local executed command'
     post-deploy: npm install --prod && npm run build && npm run pm2
