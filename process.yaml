@@ -14,6 +14,7 @@ deploy:
     user: root
     host:
       - ffplayer.pro
+    ssh_options: StrictHostKeyChecking=no
     ref: origin/master
     repo: git@github.com:infodusha/ffplayer-frontend.git
     path: /root/frontend/
