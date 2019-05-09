@@ -8,11 +8,11 @@ import fourIcon from './icons/four';
 import fiveIcon from './icons/five';
 
 const tips = [
-    { key: 'one', caption: '№1 Сервис по тренировкам и обучению играм', icon: oneIcon },
-    { key: 'two', caption: 'Своя цена: предлагай свою цену за тренировку', icon: twoIcon },
-    { key: 'three', caption: 'Общайся с тренером и следи за своим прогрессом', icon: threeIcon },
-    { key: 'four', caption: 'Заходи в Маркет, тебя ожидают множество полезностей', icon: fourIcon },
-    { key: 'five', caption: 'Live Chat смотри и комментируй совместные трансляции', icon: fiveIcon },
+    { key: 'one', caption: '№1 Сервис по тренировкам и обучению играм', icon: oneIcon, width: 150 },
+    { key: 'two', caption: 'Своя цена: предлагай свою цену за тренировку', icon: twoIcon, width: 150 },
+    { key: 'three', caption: 'Общайся с тренером и следи за своим прогрессом', icon: threeIcon, width: 150 },
+    { key: 'four', caption: 'Заходи в Маркет, тебя ожидают множество полезностей', icon: fourIcon, width: 150 },
+    { key: 'five', caption: 'Live Chat смотри и комментируй совместные трансляции', icon: fiveIcon, width: 180 },
 ];
 
 function Tips({ color }) {
@@ -24,6 +24,7 @@ function Tips({ color }) {
                     caption={tip.caption}
                     icon={tip.icon}
                     color={color}
+                    width={tip.width}
                 />
             ))}
         </div>
