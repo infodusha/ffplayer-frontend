@@ -1,19 +1,26 @@
 import PropTypes from 'prop-types';
+import NotFound from 'components/errors/not_found';
+import Unknown from 'components/errors/unknown';
+import Client from 'components/errors/client';
 
-function Err({ statusCode }) {
-    let message = statusCode ? `An error ${statusCode} occurred on server` : 'An error occurred on client';
-    return (
-        <p>{message}</p>
-    );
+function Error_({ statusCode }) {
+    if(!statusCode)
+        return <Client />;
+    switch(statusCode) {
+        case 404:
+            return <NotFound />;
+        default:
+            return <Unknown statusCode={statusCode} />;
+    }
 }
 
-Err.propTypes = {
+Error_.propTypes = {
     statusCode: PropTypes.number,
 };
 
-Err.getInitialProps = ({ res, err }) => {
+Error_.getInitialProps = ({ res, err }) => {
     let statusCode = res || err ? (res || err).statusCode : null;
     return { statusCode };
 };
 
-export default Err;
+export default Error_;
