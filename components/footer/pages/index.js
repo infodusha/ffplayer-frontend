@@ -1,16 +1,8 @@
 import css from './style.css';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
-const items = [
-    { key: 'news', caption: 'Новости', href: '#' },
-    { key: 'trainer/become', caption: 'Стать Тренером', href: '#' },
-    { key: 'trainer/find', caption: 'Найти Тренера', href: '#' },
-    { key: 'streams', caption: 'Он-лайн стримы', href: '#' },
-    { key: 'support', caption: 'Центр поддрежки', href: '#' },
-    { key: 'partners', caption: 'Партнеры', href: '#' },
-];
-
-function Pages() {
+function Pages({ items }) {
     return (
         <ul className={css.pages}>
             {items.map((item) => (
@@ -23,5 +15,13 @@ function Pages() {
         </ul>
     );
 }
+
+Pages.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.shape({
+        key: PropTypes.string.isRequired,
+        caption: PropTypes.string.isRequired,
+        href: PropTypes.string.isRequired,
+    })).isRequired,
+};
 
 export default React.memo(Pages);

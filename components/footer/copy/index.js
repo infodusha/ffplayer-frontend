@@ -4,7 +4,7 @@ import Link from 'next/link';
 function Copy() {
     return (
         <div className={css.copy}>
-            <div className={css.polytics}>
+            <div>
                 <Link href="#">
                     <a>Политика конфиденциальности</a>
                 </Link>

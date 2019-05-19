@@ -1,15 +1,25 @@
 .copy {
-    height: 60px;
+    padding: 4vh 3vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-.polytics, .copyrights {
-    margin: 25px 50px;
-}
 .copyrights {
+    width: 350px;
     display: flex;
+    justify-content: space-between;
 }
-.copyright {
-    margin-left: 40px;
+
+@media(max-width: 850px) {
+    .copy {
+        padding: 0 3vw 2vh 3vw;
+    }
+    .copyrights {
+        margin-top: 1vh;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 100%;
+        order: 2;
+    }
 }
