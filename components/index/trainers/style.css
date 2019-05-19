@@ -1,0 +1,23 @@
+.trainers {
+    background: linear-gradient(180deg, #212736 0%, rgba(34, 39, 50, 0) 100%);
+    padding: 80px 50px 120px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 45px;
+}
+.text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-right: 0.4em;
+}
