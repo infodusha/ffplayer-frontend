@@ -37,7 +37,7 @@
         display: none;
     }
     .games {
-        width: 100vw; /* FIXME */
+        width: 100%;
         align-self: flex-start;
         overflow: hidden;
     }
