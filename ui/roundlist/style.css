@@ -1,6 +1,7 @@
-.stories {
+.roundlist {
     display: flex;
     overflow-x: hidden;
+    user-select: none;
 }
 .scroll {
     margin-top: 8px;

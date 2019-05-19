@@ -30,11 +30,13 @@ function Roundlist({ users, selected }) {
             pic={user.pic}
             name={user.name}
             nickname={user.nickname}
+            rating={user.rating}
+            winrate={user.winrate}
         />
     ));
     return (
         <React.Fragment>
-            <div className={css.stories} ref={ref}>
+            <div className={css.roundlist} ref={ref}>
                 {renderedUsers}
             </div>
             { hasTouch ? null : <div className={css.scroll}>
@@ -48,11 +50,13 @@ const ID = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
 
 Roundlist.propTypes = {
     users: PropTypes.arrayOf(PropTypes.shape({
-        id: ID,
-        pic: PropTypes.string,
-        name: PropTypes.string,
-        nickname: PropTypes.string,
-    })),
+        id: ID.isRequired,
+        pic: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        nickname: PropTypes.string.isRequired,
+        rating: PropTypes.number.isRequired,
+        winrate: PropTypes.number.isRequired,
+    })).isRequired,
     selected: ID,
 };
 

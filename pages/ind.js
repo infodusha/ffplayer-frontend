@@ -2,7 +2,7 @@ import Page from 'components/page';
 import Header from 'components/header';
 import Welcome from 'components/index/welcome';
 import Trainers from 'components/index/trainers';
-import Tips from 'components/tips';
+import Info from 'components/index/info';
 import Footer from 'components/footer';
 
 function Index() {
@@ -11,7 +11,7 @@ function Index() {
             <Header />
             <Welcome />
             <Trainers />
-            <Tips color="rgba(255, 255, 255, 0.2)" />
+            <Info />
             <Footer />
         </Page>
     );

@@ -1,6 +1,6 @@
 .trainers {
     background: linear-gradient(180deg, #212736 0%, rgba(34, 39, 50, 0) 100%);
-    padding: 80px 50px 120px 50px;
+    padding: 80px 50px;
     display: flex;
     flex-direction: column;
 }
