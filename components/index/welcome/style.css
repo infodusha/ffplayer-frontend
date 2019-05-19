@@ -32,8 +32,13 @@
 .games {
     display: flex;
 }
-@media (max-width: 950px) {
+@media (max-width: 850px) {
     .subline {
         display: none;
+    }
+    .games {
+        width: 100vw; /* FIXME */
+        align-self: flex-start;
+        overflow: hidden;
     }
 }
