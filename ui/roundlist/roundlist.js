@@ -7,7 +7,7 @@ import { useSize } from 'react-hook-size';
 import { useHasTouch } from 'hooks/useHasTouch';
 import { useSwipeScroll } from './useSwipeScroll';
 
-function Trainers({ users, selected }) {
+function Roundlist({ users, selected }) {
 
     let ref = useRef();
     let [scroll, setScroll] = useState(0);
@@ -46,7 +46,7 @@ function Trainers({ users, selected }) {
 
 const ID = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
 
-Trainers.propTypes = {
+Roundlist.propTypes = {
     users: PropTypes.arrayOf(PropTypes.shape({
         id: ID,
         pic: PropTypes.string,
@@ -56,4 +56,4 @@ Trainers.propTypes = {
     selected: ID,
 };
 
-export default React.memo(Trainers);
+export default React.memo(Roundlist);

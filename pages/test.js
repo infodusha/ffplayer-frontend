@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Page from 'components/page';
 import Header from 'components/header';
 import Footer from 'components/footer';
-import Trainers from 'ui/trainers';
+import Roundlist from 'ui/roundlist';
 import pic from '../avatar.png';
 import Filters from 'components/filters';
 
@@ -40,7 +40,7 @@ function Test() {
     return (
         <Page title="FPP">
             <Header />
-            <Trainers users={users} selected={3} />
+            <Roundlist users={users} selected={3} />
             <Filters selected={selected} onSelect={handleSelect} />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
