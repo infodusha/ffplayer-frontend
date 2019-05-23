@@ -47,7 +47,6 @@ rules:
   no-eval: error
   no-extend-native: error
   no-implicit-coercion: error
-  no-invalid-this: error
   no-implied-eval: error
   no-lone-blocks: error
   no-labels: error
