@@ -43,7 +43,6 @@ function Games() {
                     key={game.key}
                     caption={game.caption}
                     image={game.image}
-                    selected={game.key === 'wotb'}
                 />
             ))}
         </div>
