@@ -14,7 +14,7 @@ const allUsers = [
     { id: 7, pic, name: 'Dan', nickname: 'gaeron', rating: 1.4, filters: ['expert'] },
     { id: 8, pic, name: 'Оля', nickname: 'olly3', rating: 1.4, filters: ['expert'] },
     { id: 9, pic, name: 'Илон Маск', nickname: 'teslanator', rating: 7.4, filters: ['expert'] },
-    { id: 10, pic, name: 'Банан', nickname: 'banyourself', rating: 1.4, filters: ['expert'] },
+    { id: 10, pic, name: 'Банан', nickname: 'banyourself', rating: 1.4, filters: ['master'] },
     { id: 11, pic, name: 'Андрей9', nickname: 'infodusha', rating: 1.4, filters: ['expert'] },
     { id: 12, pic, name: 'Андрей10', nickname: 'infodusha', rating: 1.4, filters: ['expert'] },
     { id: 13, pic, name: 'Андрей11', nickname: 'infodusha', rating: 1.4, filters: ['expert'] },
