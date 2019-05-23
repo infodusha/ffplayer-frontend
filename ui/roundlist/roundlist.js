@@ -1,7 +1,7 @@
 import { useState, useRef, useLayoutEffect, useEffect } from 'react';
 import css from './style.css';
 import PropTypes from 'prop-types';
-import User from 'ui/user';
+import User, { userWidth } from 'ui/user';
 import Scroll from 'ui/scroll/scroll';
 import { useSize } from 'react-hook-size';
 import { useHasTouch } from 'hooks/useHasTouch';
@@ -13,12 +13,12 @@ function Roundlist({ users, selected }) {
     let [scroll, setScroll] = useState(0);
     let { width } = useSize(ref);
 
-    let listWidth = ref.current ? ref.current.scrollWidth : null;
+    let listWidth = users.length * userWidth;
 
     let hasTouch = useHasTouch();
 
     useEffect(() => {
-        if(!hasTouch || !listWidth || !width)
+        if(!hasTouch || !width)
             return () => {};
         let item = ref.current;
         let swiper = new Swiper(item, listWidth - width);
@@ -31,11 +31,9 @@ function Roundlist({ users, selected }) {
     }, [scroll]);
 
     function renderScroll() {
-        if(hasTouch)
+        let isVisible = width !== null && Math.round(width) <= listWidth;
+        if(hasTouch || !isVisible)
             return null;
-        let isVisible = listWidth !== null && width !== null && width <= listWidth;
-        if(!isVisible)
-            return <div className={css.scroll}></div>;
         return (
             <div className={css.scroll}>
                 <Scroll onChange={setScroll} value={scroll} length={listWidth - width} />

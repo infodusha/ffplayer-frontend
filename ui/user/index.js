@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import css from './style.css';
 import StarIcon from './staricon';
 
+export const userWidth = Number(css.userWidth.replace('px', ''));
+
 function User({ selected, pic, name, nickname, rating, onClick }) {
     let className = cn(css.user, { [css.selected]: selected });
     let style = { backgroundImage: `url(${pic})` };

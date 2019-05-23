@@ -1,8 +1,10 @@
 @value ratingColor: #FED95A;
 @value winrateColor: #3EC28F;
+@value userWidth: 130px;
 
 .user {
-    min-width: 130px;
+    width: userWidth;
+    flex-shrink: 0;
     height: 126px;
     display: flex;
     flex-direction: column;
