@@ -4,9 +4,14 @@
     padding: 14px 20px;
     border: 1px solid #FED95A;
     color: #FED95A;
+    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
-    background-color: unset;
+    background: unset;
+}
+.button:hover {
+    color: #303543;
+    background-color: #FED95A;
 }
