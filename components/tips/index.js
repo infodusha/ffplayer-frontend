@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import css from './style.css';
 import Tip from './tip';
 import oneIcon from './icons/one';
@@ -15,7 +14,7 @@ const tips = [
     { key: 'five', caption: 'Live Chat смотри и комментируй совместные трансляции', icon: fiveIcon, width: 180 },
 ];
 
-function Tips({ color }) {
+function Tips() {
     return (
         <div className={css.tips}>
             {tips.map((tip) => (
@@ -23,16 +22,11 @@ function Tips({ color }) {
                     key={tip.key}
                     caption={tip.caption}
                     icon={tip.icon}
-                    color={color}
                     width={tip.width}
                 />
             ))}
         </div>
     );
 }
-
-Tips.propTypes = {
-    color: PropTypes.string.isRequired,
-};
 
 export default React.memo(Tips);

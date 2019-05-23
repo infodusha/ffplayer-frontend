@@ -4,7 +4,7 @@ import Tips from 'components/tips';
 function Info() {
     return (
         <div className={css.info}>
-            <Tips color="rgba(255, 255, 255, 0.2)" />
+            <Tips />
         </div>
     );
 }
