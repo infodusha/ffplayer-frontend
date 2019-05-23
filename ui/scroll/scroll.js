@@ -45,8 +45,10 @@ function Scroll({ length, value, onChange }) {
         document.addEventListener('mousemove', handleMove);
     }
 
+    let isVsible = width !== null && length !== null && width < length && !isNaN(step) && !isNaN(value);
+
     let style = {
-        left: isNaN(step) || isNaN(value) || width === null ? offset : Math.min(value / step + offset, width + offset),
+        left: !isVsible ? offset : Math.min(value / step + offset, width + offset),
     };
 
     return (
