@@ -9,7 +9,7 @@ apps:
       NODE_ENV: production
 deploy:
   production:
-    key: E:/keys/ffplayer_rsa
+    key: C:/keys/ffplayer_rsa
     user: root
     host:
       - ffplayer.pro
