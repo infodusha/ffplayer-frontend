@@ -1,0 +1,10 @@
+.games {
+    display: flex;
+}
+@media (max-width: 850px) {
+    .games {
+        width: 100%;
+        align-self: flex-start;
+        overflow: hidden;
+    }
+}

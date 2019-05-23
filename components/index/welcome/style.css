@@ -29,16 +29,8 @@
 .train {
     color: #F3CE44;
 }
-.games {
-    display: flex;
-}
 @media (max-width: 850px) {
     .subline {
         display: none;
-    }
-    .games {
-        width: 100%;
-        align-self: flex-start;
-        overflow: hidden;
     }
 }
