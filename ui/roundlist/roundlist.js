@@ -1,11 +1,11 @@
-import { useState, useRef, useLayoutEffect } from 'react';
+import { useState, useRef, useLayoutEffect, useEffect } from 'react';
 import css from './style.css';
 import PropTypes from 'prop-types';
 import User from 'ui/user';
 import Scroll from 'ui/scroll/scroll';
 import { useSize } from 'react-hook-size';
 import { useHasTouch } from 'hooks/useHasTouch';
-import { useSwipeScroll } from './useSwipeScroll';
+import { Swiper } from 'lib/swiper';
 
 function Roundlist({ users, selected }) {
 
@@ -13,35 +13,52 @@ function Roundlist({ users, selected }) {
     let [scroll, setScroll] = useState(0);
     let { width } = useSize(ref);
 
-    let length = (ref.current ? ref.current.scrollWidth : 0) - width;
+    let listWidth = ref.current ? ref.current.scrollWidth : null;
 
     let hasTouch = useHasTouch();
 
-    useSwipeScroll({ hasTouch, ref, length, setScroll });
+    useEffect(() => {
+        if(!hasTouch || !listWidth || !width)
+            return () => {};
+        let item = ref.current;
+        let swiper = new Swiper(item, listWidth - width);
+        swiper.addListener(setScroll);
+        return () => swiper.removeListener();
+    }, [hasTouch, listWidth, width]);
 
     useLayoutEffect(() => {
         ref.current.scrollLeft = scroll;
     }, [scroll]);
 
-    let renderedUsers = users.map((user) => (
-        <User
-            key={user.id}
-            selected={user.id === selected}
-            pic={user.pic}
-            name={user.name}
-            nickname={user.nickname}
-            rating={user.rating}
-            winrate={user.winrate}
-        />
-    ));
+    function renderScroll() {
+        if(hasTouch)
+            return null;
+        let isVisible = listWidth !== null && width !== null && width <= listWidth;
+        if(!isVisible)
+            return <div className={css.scroll}></div>;
+        return (
+            <div className={css.scroll}>
+                <Scroll onChange={setScroll} value={scroll} length={listWidth - width} />
+            </div>
+        );
+    }
+
     return (
         <React.Fragment>
             <div className={css.roundlist} ref={ref}>
-                {renderedUsers}
+                {users.map((user) => (
+                    <User
+                        key={user.id}
+                        selected={user.id === selected}
+                        pic={user.pic}
+                        name={user.name}
+                        nickname={user.nickname}
+                        rating={user.rating}
+                        winrate={user.winrate}
+                    />
+                ))}
             </div>
-            { hasTouch ? null : <div className={css.scroll}>
-                <Scroll onChange={setScroll} value={scroll} length={length} />
-            </div> }
+            {renderScroll()}
         </React.Fragment>
     );
 }
