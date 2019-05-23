@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import css from './style.css';
 import StarIcon from './staricon';
 
-function User({ selected, pic, name, nickname, rating, winrate, onClick }) {
+function User({ selected, pic, name, nickname, rating, onClick }) {
     let className = cn(css.user, { [css.selected]: selected });
     let style = { backgroundImage: `url(${pic})` };
     return (
@@ -16,11 +16,6 @@ function User({ selected, pic, name, nickname, rating, winrate, onClick }) {
                     <StarIcon color={css.ratingColor} />
                     <span className={css.ratingValue}>{rating}</span>
                     <span className={css.rateText}>ffp</span>
-                </span>
-                <span className={css.rate}>
-                    <StarIcon color={css.winrateColor} />
-                    <span className={css.winrateValue}>{winrate}</span>
-                    <span className={css.rateText}>winrate</span>
                 </span>
             </div>
         </div>
@@ -37,7 +32,6 @@ User.propTypes = {
     name: PropTypes.string.isRequired,
     nickname: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
-    winrate: PropTypes.number.isRequired,
     onClick: PropTypes.func,
 };
 

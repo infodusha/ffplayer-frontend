@@ -54,7 +54,6 @@ function Roundlist({ users, selected }) {
                         name={user.name}
                         nickname={user.nickname}
                         rating={user.rating}
-                        winrate={user.winrate}
                     />
                 ))}
             </div>
@@ -72,7 +71,6 @@ Roundlist.propTypes = {
         name: PropTypes.string.isRequired,
         nickname: PropTypes.string.isRequired,
         rating: PropTypes.number.isRequired,
-        winrate: PropTypes.number.isRequired,
     })).isRequired,
     selected: ID,
 };
