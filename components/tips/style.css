@@ -1,5 +1,30 @@
 .tips {
     display: flex;
+    align-content: space-between;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media (max-width: 950px) {
+    .tips {
+        height: 230px;
+    }
+}
+
+@media (max-width: 537px) {
+    .tips {
+        height: 340px;
+    }
+}
+
+@media (max-width: 375px) {
+    .tips {
+        height: 460px;
+    }
+}
+
+@media (max-width: 350px) {
+    .tips {
+        height: 600px;
+    }
 }
