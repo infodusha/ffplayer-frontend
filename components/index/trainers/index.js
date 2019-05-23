@@ -36,8 +36,6 @@ function Trainers() {
     }
 
     let users = useMemo(() => {
-        if(filters.length === 0)
-            return allUsers;
         let index = filters.findIndex((f) => f === 'streamer');
         let streamer = index !== -1;
         let filter = [...filters];
@@ -46,6 +44,8 @@ function Trainers() {
         return allUsers.filter((user) => {
             if(streamer && !user.filters.includes('streamer'))
                 return false;
+            if(filter.length === 0)
+                return true;
             if(!user.filters.find((f) => filter.includes(f)))
                 return false;
             return true;
