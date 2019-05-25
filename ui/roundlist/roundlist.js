@@ -7,7 +7,7 @@ import { useSize } from 'react-hook-size';
 import { useHasTouch } from 'hooks/useHasTouch';
 import { Swiper } from 'lib/swiper';
 
-function Roundlist({ users, selected }) {
+function Roundlist({ users }) {
 
     let ref = useRef();
     let [scroll, setScroll] = useState(0);
@@ -52,11 +52,12 @@ function Roundlist({ users, selected }) {
                 {users.map((user) => (
                     <User
                         key={user.id}
-                        selected={user.id === selected}
                         pic={user.pic}
                         name={user.name}
                         nickname={user.nickname}
                         rating={user.rating}
+                        rank={user.rank}
+                        streamer={user.streamer}
                     />
                 ))}
             </div>
@@ -74,8 +75,9 @@ Roundlist.propTypes = {
         name: PropTypes.string.isRequired,
         nickname: PropTypes.string.isRequired,
         rating: PropTypes.number.isRequired,
+        rank: PropTypes.oneOf(['top', 'expert', 'master']),
+        streamer: PropTypes.bool,
     })).isRequired,
-    selected: ID,
 };
 
 export default React.memo(Roundlist);

@@ -6,9 +6,19 @@ import colors from 'ui/colors.css';
 
 export const userWidth = Number(css.userWidth.replace('px', ''));
 
-function User({ selected, pic, name, nickname, rating, onClick }) {
-    let className = cn(css.user, { [css.selected]: selected });
-    let style = { backgroundImage: `url(${pic})` };
+function getBorderColor(rank) {
+    if(!rank)
+        return;
+    let key = rank.slice(0, 1).toUpperCase() + rank.slice(1);
+    return colors[`filter${key}`];
+}
+
+function User({ pic, name, nickname, rating, rank, streamer, onClick }) {
+    let className = cn(css.user, { [css.filter]: Boolean(rank) });
+    let style = {
+        backgroundImage: `url(${pic})`,
+        borderColor: getBorderColor(rank),
+    };
     return (
         <div className={className} onClick={onClick}>
             <i style={style}></i>
@@ -25,16 +35,13 @@ function User({ selected, pic, name, nickname, rating, onClick }) {
     );
 }
 
-User.defaultProps = {
-    selected: false,
-};
-
 User.propTypes = {
-    selected: PropTypes.bool,
     pic: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     nickname: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
+    rank: PropTypes.oneOf(['top', 'expert', 'master']),
+    streamer: PropTypes.bool,
     onClick: PropTypes.func,
 };
 

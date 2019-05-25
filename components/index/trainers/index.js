@@ -5,19 +5,19 @@ import pic from '../../../avatar.png';
 import Filters from 'components/filters';
 
 const allUsers = [
-    { id: 1, pic, name: 'Андрей', nickname: 'infodusha', rating: 1.1, filters: ['top'] },
-    { id: 2, pic, name: 'Егор', nickname: 'krid_bro', rating: 3.4, filters: ['expert'] },
-    { id: 3, pic, name: 'Олег', nickname: 'olegik', rating: 3.2, filters: ['expert'] },
-    { id: 4, pic, name: 'Миха', nickname: 'mixxx_x', rating: 4.2, filters: ['expert'] },
-    { id: 5, pic, name: 'Димас', nickname: 'dimdim94', rating: 6.1, filters: ['expert'] },
-    { id: 6, pic, name: 'Алексей', nickname: 'perfect_m1nd', rating: 9.9, filters: ['top', 'streamer'] },
-    { id: 7, pic, name: 'Dan', nickname: 'gaeron', rating: 1.4, filters: ['expert'] },
-    { id: 8, pic, name: 'Оля', nickname: 'olly3', rating: 1.4, filters: ['expert'] },
-    { id: 9, pic, name: 'Илон Маск', nickname: 'teslanator', rating: 7.4, filters: ['expert'] },
-    { id: 10, pic, name: 'Банан', nickname: 'banyourself', rating: 1.4, filters: ['master'] },
-    { id: 11, pic, name: 'Андрей9', nickname: 'infodusha', rating: 1.4, filters: ['expert'] },
-    { id: 12, pic, name: 'Андрей10', nickname: 'infodusha', rating: 1.4, filters: ['expert'] },
-    { id: 13, pic, name: 'Андрей11', nickname: 'infodusha', rating: 1.4, filters: ['expert'] },
+    { id: 1, pic, name: 'Андрей', nickname: 'infodusha', rating: 1.1, rank: 'top' },
+    { id: 2, pic, name: 'Егор', nickname: 'krid_bro', rating: 3.4, rank: 'expert' },
+    { id: 3, pic, name: 'Олег', nickname: 'olegik', rating: 3.2, rank: 'expert' },
+    { id: 4, pic, name: 'Миха', nickname: 'mixxx_x', rating: 4.2, rank: 'expert' },
+    { id: 5, pic, name: 'Димас', nickname: 'dimdim94', rating: 6.1, rank: 'expert' },
+    { id: 6, pic, name: 'Алексей', nickname: 'perfect_m1nd', rating: 9.9, rank: 'top', streamer: true },
+    { id: 7, pic, name: 'Dan', nickname: 'gaeron', rating: 1.4, rank: 'expert' },
+    { id: 8, pic, name: 'Оля', nickname: 'olly3', rating: 1.4, rank: 'expert' },
+    { id: 9, pic, name: 'Илон Маск', nickname: 'teslanator', rating: 7.4, rank: 'expert' },
+    { id: 10, pic, name: 'Банан', nickname: 'banyourself', rating: 1.4, rank: 'master' },
+    { id: 11, pic, name: 'Андрей9', nickname: 'infodusha', rating: 1.4 },
+    { id: 12, pic, name: 'Андрей10', nickname: 'infodusha', rating: 1.4 },
+    { id: 13, pic, name: 'Андрей11', nickname: 'infodusha', rating: 1.4 },
 ];
 
 function Trainers() {
@@ -36,17 +36,14 @@ function Trainers() {
     }
 
     let users = useMemo(() => {
-        let index = filters.findIndex((f) => f === 'streamer');
-        let streamer = index !== -1;
-        let filter = [...filters];
-        if(streamer)
-            filter.splice(index, 1);
+        let streamer = filters.includes('streamer');
+        let noRank = filters.length === 0 || filters.length === 1 && streamer;
         return allUsers.filter((user) => {
-            if(streamer && !user.filters.includes('streamer'))
+            if(streamer && !user.streamer)
                 return false;
-            if(filter.length === 0)
+            if(noRank)
                 return true;
-            if(!user.filters.find((f) => filter.includes(f)))
+            if(!user.rank || !filters.includes(user.rank))
                 return false;
             return true;
         });
@@ -58,7 +55,7 @@ function Trainers() {
                 <span className={css.text}>Выбери своего тренера</span>
                 <Filters selected={filters} onSelect={handleFilterChange} />
             </div>
-            <Roundlist users={users} selected={3} />
+            <Roundlist users={users} />
         </div>
     );
 }
