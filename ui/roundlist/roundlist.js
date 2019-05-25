@@ -18,8 +18,13 @@ function Roundlist({ users, selected }) {
     let hasTouch = useHasTouch();
 
     useEffect(() => {
+        setScroll(0);
+    }, [users]);
+
+
+    useEffect(() => {
         if(!hasTouch || !width)
-            return () => {};
+            return;
         let item = ref.current;
         let swiper = new Swiper(item, listWidth - width);
         swiper.addListener(setScroll);
