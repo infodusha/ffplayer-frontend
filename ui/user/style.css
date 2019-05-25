@@ -1,5 +1,5 @@
-@value ratingColor: #FED95A;
-@value winrateColor: #3EC28F;
+@value colors: 'ui/colors.css';
+@value primary from colors;
 @value userWidth: 130px;
 
 .user {
@@ -21,7 +21,7 @@
 }
 .selected i {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 2px solid #FED95A;
+    border: 2px solid primary;
     box-sizing: border-box;
 }
 .selected .text {
@@ -50,9 +50,5 @@
 }
 .ratingValue {
     margin: 0 5px;
-    color: ratingColor;
-}
-.winrateValue {
-    margin: 0 5px;
-    color: winrateColor;
+    color: primary;
 }

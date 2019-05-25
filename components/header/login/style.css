@@ -1,3 +1,6 @@
+@value colors: 'ui/colors.css';
+@value primary from colors;
+
 .login {
     width: 250px;
     display: flex;
@@ -9,7 +12,7 @@
     font-size: 14px;
     line-height: normal;
     text-align: center;
-    background-color: #FED95A;
+    background-color: primary;
     border-radius: 7px;
     padding: 14px 25px;
     border: 0px;

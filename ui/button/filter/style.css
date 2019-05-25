@@ -1,3 +1,6 @@
+@value colors: 'ui/colors.css';
+@value filterText, filterSelectedText from colors;
+
 .filter {
     display: flex;
     padding: 5px 10px;
@@ -8,10 +11,10 @@
     user-select: none;
 }
 .selected {
-    color: #000000;
+    color: filterSelectedText;
 }
 .unselected {
-    color: #BDC4D2;
+    color: filterText;
 }
 .caption {
     font-size: 13px;

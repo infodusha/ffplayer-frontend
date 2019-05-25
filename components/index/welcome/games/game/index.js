@@ -3,6 +3,7 @@ import cn from 'classnames';
 import PropTypes from 'prop-types';
 import css from './style.css';
 import ArrowIcon from './arrow';
+import colors from 'ui/colors.css';
 
 function Game({ image, caption }) {
 
@@ -23,7 +24,7 @@ function Game({ image, caption }) {
             <div className={cn(css.caption, { [css.selected]: selected })}>
                 {caption}
                 <div className={css.arrow}>
-                    <ArrowIcon className={css.arrow} color={selected ? '#F3CE44' : '#ffffff'} />
+                    <ArrowIcon className={css.arrow} color={selected ? colors.gameHoverText : colors.gameText} />
                 </div>
             </div>
         </div>

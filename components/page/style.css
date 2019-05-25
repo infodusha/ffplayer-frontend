@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
 
+@value colors: 'ui/colors.css';
+@value bodyBg from colors;
+@value bodyText from colors;
+
 body {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    color: #ffffff;
-    background-color: #1F232E;
+    color: bodyText;
+    background-color: bodyBg;
 }
 
 a {

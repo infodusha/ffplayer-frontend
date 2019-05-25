@@ -1,13 +1,16 @@
+@value colors: 'ui/colors.css';
+@value footerBg, footerText, footerHoverLink, footerLogoBg, footerLogoText from colors;
+
 .footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #191C25;
-    color: #51596D;
+    background-color: footerBg;
+    color: footerText;
     user-select: none;
 }
 .footer a:hover {
-    color: #ffffff;
+    color: footerHoverLink;
 }
 .top {
     padding: 3vh 3vw;
@@ -19,8 +22,8 @@
     width: 75px;
     height: 45px;
     border-radius: 10px;
-    background-color: #1F232E;
-    color: #ffffff;
+    background-color: footerLogoBg;
+    color: footerLogoText;
     display: flex;
     justify-content: center;
     align-items: center; 

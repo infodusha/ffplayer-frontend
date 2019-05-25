@@ -2,6 +2,7 @@ import cn from 'classnames';
 import PropTypes from 'prop-types';
 import css from './style.css';
 import StarIcon from './staricon';
+import colors from 'ui/colors.css';
 
 export const userWidth = Number(css.userWidth.replace('px', ''));
 
@@ -15,7 +16,7 @@ function User({ selected, pic, name, nickname, rating, onClick }) {
                 <span className={css.text}>{name}</span>
                 <span className={css.text}>@{nickname}</span>
                 <span className={css.rate}>
-                    <StarIcon color={css.ratingColor} />
+                    <StarIcon color={colors.primary} />
                     <span className={css.ratingValue}>{rating}</span>
                     <span className={css.rateText}>ffp</span>
                 </span>

@@ -1,3 +1,6 @@
+@value colors: 'ui/colors.css';
+@value gameHoverText from colors;
+
 .game {
     user-select: none;
     margin: 0 3vw;
@@ -27,7 +30,7 @@
     align-items: center;
 }
 .selected {
-    color: #F3CE44;
+    color: gameHoverText;
 }
 .arrow {
     margin-left: 15px;

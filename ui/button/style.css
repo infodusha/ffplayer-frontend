@@ -1,17 +1,20 @@
+@value colors: 'ui/colors.css';
+@value primary, buttonHoverText from colors;
+
 .button {
     text-align: center;
     border-radius: 7px;
     padding: 14px 20px;
-    border: 1px solid #FED95A;
-    color: #FED95A;
+    border: 1px solid primary;
+    color: primary;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
-    background: unset;
+    background-color: unset;
 }
 .button:hover {
-    color: #303543;
-    background-color: #FED95A;
+    color: buttonHoverText;
+    background-color: primary;
 }

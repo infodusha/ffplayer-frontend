@@ -5,12 +5,13 @@ import TopIcon from './icons/top';
 import ExpertIcon from './icons/expert';
 import MasterIcon from './icons/master';
 import StreamerIcon from './icons/streamer';
+import colors from 'ui/colors.css';
 
 const items = [
-    { key: 'top', caption: 'Топ', color: '#EFAD2B', icon: TopIcon },
-    { key: 'expert', caption: 'Эксперт', color: '#A96EFF', icon: ExpertIcon },
-    { key: 'master', caption: 'Мастер', color: '#51ADFA', icon: MasterIcon },
-    { key: 'streamer', caption: 'Стример', color: '#FF4D4F', icon: StreamerIcon },
+    { key: 'top', caption: 'Топ', color: colors.filterTop, icon: TopIcon },
+    { key: 'expert', caption: 'Эксперт', color: colors.filterExpert, icon: ExpertIcon },
+    { key: 'master', caption: 'Мастер', color: colors.filterMaster, icon: MasterIcon },
+    { key: 'streamer', caption: 'Стример', color: colors.filterStreamer, icon: StreamerIcon },
 ];
 
 function Filters({ selected, onSelect: handleSelect }) {
