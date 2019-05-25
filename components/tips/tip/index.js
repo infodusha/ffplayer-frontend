@@ -1,24 +1,18 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import PropTypes from 'prop-types';
 import css from './style.css';
 import colors from 'ui/colors.css';
+import { useHovered } from 'hooks/useHovered';
 
 function Tip({ width, caption, icon: Icon }) {
 
-    let [selected, setSelected] = useState(false);
+    let ref = useRef();
+    let hovered = useHovered(ref);
 
-    function handleMouseEnter() {
-        setSelected(true);
-    }
-
-    function handleMouseLeave() {
-        setSelected(false);
-    }
-
-    let color = selected ? colors.tipHoverBg : colors.tipBg;
+    let color = hovered ? colors.tipHoverBg : colors.tipBg;
 
     return (
-        <div className={css.tip} style={{ color, width }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={css.tip} style={{ color, width }} ref={ref}>
             <Icon color={color} />
             <span className={css.caption}>{caption}</span>
         </div>

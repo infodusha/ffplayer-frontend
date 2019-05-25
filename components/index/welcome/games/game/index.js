@@ -1,30 +1,24 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import cn from 'classnames';
 import PropTypes from 'prop-types';
 import css from './style.css';
 import ArrowIcon from './arrow';
 import colors from 'ui/colors.css';
+import { useHovered } from 'hooks/useHovered';
 
 function Game({ image, caption }) {
 
-    let [selected, setSelected] = useState(false);
-
-    function handleMouseEnter() {
-        setSelected(true);
-    }
-
-    function handleMouseLeave() {
-        setSelected(false);
-    }
+    let ref = useRef();
+    let hovered = useHovered(ref);
 
     let imageStyle = { backgroundImage: `url(${image})` };
     return (
-        <div className={css.game} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={css.game} ref={ref}>
             <div className={css.image} style={imageStyle}></div>
-            <div className={cn(css.caption, { [css.selected]: selected })}>
+            <div className={cn(css.caption, { [css.selected]: hovered })}>
                 {caption}
                 <div className={css.arrow}>
-                    <ArrowIcon className={css.arrow} color={selected ? colors.gameHoverText : colors.gameText} />
+                    <ArrowIcon className={css.arrow} color={hovered ? colors.gameHoverText : colors.gameText} />
                 </div>
             </div>
         </div>
