@@ -3,7 +3,7 @@
 
 .trainers {
     background: trainersBg;
-    padding: 80px 50px;
+    padding: 6vh 2vw;
     display: flex;
     flex-direction: column;
 }
