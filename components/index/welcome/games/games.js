@@ -1,7 +1,7 @@
-import { useState, useRef, useEffect, useLayoutEffect } from 'react';
+import { useState, useRef, useLayoutEffect } from 'react';
 import { useSize } from 'react-hook-size';
-import { useHasTouch } from 'hooks/useHasTouch';
-import { Swiper } from 'lib/swiper';
+import { useSwipeArea } from 'hooks/useSwipeArea';
+import { useWheelScroll } from 'hooks/useWheelScroll';
 import css from './style.css';
 import Game from './game';
 import wotbImage from './wotb.png';
@@ -20,17 +20,9 @@ function Games() {
     let [scroll, setScroll] = useState(0);
     let { width } = useSize(ref);
 
-    let hasTouch = useHasTouch();
-
-    useEffect(() => {
-        let listWidth = ref.current ? ref.current.scrollWidth : null;
-        if(!hasTouch || !listWidth || !width || width < document.body.offsetWidth)
-            return () => {};
-        let item = ref.current;
-        let swiper = new Swiper(item, listWidth - width);
-        swiper.addListener(setScroll);
-        return () => swiper.removeListener();
-    }, [hasTouch, width]);
+    let listWidth = ref.current ? ref.current.scrollWidth : null;
+    useSwipeArea(ref, listWidth - width, setScroll);
+    useWheelScroll(ref, listWidth - width, setScroll, 30);
 
     useLayoutEffect(() => {
         ref.current.scrollLeft = scroll;
