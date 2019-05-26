@@ -15,10 +15,12 @@ const allUsers = [
     { id: 8, pic, name: 'Оля', nickname: 'olly3', rating: 1.4, rank: 'expert' },
     { id: 9, pic, name: 'Илон Маск', nickname: 'teslanator', rating: 7.4, rank: 'expert' },
     { id: 10, pic, name: 'Банан', nickname: 'banyourself', rating: 1.4, rank: 'master' },
-    { id: 11, pic, name: 'Андрей9', nickname: 'infodusha', rating: 1.4 },
-    { id: 12, pic, name: 'Андрей10', nickname: 'infodusha', rating: 1.4 },
-    { id: 13, pic, name: 'Андрей11', nickname: 'infodusha', rating: 1.4 },
+    { id: 11, pic, name: 'Андрей9', nickname: 'infodusha', rating: 1.4, rank: 'top' },
+    { id: 12, pic, name: 'Андрей10', nickname: 'infodusha', rating: 1.4, rank: 'top' },
+    { id: 13, pic, name: 'Андрей11', nickname: 'infodusha', rating: 1.4, rank: 'top' },
 ];
+
+const emptyCaption = 'Пока такого тренера нет|Мы работаем над тем, чтобы он появился';
 
 function Trainers() {
 
@@ -43,7 +45,7 @@ function Trainers() {
                 return false;
             if(noRank)
                 return true;
-            if(!user.rank || !filters.includes(user.rank))
+            if(!filters.includes(user.rank))
                 return false;
             return true;
         });
@@ -55,7 +57,7 @@ function Trainers() {
                 <span className={css.text}>Выбери своего тренера</span>
                 <Filters selected={filters} onSelect={handleFilterChange} />
             </div>
-            <Roundlist users={users} />
+            <Roundlist users={users} emptyCaption={emptyCaption} />
         </div>
     );
 }

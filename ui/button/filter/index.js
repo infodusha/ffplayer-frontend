@@ -1,13 +1,7 @@
 import cn from 'classnames';
 import PropTypes from 'prop-types';
 import css from './style.css';
-
-function HEXtoRGBA(color, alpha = 1) {
-    let red = parseInt(color.slice(1, 3), 16);
-    let green = parseInt(color.slice(3, 5), 16);
-    let blue = parseInt(color.slice(5, 7), 16);
-    return `rgba(${red}, ${green}, ${blue}, ${alpha})`;
-}
+import { HEXtoRGBA } from 'lib/utils';
 
 function ButtonFilter({ caption, icon: Icon, color, selected, onClick }) {
     let filterStyle = {

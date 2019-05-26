@@ -16,16 +16,12 @@
     background-size: 100%;
     border-radius: 50%;
 }
-.user:hover {
-    cursor: pointer;
+.user .text {
+    color: #EEEDFB; /* Light Purple */
 }
-.filter i {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 2px solid;
+.pic {
+    border: 1px solid;
     box-sizing: border-box;
-}
-.filter .text {
-    color: #FFFFFF;
 }
 .info {
     display: flex;
@@ -51,4 +47,13 @@
 .ratingValue {
     margin: 0 5px;
     color: primary;
+}
+.user:hover {
+    cursor: pointer;
+}
+.hovered .text {
+    color: #FFFFFF;
+}
+.hovered .rateText {
+    color: #ABB1C0; /* Grey 4 */
 }
