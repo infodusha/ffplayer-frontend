@@ -2,7 +2,8 @@ import { useRef } from 'react';
 import cn from 'classnames';
 import PropTypes from 'prop-types';
 import css from './style.css';
-import StarIcon from './staricon';
+import StarIcon from './icons/star';
+import StreamerIcon from './icons/streamer';
 import colors from 'ui/colors.css';
 import { useHovered } from 'hooks/useHovered';
 import { HEXtoRGBA } from 'lib/utils';
@@ -27,9 +28,19 @@ function User({ pic, name, nickname, rating, rank, streamer, onClick }) {
         boxShadow: hovered ? `0px 5px 10px ${HEXtoRGBA(color, 0.17)}` : undefined,
     };
 
+    function renderStreamer() {
+        if(!streamer)
+            return null;
+        return (
+            <div className={css.streamer}>
+                <StreamerIcon color={colors.filterStreamer} />
+            </div>
+        );
+    }
+
     return (
         <div className={className} onClick={onClick} ref={ref}>
-            <i className={css.pic} style={style}></i>
+            <i className={css.pic} style={style}>{renderStreamer()}</i>
             <div className={css.info}>
                 <span className={css.text}>{name}</span>
                 <span className={css.text}>@{nickname}</span>

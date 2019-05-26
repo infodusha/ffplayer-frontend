@@ -10,18 +10,16 @@
     flex-direction: column;
     align-items: center;
 }
-.user i {
-    width: 70px;
-    height: 70px;
-    background-size: 100%;
-    border-radius: 50%;
-}
-.user .text {
+.text {
     color: #EEEDFB; /* Light Purple */
 }
 .pic {
     border: 1px solid;
     box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    background-size: 100%;
+    border-radius: 50%;
 }
 .info {
     display: flex;
@@ -47,6 +45,11 @@
 .ratingValue {
     margin: 0 5px;
     color: primary;
+}
+.streamer {
+    position: relative;
+    top: 7px;
+    left: 53px;
 }
 .user:hover {
     cursor: pointer;
