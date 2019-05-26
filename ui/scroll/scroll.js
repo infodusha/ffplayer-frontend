@@ -52,7 +52,7 @@ function Scroll({ length, value, onChange }) {
     };
 
     return (
-        <div className={css.scroll} ref={ref}>
+        <div className={css.scroll} ref={ref} onClick={handleMove}>
             <div className={css.line}>
                 <div
                     style={style}
