@@ -1,4 +1,5 @@
 import { useState, useRef, useLayoutEffect, useEffect } from 'react';
+import cn from 'classnames';
 import css from './style.css';
 import PropTypes from 'prop-types';
 import User, { userWidth } from 'ui/user';
@@ -35,10 +36,23 @@ function Roundlist({ users }) {
         ref.current.scrollLeft = scroll;
     }, [scroll]);
 
-    function renderScroll() {
-        let isVisible = width !== null && Math.round(width) <= listWidth;
-        if(hasTouch || !isVisible)
+    function renderEmpty() {
+        if(users.length !== 0)
             return null;
+        return (
+            <div className={css.empty}>
+                <div>Пока такого тренера нет</div>
+                <div>Мы работаем над тем, чтобы он появился</div>
+            </div>
+        );
+    }
+
+    function renderScroll() {
+        if(hasTouch)
+            return null;
+        let isVisible = width !== null && Math.round(width) <= listWidth;
+        if(!isVisible)
+            return <div className={cn(css.scroll, css.scrollPlaceholder)}></div>;
         return (
             <div className={css.scroll}>
                 <Scroll onChange={setScroll} value={scroll} length={listWidth - width} />
@@ -60,6 +74,7 @@ function Roundlist({ users }) {
                         streamer={user.streamer}
                     />
                 ))}
+                {renderEmpty()}
             </div>
             {renderScroll()}
         </React.Fragment>

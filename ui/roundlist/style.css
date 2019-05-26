@@ -2,8 +2,20 @@
     display: flex;
     overflow-x: hidden;
     user-select: none;
+    height: 126px;
 }
 .scroll {
     margin-top: 8px;
     margin: 8px 20px 0 20px;
+}
+.scrollPlaceholder {
+    height: 25px;
+}
+.empty {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
 }
