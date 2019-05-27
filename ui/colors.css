@@ -40,12 +40,12 @@
 @value selectGameTrain: #F3CE44;
 
 /* Tip */
-@value tipBg: #3D4257;
+@value tipBg: #3D4257; /* Grey 1 */
 @value tipHoverBg: #6A7286; /* Grey 3 */
 
 /* User */
 @value userText: #EEEDFB; /* Light Purple */
-@value userRateText: #464C61; /* Grey */
+@value userRateText: #464C61; /* Grey 2 */
 @value userHoverText: #FFFFFF;
 @value userHoverRateText: #ABB1C0; /* Grey 4 */
 
