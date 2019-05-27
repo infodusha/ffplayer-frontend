@@ -14,12 +14,12 @@ export function useSwipeArea(ref, length, setScroll) {
 
         function inertia(v0) {
             let s = 10;
-            let a = v0 / 1000;
+            let a = v0 / length;
             let v = (t) => v0 + a*t;
             let time = Date.now();
             interval = window.setInterval(() => {
                 let t = Date.now() - time;
-                if(t >= Math.abs(v0) * 100) {
+                if(t >= Math.abs(v0) * length / 10) {
                     window.clearInterval(interval);
                     interval = null;
                     return;
