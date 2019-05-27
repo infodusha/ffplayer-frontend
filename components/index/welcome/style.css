@@ -1,5 +1,5 @@
 @value colors: 'ui/colors.css';
-@value selectGame, selectGameTrain from colors;
+@value welcomeBg, selectGame, selectGameTrain from colors;
 
 .welcome {
     display: flex;
@@ -10,6 +10,7 @@
     justify-content: space-evenly;
     min-height: 500px;
     max-height: 900px;
+    background: welcomeBg;
 }
 .text {
     display: flex;

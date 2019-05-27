@@ -1,5 +1,5 @@
 @value colors: 'ui/colors.css';
-@value primary from colors;
+@value primary, userText, userRateText, userHoverText, userHoverRateText from colors;
 @value userWidth: 130px;
 
 .user {
@@ -9,9 +9,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.text {
-    color: #EEEDFB; /* Light Purple */
 }
 .pic {
     border: 1px solid;
@@ -30,10 +27,10 @@
     font-size: 14px;
     line-height: normal;
     text-align: center;
-    color: #A1A7B5;
+    color: userText;
 }
 .rateText {
-    color: #464C61;
+    color: userRateText;
 }
 .rate {
     margin-top: 5px;
@@ -55,8 +52,8 @@
     cursor: pointer;
 }
 .hovered .text {
-    color: #FFFFFF;
+    color: userHoverText;
 }
 .hovered .rateText {
-    color: #ABB1C0; /* Grey 4 */
+    color: userHoverRateText;
 }
