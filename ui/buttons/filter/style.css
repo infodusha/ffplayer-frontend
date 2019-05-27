@@ -1,0 +1,22 @@
+@value colors: 'ui/colors.css';
+@value filterText, filterSelectedText from colors;
+
+.button {
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 14px;
+    border: none;
+    margin: 5px;
+    align-items: center;
+    user-select: none;
+}
+.selected {
+    color: filterSelectedText;
+}
+.unselected {
+    color: filterText;
+}
+.caption {
+    font-size: 13px;
+    margin-left: 6px;
+}

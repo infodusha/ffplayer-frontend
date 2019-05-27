@@ -2,13 +2,14 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 import { useMaxScroll } from '../useMaxScroll';
 import css from './style.css';
+import ButtonFilled from 'ui/buttons/filled';
 
-function Login({ className: userClassName, ...userProps }) {
+function Login({ ...userProps }) {
     let isScrolled = useMaxScroll(70);
-    let className = cn(css.loginButton, userClassName, { [css.scrolled]: isScrolled });
+    let className = cn(css.loginButton, { [css.scrolled]: isScrolled });
     return (
         <div className={css.login}>
-            <button className={className} {...userProps}>Войти</button>
+            <ButtonFilled {...userProps} className={className} caption="Войти" />
         </div>
     );
 }

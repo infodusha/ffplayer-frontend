@@ -3,7 +3,7 @@ import css from './style.css';
 import Copy from './copy';
 import Nav from 'components/nav';
 import Pages from './pages';
-import Button from 'ui/button';
+import Button from 'ui/buttons/primary';
 
 const pages1 = [
     { key: 'news', caption: 'Новости', href: '#' },

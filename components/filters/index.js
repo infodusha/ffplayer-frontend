@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import ButtonFilter from 'ui/button/filter';
+import ButtonFilter from 'ui/buttons/filter';
 import css from './style.css';
 import TopIcon from './icons/top';
 import ExpertIcon from './icons/expert';

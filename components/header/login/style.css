@@ -8,16 +8,9 @@
 }
 .loginButton {
     margin-right: 40px;
-    color: #000000;
-    font-size: 14px;
-    line-height: normal;
-    text-align: center;
-    background-color: primary;
-    border-radius: 7px;
-    padding: 14px 25px;
-    border: 0px;
+    padding: 14px 25px !important;
     transition: padding 200ms;
 }
 .scrolled {
-    padding: 6.5px 13px;
+    padding: 6.5px 13px !important;
 }
