@@ -1,19 +1,36 @@
+import { useRef } from 'react';
 import cn from 'classnames';
 import PropTypes from 'prop-types';
 import css from './style.css';
 import { HEXtoRGBA } from 'lib/utils';
+import { useHovered } from 'hooks/useHovered';
+
+function getAplha(selected, hovered) {
+    if(hovered)
+        return 0.2;
+    if(selected)
+        return 1;
+    return 0.1;
+}
 
 function ButtonFilter({ caption, icon: Icon, color, selected, onClick }) {
+
+    let ref = useRef();
+    let hovered = useHovered(ref);
+
     let filterStyle = {
-        backgroundColor: HEXtoRGBA(color, selected ? 1 : 0.2),
+        backgroundColor: HEXtoRGBA(color, getAplha(selected, hovered)),
     };
+
+    let isSelected = selected && !hovered;
+
     let filterClassName = cn(css.button, {
-        [css.selected]: selected,
-        [css.unselected]: !selected,
+        [css.selected]: isSelected,
+        [css.unselected]: !isSelected,
     });
     return (
-        <button className={filterClassName} style={filterStyle} tabIndex="0" onClick={onClick}>
-            <Icon color={selected ? 'white' : color} />
+        <button className={filterClassName} style={filterStyle} tabIndex={0} onClick={onClick} ref={ref}>
+            <Icon color={isSelected ? 'white' : color} />
             <span className={css.caption}>{caption}</span>
         </button>
     );

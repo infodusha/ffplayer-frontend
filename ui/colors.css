@@ -15,6 +15,7 @@
 @value filterStreamer: #FF4D4F;
 @value filterText: #BDC4D2;
 @value filterSelectedText: #000000;
+@value filterHoverText: #FFFFFF;
 
 /* Trainers */
 @value trainersBg: linear-gradient(180deg, #212736 0%, rgba(34, 39, 50, 0) 100%);

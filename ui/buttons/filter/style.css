@@ -1,5 +1,5 @@
 @value colors: 'ui/colors.css';
-@value filterText, filterSelectedText from colors;
+@value filterText, filterSelectedText, filterHoverText from colors;
 
 .button {
     display: flex;
@@ -19,4 +19,7 @@
 .caption {
     font-size: 13px;
     margin-left: 6px;
+}
+.button:hover {
+    color: filterHoverText;
 }
