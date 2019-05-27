@@ -1,0 +1,23 @@
+.blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6vh 2vw;
+}
+.market {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.marketTip {
+    color: #FF4951;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+}
+.marketImg {
+    -webkit-user-drag: none;
+    user-select: none;
+}

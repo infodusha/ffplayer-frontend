@@ -1,0 +1,25 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+.big {
+    padding-bottom: 0;
+}
+.top {
+    display: flex;
+}
+.caption {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+}
+.big .caption {
+    color: #1F232E;
+}
+.small .caption {
+    color: #FFFFFF;
+}
