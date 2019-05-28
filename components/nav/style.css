@@ -1,3 +1,6 @@
+@value colors: 'ui/colors.css';
+@value headerBg from colors;
+
 .items {
     padding: 0px;
     margin: 0px;
@@ -21,7 +24,7 @@
         bottom: 0;
         height: 60px;
         width: 100%;
-        background: #202534;
+        background: headerBg;
     }
     .item {
         padding: 0 0;
