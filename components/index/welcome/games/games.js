@@ -17,16 +17,16 @@ const games = [
 function Games() {
 
     let ref = useRef();
-    let [scroll, setScroll] = useState(0);
-    let { width } = useSize(ref);
+    // let [scroll, setScroll] = useState(0);
+    // let { width } = useSize(ref);
 
-    let listWidth = ref.current ? ref.current.scrollWidth : null;
-    useSwipeArea(ref, listWidth - width, setScroll);
-    useWheelScroll(ref, listWidth - width, setScroll, 30);
+    // let listWidth = ref.current ? ref.current.scrollWidth : null;
+    // useSwipeArea(ref, listWidth - width, setScroll);
+    // useWheelScroll(ref, listWidth - width, setScroll, 30);
 
-    useLayoutEffect(() => {
-        ref.current.scrollLeft = scroll;
-    }, [scroll]);
+    // useLayoutEffect(() => {
+    //     ref.current.scrollLeft = scroll;
+    // }, [scroll]);
 
     return (
         <div className={css.games} ref={ref}>

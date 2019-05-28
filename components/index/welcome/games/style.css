@@ -5,6 +5,13 @@
     .games {
         width: 100%;
         align-self: flex-start;
-        overflow: hidden;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+    .games::-webkit-scrollbar, .games::-webkit-scrollbar-thumb {
+        -webkit-appearance: none;
+        display: none;
     }
 }
