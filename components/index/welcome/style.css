@@ -7,11 +7,13 @@
     align-items: center;
     margin-top: 70px;
     height: calc(100vh - 70px);
-    justify-content: space-around; /* Edge Fix */
-    justify-content: space-evenly;
+    justify-content: space-around;
     min-height: 500px;
     max-height: 900px;
     background: welcomeBg;
+}
+.welcome::before, .welcome::after {
+    content: '';
 }
 .text {
     display: flex;
