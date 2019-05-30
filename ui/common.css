@@ -1,0 +1,9 @@
+.useScroll {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+.useScroll::-webkit-scrollbar, .useScroll::-webkit-scrollbar-thumb {
+    display: none;
+}

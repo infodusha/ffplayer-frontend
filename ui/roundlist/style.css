@@ -1,8 +1,8 @@
 .roundlist {
     display: flex;
-    overflow-x: hidden;
     user-select: none;
     height: 126px;
+    composes: useScroll from 'ui/common.css';
 }
 .scroll {
     margin-top: 8px;

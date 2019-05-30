@@ -5,12 +5,6 @@
     .games {
         width: 100%;
         align-self: flex-start;
-        overflow-x: scroll;     
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
-    }
-    .games::-webkit-scrollbar, .games::-webkit-scrollbar-thumb {
-        display: none;
+        composes: useScroll from 'ui/common.css';
     }
 }

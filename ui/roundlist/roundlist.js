@@ -6,8 +6,6 @@ import User, { userWidth } from 'ui/user';
 import Scroll from 'ui/scroll/scroll';
 import { useSize } from 'react-hook-size';
 import { useHasTouch } from 'hooks/useHasTouch';
-import { useSwipeArea } from 'hooks/useSwipeArea';
-import { useWheelScroll } from 'hooks/useWheelScroll';
 
 function Roundlist({ users, emptyCaption }) {
 
@@ -22,10 +20,6 @@ function Roundlist({ users, emptyCaption }) {
     useEffect(() => {
         setScroll(0);
     }, [users]);
-
-    useWheelScroll(ref, listWidth - width, setScroll, 30);
-
-    useSwipeArea(ref, listWidth - width, setScroll);
 
     useEffect(() => {
         ref.current.scrollLeft = scroll;
