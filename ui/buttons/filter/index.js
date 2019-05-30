@@ -6,10 +6,10 @@ import { HEXtoRGBA } from 'lib/utils';
 import { useHovered } from 'hooks/useHovered';
 
 function getAplha(selected, hovered) {
-    if(hovered)
-        return 0.2;
     if(selected)
         return 1;
+    if(hovered)
+        return 0.2;
     return 0.1;
 }
 
@@ -30,7 +30,7 @@ function ButtonFilter({ caption, icon: Icon, color, selected, onClick }) {
     });
     return (
         <button className={filterClassName} style={filterStyle} tabIndex={0} onClick={onClick} ref={ref}>
-            <Icon color={isSelected ? 'white' : color} />
+            <Icon color={selected ? 'white' : color} />
             <span className={css.caption}>{caption}</span>
         </button>
     );
