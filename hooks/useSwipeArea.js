@@ -17,6 +17,7 @@ export function useSwipeArea(ref, length, setScroll) {
             let a = v0 / length * 2;
             let v = (t) => v0 - a*t;
             let time = Date.now();
+            let prevTime = 0;
             interval = window.setInterval(() => {
                 let t = Date.now() - time;
                 if(sign !== Math.sign(v(t))) {
@@ -24,19 +25,23 @@ export function useSwipeArea(ref, length, setScroll) {
                     interval = null;
                     return;
                 }
-                setScroll((scroll) => Math.max(0, Math.min(scroll + v(t) * 10, length)));
+                let dt = t - prevTime;
+                setScroll((scroll) => Math.max(0, Math.min(scroll + v(t) * dt, length)));
+                prevTime = t;
             }, 10);
         }
 
-        function start({ touches }) {
-            if(touches.length !== 1)
+        function start(event) {
+            if(event.touches.length !== 1)
                 return;
+            if(event.cancelable)
+                event.preventDefault();
             if(interval) {
                 window.clearInterval(interval);
                 interval = null;
             }
             dtX = 0;
-            startX = touches[0].pageX;
+            startX = event.touches[0].pageX;
             startT = Date.now();
         }
 
@@ -55,7 +60,6 @@ export function useSwipeArea(ref, length, setScroll) {
             let dtV = dtX / dtT;
             inertia(dtV);
         }
-
 
         item.addEventListener('touchstart', start);
         item.addEventListener('touchmove', move);
