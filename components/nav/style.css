@@ -1,5 +1,5 @@
 @value colors: 'ui/colors.css';
-@value headerBg from colors;
+@value headerBg, primarySelect from colors;
 
 .items {
     padding: 0px;
@@ -13,7 +13,7 @@
     letter-spacing: 0.15em;
 }
 .selected {
-    color: #F3CE44;
+    color: primarySelect;
 }
 @media (max-width: 725px) {
     .items {

@@ -18,7 +18,7 @@ function Game({ image, caption }) {
             <div className={cn(css.caption, { [css.selected]: hovered })}>
                 {caption}
                 <div className={css.arrow}>
-                    <ArrowIcon className={css.arrow} color={hovered ? colors.gameHoverText : colors.gameText} />
+                    <ArrowIcon className={css.arrow} color={hovered ? colors.primarySelect : colors.gameText} />
                 </div>
             </div>
         </div>

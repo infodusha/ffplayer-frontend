@@ -1,4 +1,5 @@
 @value primary: #FED95A;
+@value primarySelect: #F3CE44;
 
 /* Body */
 @value bodyBg: #1D2230;
@@ -30,14 +31,12 @@
 
 /* Game */
 @value gameText: #FFFFFF;
-@value gameHoverText: #F3CE44;
 
 /* Welcome */
 @value welcomeBg: linear-gradient(180deg, rgba(25, 28, 37, 0.3) 0%, rgba(34, 39, 50, 0) 71.87%);
 
 /* Select Game */
 @value selectGame: #ABB1C0; /* Grey 4 */
-@value selectGameTrain: #F3CE44;
 
 /* Tip */
 @value tipBg: #3D4257; /* Grey 1 */

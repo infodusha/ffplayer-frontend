@@ -1,5 +1,5 @@
 @value colors: 'ui/colors.css';
-@value welcomeBg, selectGame, selectGameTrain from colors;
+@value welcomeBg, selectGame, primarySelect from colors;
 
 .welcome {
     display: flex;
@@ -31,7 +31,7 @@
     color: selectGame;
 }
 .train {
-    color: selectGameTrain;
+    color: primarySelect;
 }
 @media (max-width: 850px) {
     .subline {

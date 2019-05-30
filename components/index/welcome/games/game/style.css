@@ -1,5 +1,5 @@
 @value colors: 'ui/colors.css';
-@value gameHoverText from colors;
+@value primarySelect from colors;
 
 .game {
     user-select: none;
@@ -30,7 +30,7 @@
     align-items: center;
 }
 .selected {
-    color: gameHoverText;
+    color: primarySelect;
 }
 .arrow {
     margin-left: 15px;
