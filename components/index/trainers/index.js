@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import css from './style.css';
 import Roundlist from 'ui/roundlist';
 import pic from '../../../avatar.png';
+import pic1 from '../../../agent.png';
 import Filters from 'components/filters';
 
 const allUsers = [
@@ -10,7 +11,7 @@ const allUsers = [
     { id: 3, pic, name: 'Олег', nickname: 'olegik', rating: 3.2, rank: 'expert' },
     { id: 4, pic, name: 'Миха', nickname: 'mixxx_x', rating: 4.2, rank: 'expert' },
     { id: 5, pic, name: 'Димас', nickname: 'dimdim94', rating: 6.1, rank: 'expert' },
-    { id: 6, pic, name: 'Алексей', nickname: 'perfect_m1nd', rating: 9.9, rank: 'top', streamer: true },
+    { id: 6, pic: pic1, name: 'Алексей', nickname: 'perfect_m1nd', rating: 9.9, rank: 'top', streamer: true },
     { id: 7, pic, name: 'Dan', nickname: 'gaeron', rating: 1.4, rank: 'expert' },
     { id: 8, pic, name: 'Оля', nickname: 'olly3', rating: 1.4, rank: 'expert' },
     { id: 9, pic, name: 'Илон Маск', nickname: 'teslanator', rating: 7.4, rank: 'expert' },
