@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import cn from 'classnames';
 import css from './style.css';
 import PropTypes from 'prop-types';
@@ -21,9 +21,21 @@ function Roundlist({ users, emptyCaption }) {
         setScroll(0);
     }, [users]);
 
-    useEffect(() => {
-        ref.current.scrollLeft = scroll;
+    useLayoutEffect(() => {
+        if(ref.current.scrollLeft !== scroll)
+            ref.current.scrollLeft = scroll;
     }, [scroll]);
+
+    useEffect(() => {
+        let item = ref.current;
+
+        function handleScroll() {
+            setScroll(ref.current.scrollLeft);
+        }
+
+        item.addEventListener('scroll', handleScroll);
+        return () => item.removeEventListener('scroll', handleScroll);
+    }, []);
 
     function renderEmpty() {
         if(users.length !== 0)
