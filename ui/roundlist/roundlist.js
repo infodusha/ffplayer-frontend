@@ -1,4 +1,4 @@
-import { useState, useRef, useLayoutEffect, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import cn from 'classnames';
 import css from './style.css';
 import PropTypes from 'prop-types';
@@ -27,7 +27,7 @@ function Roundlist({ users, emptyCaption }) {
 
     useSwipeArea(ref, listWidth - width, setScroll);
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         ref.current.scrollLeft = scroll;
     }, [scroll]);
 
