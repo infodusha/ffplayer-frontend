@@ -7,13 +7,12 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+.item {
+    display: block;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: footerText;
-}
-.item {
-    display: block;
-    line-height: 30px;
 }
