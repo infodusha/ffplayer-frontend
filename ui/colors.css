@@ -52,6 +52,7 @@
 @value footerBg: #191E2B;
 @value footerText: #ABB1C0; /* Grey 4 */
 @value footerHoverLink: #FFFFFF;
+@value footerCopyText: #6A7286; /* Grey 3 */
 
 /* Footer Logo */
 @value footerLogoBg: #1F232E;

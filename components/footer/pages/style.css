@@ -1,9 +1,17 @@
+@value colors: 'ui/colors.css';
+@value footerText from colors;
+
 .pages {
     padding: 0px;
     margin: 0px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: footerText;
 }
 .item {
     display: block;
