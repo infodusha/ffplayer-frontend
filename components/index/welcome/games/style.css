@@ -1,7 +1,10 @@
+@value breakpoints: 'ui/breakpoints.css';
+@value tablet from breakpoints;
+
 .games {
     display: flex;
 }
-@media (max-width: 850px) {
+@media tablet {
     .games {
         width: 100%;
         align-self: flex-start;
