@@ -52,7 +52,7 @@ function Roundlist({ users, emptyCaption }) {
     function renderScroll() {
         if(hasTouch)
             return null;
-        let isVisible = width !== null && Math.round(width) <= listWidth;
+        let isVisible = width !== null && Math.round(width) < listWidth;
         if(!isVisible)
             return <div className={cn(css.scroll, css.scrollPlaceholder)}></div>;
         return (
