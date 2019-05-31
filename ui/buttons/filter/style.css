@@ -1,5 +1,5 @@
 @value colors: 'ui/colors.css';
-@value filterText, filterSelectedText, filterHoverText from colors;
+@value primarySelect, filterText, filterSelectedText, filterHoverText from colors;
 
 .button {
     display: flex;
@@ -9,6 +9,7 @@
     margin: 5px;
     align-items: center;
     user-select: none;
+    composes: useFocus from common;
 }
 .selected {
     color: filterSelectedText;
@@ -22,4 +23,8 @@
 }
 .button:hover {
     color: filterHoverText;
+}
+.button:focus {
+    box-shadow: 0 0 0 1px primarySelect;
+    outline: unset;
 }
