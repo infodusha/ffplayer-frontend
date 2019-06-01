@@ -16,7 +16,7 @@
 .selected {
     color: primarySelect;
 }
-@media (for-tablet-portrait-down) {
+@media for-tablet-portrait-down {
     .items {
         position: fixed;
         display: flex;
