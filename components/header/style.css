@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value headerBg, headerText from colors;
+@value headerBg, headerText from 'ui/colors.css';
 
 .header {
     font-size: 15px;

@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value primarySelect from colors;
+@value primarySelect from 'ui/colors.css';
 
 .game {
     user-select: none;

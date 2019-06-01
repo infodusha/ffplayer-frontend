@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value headerBg, primarySelect from colors;
+@value headerBg, primarySelect from 'ui/colors.css';
 
 .items {
     padding: 0px;

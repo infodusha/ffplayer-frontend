@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value scrollLineBg, scrollTriggerBg from colors;
+@value scrollLineBg, scrollTriggerBg from 'ui/colors.css';
 @value offset: -12.5px;
 
 .scroll {

@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value primary, userText, userRateText, userHoverText, userHoverRateText from colors;
+@value primary, userText, userRateText, userHoverText, userHoverRateText from 'ui/colors.css';
 @value userWidth: 130px;
 
 .user {

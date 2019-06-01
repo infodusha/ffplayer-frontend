@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value footerBg, footerText, footerHoverLink, footerLogoBg, footerLogoText from colors;
+@value footerBg, footerText, footerHoverLink, footerLogoBg, footerLogoText from 'ui/colors.css';
 
 .footer {
     display: flex;

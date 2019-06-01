@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value footerCopyText from colors;
+@value footerCopyText from 'ui/colors.css';
 
 .copy {
     padding: 4vh 3vw;

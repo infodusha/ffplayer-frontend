@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value footerText from colors;
+@value footerText from 'ui/colors.css';
 
 .pages {
     padding: 0px;

@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value welcomeBg, selectGame, primarySelect from colors;
+@value welcomeBg, selectGame, primarySelect from 'ui/colors.css';
 
 .welcome {
     display: flex;

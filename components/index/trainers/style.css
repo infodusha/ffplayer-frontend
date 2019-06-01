@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value trainersBg, trainersBgText from colors;
+@value trainersBg, trainersBgText from 'ui/colors.css';
 
 .trainers {
     background: trainersBg;

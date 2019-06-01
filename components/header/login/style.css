@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value primary from colors;
+@value primary from 'ui/colors.css';
 
 .login {
     width: 250px;

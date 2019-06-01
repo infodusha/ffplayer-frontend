@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value primary, buttonHoverText from colors;
+@value primary, buttonHoverText from 'ui/colors.css';
 
 .button {
     text-align: center;

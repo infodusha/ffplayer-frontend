@@ -1,5 +1,4 @@
-@value colors: 'ui/colors.css';
-@value primary from colors;
+@value primary from 'ui/colors.css';
 
 .profile {
     width: 250px;
