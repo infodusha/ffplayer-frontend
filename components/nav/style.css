@@ -1,8 +1,10 @@
 @value headerBg, primarySelect from 'ui/colors.css';
+@value for-mobile-only from 'ui/breakpoints.css';
 
 .items {
     padding: 0px;
     margin: 0px;
+    transition: height 200ms;
 }
 .item {
     display: inline;
@@ -21,9 +23,12 @@
         justify-content: space-around;
         align-items: center;
         bottom: 0;
-        height: 60px;
+        height: 40px;
         width: 100%;
         background: headerBg;
+    }
+    .scrolled {
+        height: 22px;
     }
     .item {
         padding: 0 0;

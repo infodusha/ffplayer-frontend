@@ -2,6 +2,7 @@ import cn from 'classnames';
 import PropTypes from 'prop-types';
 import css from './style.css';
 import Link from 'next/link';
+import { useMaxScroll } from 'hooks/useMaxScroll';
 
 const items = [
     { key: 'games', caption: 'Игры', href: '#' },
@@ -10,8 +11,10 @@ const items = [
 ];
 
 function Nav({ selected }) {
+    let isScrolled = useMaxScroll(70);
+    let className = cn(css.items, { [css.scrolled]: isScrolled });
     return (
-        <ul className={css.items}>
+        <ul className={className}>
             {items.map((item) => (
                 <li key={item.key} className={cn(css.item, { [css.selected]: selected === item.key })}>
                     <Link href={item.href} prefetch>

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { useMaxScroll } from '../useMaxScroll';
+import { useMaxScroll } from '../../../hooks/useMaxScroll';
 import css from './style.css';
 import ButtonFilled from 'ui/buttons/filled';
 

@@ -1,4 +1,5 @@
 @value headerBg, headerText from 'ui/colors.css';
+@value for-mobile-only from 'ui/breakpoints.css';
 
 .header {
     font-size: 15px;
@@ -19,4 +20,13 @@
 }
 .scrolled {
     height: 45px;
+}
+
+@media for-mobile-only {
+    .header {
+        height: 45px;
+    }
+    .scrolled {
+        height: 22px;
+    }
 }

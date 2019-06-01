@@ -5,7 +5,7 @@ import Profile from './profile';
 import Nav from 'components/nav';
 import Login from './login';
 import Title from './title';
-import { useMaxScroll } from './useMaxScroll';
+import { useMaxScroll } from 'hooks/useMaxScroll';
 
 function Header() {
     let [isLoginned, setIsLoginned] = useState(false);
