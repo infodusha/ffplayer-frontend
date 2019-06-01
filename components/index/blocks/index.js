@@ -1,6 +1,12 @@
 import css from './style.css';
 import Block from './block';
-import marketImage from './market.png';
+import MoreNews from './news/more';
+import NewsItem from './news/item';
+
+const news = [
+    { id: 1, date: new Date(), caption: 'Смым передовым сервисом в игровой индустрии на 2020 год, по версии Forbs становится FFPlayer' },
+    { id: 2, date: new Date(0), caption: 'Начало новго формата и подхода к миру игровых платформ' },
+];
 
 function Blocks() {
     return (
@@ -9,15 +15,26 @@ function Blocks() {
                 <div className={css.market}>
                     <div className={css.marketTip}>Маркет</div>
                     <div className={css.marketTip}>полезностей</div>
-                    <img className={css.marketImg} src={marketImage} />
                 </div>
             </Block>
             <Block caption="Новости" color="#1686FB">
-                Новости
+                <div className={css.news}>
+                    <NewsItem date={news[0].date}>{news[0].caption}</NewsItem>
+                    <NewsItem date={news[1].date}>{news[1].caption}</NewsItem>
+                    <MoreNews />
+                </div>
             </Block>
-            <Block caption="Он-лайн" color="#ED5158">
-                Новости
-            </Block>
+            <div className={css.last}>
+                <Block caption="Он-лайн" color="#ED5158" list="top">
+                    <div className={css.online}>
+                        <i className={css.onlineImg} />
+                    </div>
+                </Block>
+                <Block caption="Live Chat" color="#A05AF8" list="bottom">
+                    <div className={css.chat}>
+                    </div>
+                </Block>
+            </div>
         </div>
     );
 }

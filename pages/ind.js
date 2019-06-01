@@ -12,7 +12,7 @@ function Index() {
             <Header />
             <Welcome />
             <Trainers />
-            {/* <Blocks /> */}
+            <Blocks />
             <Info />
             <Footer />
         </Page>

@@ -1,14 +1,21 @@
 .block {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 1.5vw 2vw;
     border-radius: 10px;
+    user-select: none;
+    width: 22vw;
+    height: 23vw;
 }
 .big {
     padding-bottom: 0;
+    width: 46vw;
 }
 .top {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 .caption {
     font-style: normal;
@@ -22,4 +29,17 @@
 }
 .small .caption {
     color: #FFFFFF;
+}
+.listTop {
+    height: 15vw;
+}
+.listBottom {
+    height: 5.5vw;
+    justify-content: center;
+}
+.listBottom .caption {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
 }

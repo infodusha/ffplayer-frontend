@@ -4,10 +4,21 @@
     justify-content: space-between;
     padding: 6vh 2vw;
 }
+.last {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .market {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('./market.png');
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 .marketTip {
     color: #FF4951;
@@ -17,7 +28,26 @@
     line-height: 23px;
     letter-spacing: 0.1em;
 }
-.marketImg {
-    -webkit-user-drag: none;
-    user-select: none;
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.onlineImg {
+    background-image: url('./online.svg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 4vw;
+    height: 3vw;
 }

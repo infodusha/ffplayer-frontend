@@ -1,11 +1,14 @@
 import css from './style.css';
 import cn from 'classnames';
 import PropTypes from 'prop-types';
+import ArrowIcon from './arrow';
 
-function Block({ caption, children, isBig, color }) {
+function Block({ caption, children, isBig, color, list }) {
     let className = cn(css.block, {
         [css.big]: isBig,
         [css.small]: !isBig,
+        [css.listTop]: list === 'top',
+        [css.listBottom]: list === 'bottom',
     });
     let style = {
         backgroundColor: color,
@@ -14,14 +17,17 @@ function Block({ caption, children, isBig, color }) {
         <div className={className} style={style}>
             <div className={css.top}>
                 <div className={css.caption}>{caption}</div>
-                <div></div>
+                <div className={css.arrow}>
+                    <ArrowIcon color={ isBig ? '#F10B0E' : '#FFFFFF' } />
+                </div>
             </div>
-            <div className={css.content}>{children}</div>
+            {children}
         </div>
     );
 }
 
 Block.propTypes = {
+    list: PropTypes.oneOf(['top', 'bottom']),
     caption: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
     isBig: PropTypes.bool,
