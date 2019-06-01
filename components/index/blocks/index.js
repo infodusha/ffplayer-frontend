@@ -27,7 +27,7 @@ function Blocks() {
             <div className={css.last}>
                 <Block caption="Он-лайн" color="#ED5158" list="top">
                     <div className={css.online}>
-                        <i className={css.onlineImg} />
+                        <div className={css.onlineImg} />
                     </div>
                 </Block>
                 <Block caption="Live Chat" color="#A05AF8" list="bottom">

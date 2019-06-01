@@ -54,7 +54,7 @@ function Roundlist({ users, emptyCaption }) {
             return null;
         let isVisible = width !== null && Math.round(width) < listWidth;
         if(!isVisible)
-            return <div className={cn(css.scroll, css.scrollPlaceholder)}></div>;
+            return <div className={cn(css.scroll, css.scrollPlaceholder)} />;
         return (
             <div className={css.scroll}>
                 <Scroll onChange={setScroll} value={scroll} length={listWidth - width} />

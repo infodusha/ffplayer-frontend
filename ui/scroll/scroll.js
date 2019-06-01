@@ -59,7 +59,7 @@ function Scroll({ length, value, onChange }) {
                     className={css.trigger}
                     onDragStart={handleDrag}
                     onMouseDown={handleDown}
-                ></div>
+                />
             </div>
         </div>
     );

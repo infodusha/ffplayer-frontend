@@ -40,7 +40,7 @@ function User({ pic, name, nickname, rating, rank, streamer, onClick }) {
 
     return (
         <div className={className} onClick={onClick} ref={ref}>
-            <i className={css.pic} style={style}>{renderStreamer()}</i>
+            <div className={css.pic} style={style}>{renderStreamer()}</div>
             <div className={css.info}>
                 <span className={css.text}>{name}</span>
                 <span className={css.text}>@{nickname}</span>

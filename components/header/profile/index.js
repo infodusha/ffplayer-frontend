@@ -8,7 +8,7 @@ function Profile({ balance, nickname }) {
             <div className={css.info}>
                 <span className={css.nickname}>{nickname}</span>
                 <div className={css.profileIcon}>
-                    <div className={css.profileOnline}></div>
+                    <div className={css.profileOnline} />
                 </div>
             </div>
         </div>

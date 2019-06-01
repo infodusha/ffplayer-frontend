@@ -14,7 +14,7 @@ function Game({ image, caption }) {
     let imageStyle = { backgroundImage: `url(${image})` };
     return (
         <div className={css.game} ref={ref}>
-            <div className={css.image} style={imageStyle}></div>
+            <div className={css.image} style={imageStyle} />
             <div className={cn(css.caption, { [css.selected]: hovered })}>
                 {caption}
                 <div className={css.arrow}>
