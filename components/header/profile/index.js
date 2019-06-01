@@ -7,7 +7,9 @@ function Profile({ balance, nickname }) {
             <span className={css.balance}>₽ {balance}</span>
             <div className={css.info}>
                 <span className={css.nickname}>{nickname}</span>
-                <i className={css.profileIcon}></i>
+                <div className={css.profileIcon}>
+                    <div className={css.profileOnline}></div>
+                </div>
             </div>
         </div>
     );

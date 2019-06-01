@@ -33,3 +33,13 @@
     height: 40px;
     background-image: url('./profile.png');
 }
+.profileOnline {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF4951;
+    position: relative;
+    top: 1px;
+    left: 29px;
+}
