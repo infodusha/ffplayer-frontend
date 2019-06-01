@@ -1,9 +1,9 @@
 @value primary from 'ui/colors.css';
 
 .login {
-    width: 250px;
     display: flex;
     justify-content: flex-end;
+    flex-basis: 250px;
 }
 .loginButton {
     margin-right: 40px;

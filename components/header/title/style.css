@@ -1,7 +1,9 @@
+@value for-tablet-portrait-down from 'ui/breakpoints.css';
+
 .title {
     display: flex;
     align-items: center;
-    width: 250px;
+    flex-basis: 250px;
 }
 .burger {
     margin-left: 40px;
@@ -15,4 +17,10 @@
 .label {
     margin-left: 40px;
     color: #FFFFFF;
+}
+
+@media for-tablet-portrait-down {
+    .title {
+        flex-basis: unset;
+    }
 }
