@@ -1,5 +1,5 @@
 @value for-phone-only only screen and (max-width: 599px);
-@value for-tablet-portrait-up only screen and (min-width: 600px) and (orientation: portrait);
-@value for-tablet-landscape-up only screen and (min-width: 900px) and (orientation: landscape);
-@value for-desktop-up only screen and (min-width: 1200px);
+@value for-tablet-portrait-down only screen and (max-width: 899px);
+@value for-tablet-landscape-down only screen and (max-width: 1199px);
+@value for-desktop-down only screen and (max-width: 1799px);
 @value for-big-desktop-up only screen and (min-width: 1800px);

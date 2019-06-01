@@ -1,5 +1,5 @@
 @value headerBg, primarySelect from 'ui/colors.css';
-@value for-mobile-only from 'ui/breakpoints.css';
+@value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .items {
     padding: 0px;
@@ -16,7 +16,7 @@
 .selected {
     color: primarySelect;
 }
-@media (max-width: 725px) {
+@media (for-tablet-portrait-down) {
     .items {
         position: fixed;
         display: flex;

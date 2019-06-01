@@ -1,9 +1,9 @@
-@value for-tablet-portrait-up from 'ui/breakpoints.css';
+@value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .games {
     display: flex;
 }
-@media for-tablet-portrait-up {
+@media for-tablet-portrait-down {
     .games {
         width: 100%;
         align-self: flex-start;
