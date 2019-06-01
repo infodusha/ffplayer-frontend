@@ -6,7 +6,7 @@
     flex-basis: 250px;
 }
 .burger {
-    margin-left: 40px;
+    margin-left: 2vw;
 }
 .burgerIcon {
     display: block;
@@ -15,7 +15,7 @@
     background-image: url('./burger.svg');
 }
 .label {
-    margin-left: 40px;
+    margin-left: 3vw;
     color: #FFFFFF;
 }
 

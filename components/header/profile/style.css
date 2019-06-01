@@ -1,18 +1,19 @@
 @value primary from 'ui/colors.css';
 
 .profile {
-    width: 250px;
+    flex-basis: 250px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 .balance {
     color: primary;
-    padding: 0 25px;
+    margin-right: 2vw;
 }
 .info {
     display: flex;
     align-items: center;
-    padding-right: 40px;
+    margin-right: 2vw;
     justify-self: flex-end;
 }
 .profile {
@@ -24,7 +25,7 @@
 }
 .nickname {
     color: #A1A7B5;
-    padding: 0 15px;
+    margin-right: 13px;
 }
 .profileIcon {
     display: block;

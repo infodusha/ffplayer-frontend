@@ -6,7 +6,7 @@
     flex-basis: 250px;
 }
 .loginButton {
-    margin-right: 40px;
+    margin-right: 2vw;
     padding: 14px 25px !important;
     transition: padding 200ms;
 }
