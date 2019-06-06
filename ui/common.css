@@ -1,10 +1,11 @@
-@value primary, scrollLineBg, scrollTriggerBg from 'ui/colors.css';
+@value primary, scrollLineBg from 'ui/colors.css';
 
 .useScroll {
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     scrollbar-width: thin;
+    scrollbar-color: primary scrollLineBg;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 25px;
 }
@@ -16,5 +17,13 @@
 }
 .useScroll::-webkit-scrollbar-thumb {
     background-color: primary;
-    outline: 1px solid scrollTriggerBg;
+}
+
+.hideScrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: unset;
+}
+.hideScrollbar::-webkit-scrollbar {
+    display: none;
 }

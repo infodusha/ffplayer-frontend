@@ -8,8 +8,6 @@ import colors from 'ui/colors.css';
 import { useHovered } from 'hooks/useHovered';
 import { HEXtoRGBA } from 'lib/utils';
 
-export const userWidth = Number(css.userWidth.replace('px', ''));
-
 function getColor(rank) {
     let key = rank.slice(0, 1).toUpperCase() + rank.slice(1);
     return colors[`filter${key}`];
