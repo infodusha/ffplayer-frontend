@@ -1,7 +1,7 @@
 .roundlist {
     display: flex;
     user-select: none;
-    min-height: 150px;
+    flex-shrink: 0;
     composes: useScroll from 'ui/common.css';
 }
 .scroll {
