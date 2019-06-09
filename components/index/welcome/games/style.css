@@ -8,5 +8,6 @@
         width: 100%;
         align-self: flex-start;
         composes: useScroll from 'ui/common.css';
+        scroll-snap-type: x mandatory;
     }
 }
