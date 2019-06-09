@@ -10,4 +10,8 @@
         composes: useScroll from 'ui/common.css';
         scroll-snap-type: x mandatory;
     }
+    .games:last-child::after {
+        content: '';
+        flex: 0 0 0.1px;
+    }
 }
