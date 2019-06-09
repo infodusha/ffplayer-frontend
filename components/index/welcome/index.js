@@ -5,7 +5,7 @@ function Welcome() {
     return (
         <div className={css.welcome}>
             <div className={css.text}>
-                <span className={css.line}>Feel like the First Player - Учим побеждать в онлайн играх</span>
+                <span className={css.line}>FFPlay - Учим побеждать в онлайн играх</span>
                 <span className={css.subline}>Тренируйтесь, общайтесь, смотрите трансляции!</span>
             </div>
             <div className={css.select}>
