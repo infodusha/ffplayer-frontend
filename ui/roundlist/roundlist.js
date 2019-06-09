@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import cn from 'classnames';
+import { hideScrollbar } from 'ui/common.css';
 import css from './style.css';
 import PropTypes from 'prop-types';
 import User from 'ui/user';
@@ -27,7 +28,7 @@ function Roundlist({ users, emptyCaption }) {
         );
     }
 
-    let className = cn(css.roundlist, { [css.hideScrollbar]: hasTouch });
+    let className = cn(css.roundlist, { [hideScrollbar]: hasTouch });
 
     return (
         <div className={className} ref={ref}>

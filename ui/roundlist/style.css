@@ -19,6 +19,3 @@
     justify-content: center;
     align-items: center;
 }
-.hideScrollbar {
-    composes: hideScrollbar from 'ui/common.css';
-}
