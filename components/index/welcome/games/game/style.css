@@ -1,5 +1,5 @@
 @value primarySelect from 'ui/colors.css';
-@value for-phone-only from 'ui/breakpoints.css';
+@value for-phone-only, for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .game {
     user-select: none;
@@ -38,9 +38,18 @@
     display: flex;
     align-items: flex-end;
 }
+@media for-tablet-portrait-down {
+    .game {
+        margin: 0 1.5vw;
+    }
+    .image {
+        width: 28vw;
+        height: 14vw;
+    }
+}
 @media for-phone-only {
     .image {
         width: 93vw;
-        height: 47.5vw;
+        height: 39vw;
     }
 }
