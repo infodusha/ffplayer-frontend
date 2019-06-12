@@ -48,8 +48,16 @@
     }
 }
 @media for-phone-only {
+    .game {
+        margin: 0 3vw;
+    }
     .image {
-        width: 93vw;
-        height: 39vw;
+        width: 94vw;
+        height: 40vw;
+    }
+    .caption {
+        position: relative;
+        top: -15vw;
+        margin-top: 8px;
     }
 }

@@ -43,13 +43,18 @@
 }
 @media for-phone-only {
     .welcome {
-        height: 230vw;
+        height: 220vw;
         max-height: unset;
     }
     .line {
-        font-size: 1.5em;
+        font-size: 1.7em;
+        padding: 0 5vw;
     }
     .subline {
+        margin-top: 1.7em;
+        font-size: 0.9em;
+    }
+    .select, .train {
         display: none;
     }
 }
