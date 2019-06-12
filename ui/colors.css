@@ -19,7 +19,7 @@
 @value filterHoverText: #FFFFFF;
 
 /* Trainers */
-@value trainersBg: linear-gradient(180deg, #212736 0%, rgba(34, 39, 50, 0) 100%);
+@value trainersBg: linear-gradient(180deg, #222837 0%, #1D2230 47.4%, #1D2230 100%);
 @value trainersBgText: #FFFFFF;
 
 /* Scroll */
