@@ -5,13 +5,6 @@
 }
 @media for-tablet-portrait-down {
     .games {
-        width: 100%;
-        align-self: flex-start;
-        composes: useScroll from 'ui/common.css';
-        scroll-snap-type: x mandatory;
-    }
-    .games:last-child::after {
-        content: '';
-        flex: 0 0 0.1px;
+        flex-wrap: wrap;
     }
 }

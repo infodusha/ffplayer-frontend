@@ -1,4 +1,5 @@
 @value welcomeBg, selectGame, primarySelect from 'ui/colors.css';
+@value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .welcome {
     display: flex;
@@ -35,8 +36,9 @@
 .train {
     color: primarySelect;
 }
-@media (max-width: 850px) {
-    .subline {
-        display: none;
+@media for-tablet-portrait-down {
+    .welcome {
+        height: unset;
+        max-height: unset;
     }
 }
