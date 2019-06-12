@@ -1,9 +1,9 @@
-@value for-tablet-portrait-down from 'ui/breakpoints.css';
+@value for-phone-only from 'ui/breakpoints.css';
 
 .games {
     display: flex;
 }
-@media for-tablet-portrait-down {
+@media for-phone-only {
     .games {
         flex-wrap: wrap;
     }

@@ -1,5 +1,5 @@
 @value welcomeBg, selectGame, primarySelect from 'ui/colors.css';
-@value for-tablet-portrait-down from 'ui/breakpoints.css';
+@value for-phone-only, for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .welcome {
     display: flex;
@@ -24,7 +24,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 2.5em;
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
 .select {
     font-weight: 500;
@@ -38,7 +38,18 @@
 }
 @media for-tablet-portrait-down {
     .welcome {
-        height: unset;
+        height: 80vw;
+    }
+}
+@media for-phone-only {
+    .welcome {
+        height: 230vw;
         max-height: unset;
+    }
+    .line {
+        font-size: 1.5em;
+    }
+    .subline {
+        display: none;
     }
 }
