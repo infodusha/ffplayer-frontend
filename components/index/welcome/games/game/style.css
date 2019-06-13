@@ -65,12 +65,11 @@
         position: relative;
         top: 25vw;
         left: 5vw;
-        display: flex;
+        display: inline-flex;
         margin-top: 18px;
         font-weight: 500;
         font-size: 17px;
         line-height: 26px;
-        display: flex;
         align-items: center;
     }
 }
