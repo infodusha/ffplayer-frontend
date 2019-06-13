@@ -7,5 +7,7 @@
     .games {
         flex-wrap: wrap;
         padding-top: 10vw;
+        align-content: space-between;
+        height: 145vw;
     }
 }
