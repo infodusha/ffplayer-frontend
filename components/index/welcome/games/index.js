@@ -7,7 +7,7 @@ import pubgImage from './pubg.png';
 const games = [
     { key: 'wotb', caption: 'World of Tanks Blitz', image: wotbImage },
     { key: 'frtn', caption: 'Fortnite', image: frtnImage },
-    { key: 'pubg', caption: 'PUBG Mobail', image: pubgImage },
+    { key: 'pubg', caption: 'PUBG Mobile', image: pubgImage },
 ];
 
 function Games() {
@@ -24,4 +24,4 @@ function Games() {
     );
 }
 
-export default React.memo(Games);
+export default Games;
