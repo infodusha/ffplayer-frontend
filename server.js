@@ -3,8 +3,6 @@ const Koa = require('koa');
 const next = require('next');
 const serve = require('koa-static');
 const Router = require('koa-router');
-const compress = require('koa-compress');
-const zlib = require('zlib');
 const routes = require('./routes.json');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
@@ -33,11 +31,6 @@ app.prepare().then(() => {
         ctx.res.statusCode = 200;
         await next();
     });
-
-    server.use(compress({
-        threshold: 2048,
-        flush: zlib.Z_SYNC_FLUSH,
-    }));
 
     server.use(serve('static'));
 
