@@ -1,3 +1,5 @@
+@value for-phone-only from 'ui/breakpoints.css';
+
 .block {
     display: flex;
     flex-direction: column;
@@ -42,4 +44,21 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
+}
+
+@media for-phone-only {
+    .block {
+        width: 47vw;
+        height: 48.5vw;
+    }
+    .big {
+        width: 97vw;
+        height: 48.5vw;
+    }
+    .listTop {
+        height: 28vw;
+    }
+    .listBottom {
+        height: 18vw;
+    }
 }

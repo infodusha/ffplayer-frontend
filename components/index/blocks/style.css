@@ -1,7 +1,11 @@
+@value for-phone-only from 'ui/breakpoints.css';
+
 .blocks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
     padding: 6vh 2vw;
 }
 .last {
@@ -50,4 +54,10 @@
     background-repeat: no-repeat;
     width: 4vw;
     height: 3vw;
+}
+
+@media for-phone-only {
+    .blocks {
+        height: 121vw;
+    }
 }
