@@ -5,11 +5,14 @@ export function useMaxScroll(maxScroll = 0) {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
+        let item = window.document.querySelector('body > div > div');
+
         function handleScroll() {
-            setIsScrolled((window.pageYOffset || window.document.documentElement.scrollTop) > maxScroll);
+            setIsScrolled(item.scrollTop > maxScroll);
         }
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+
+        item.addEventListener('scroll', handleScroll);
+        return () => item.removeEventListener('scroll', handleScroll);
     }, [maxScroll]);
 
     return isScrolled;

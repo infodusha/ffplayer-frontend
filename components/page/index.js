@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
+import css from './style.css';
 import 'normalize.css';
-import './style.css';
+import './global.css';
 
 function Page({ title, children }) {
     return (
@@ -11,7 +12,9 @@ function Page({ title, children }) {
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
             </Head>
-            {children}
+            <div className={css.showBar}>
+                {children}
+            </div>
         </React.Fragment>
     );
 }
