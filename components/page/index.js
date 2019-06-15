@@ -11,6 +11,7 @@ function Page({ title, children }) {
                 <title>{title}</title>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+                <link rel="shortcut icon" href="/favicon.png" type="image/png" />
             </Head>
             <div className={css.showBar}>
                 {children}
