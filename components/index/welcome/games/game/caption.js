@@ -1,4 +1,3 @@
-import React from 'react';
 import ArrowIcon from './arrow';
 import colors from 'ui/colors.css';
 import css from './style.css';

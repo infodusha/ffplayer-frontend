@@ -1,4 +1,3 @@
-import React from 'react';
 import css from './style.css';
 import PropTypes from 'prop-types';
 

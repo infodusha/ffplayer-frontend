@@ -1,3 +1,5 @@
+@value for-phone-only from 'ui/breakpoints.css';
+
 .tip {
     display: flex;
     flex-direction: column;
@@ -11,4 +13,25 @@
 }
 .tip:hover {
     cursor: pointer;
+}
+.flex1 {
+    width: 130px;
+}
+.flex2 {
+    width: 150px;
+}
+.flex3 {
+    width: 180px;
+}
+
+@media for-phone-only {
+    .flex1 {
+        width: 40vw;
+    }
+    .flex2 {
+        width: 40vw;
+    }
+    .flex3 {
+        width: 55vw;
+    }
 }

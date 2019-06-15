@@ -15,6 +15,7 @@
 
 @media for-phone-only {
     .tips {
-        height: 150vw;
+        min-height: 420px;
+        height: 100vw;
     }
 }

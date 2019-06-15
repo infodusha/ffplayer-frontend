@@ -9,4 +9,4 @@ function Info() {
     );
 }
 
-export default React.memo(Info);
+export default Info;
