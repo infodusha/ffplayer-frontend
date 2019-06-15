@@ -23,7 +23,7 @@ function User({ pic, name, nickname, rating, rank, streamer, onClick }) {
     let style = {
         backgroundImage: `url(${pic})`,
         borderColor: color,
-        boxShadow: hovered ? `0px 10px 20px ${HEXtoRGBA(color, 0.30)}` : undefined,
+        boxShadow: hovered ? `0px 10px 30px ${HEXtoRGBA(color, 0.30)}` : undefined,
     };
 
     function renderStreamer() {
