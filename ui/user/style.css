@@ -1,4 +1,4 @@
-@value primary, userText, grey2, userHoverText, grey4 from 'ui/colors.css';
+@value primary, userText, grey2, grey4 from 'ui/colors.css';
 @value for-phone-only from 'ui/breakpoints.css';
 
 .user {
@@ -52,7 +52,7 @@
     cursor: pointer;
 }
 .hovered .text {
-    color: userHoverText;
+    color: white;
 }
 .hovered .rateText {
     color: grey4;

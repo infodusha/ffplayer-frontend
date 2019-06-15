@@ -1,7 +1,5 @@
 @value primary: #FED95A;
 @value primarySelect: #F3CE44;
-/* @value black: #000000;
-@value white: #FFFFFF; */
 @value grey1: #3D4257;
 @value grey2: #464C61;
 @value grey3: #6A7286;
@@ -9,11 +7,9 @@
 
 /* Body */
 @value bodyBg: #1D2230;
-@value bodyText: #FFFFFF;
 
 /* Header */
 @value headerBg: #202534;
-@value headerText: #FFFFFF;
 
 /* Filters */
 @value filterTop: #EFAD2B;
@@ -21,30 +17,21 @@
 @value filterMaster: #51ADFA;
 @value filterStreamer: #FF4D4F;
 @value filterText: #BDC4D2;
-@value filterSelectedText: #000000;
-@value filterHoverText: #FFFFFF;
 
 /* Trainers */
 @value trainersBg: linear-gradient(180deg, #222837 0%, #1D2230 47.4%, #1D2230 100%);
-@value trainersBgText: #FFFFFF;
 
 /* Button */
 @value buttonHoverText: #303543;
-
-/* Game */
-@value gameText: #FFFFFF;
 
 /* Welcome */
 @value welcomeBg: linear-gradient(180deg, rgba(25, 28, 37, 0.3) 0%, rgba(34, 39, 50, 0) 71.87%);
 
 /* User */
 @value userText: #EEEDFB; /* Light Purple */
-@value userHoverText: #FFFFFF;
 
 /* Footer */
 @value footerBg: #191E2B;
-@value footerHoverLink: #FFFFFF;
 
 /* Footer Logo */
 @value footerLogoBg: #1F232E;
-@value footerLogoText: #FFFFFF;

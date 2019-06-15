@@ -18,7 +18,7 @@ function Block({ caption, children, isBig, color, list }) {
             <div className={css.top}>
                 <div className={css.caption}>{caption}</div>
                 <div className={css.arrow}>
-                    <ArrowIcon color={ isBig ? '#F10B0E' : '#FFFFFF' } />
+                    <ArrowIcon color={ isBig ? '#F10B0E' : 'white' } />
                 </div>
             </div>
             {children}

@@ -8,7 +8,7 @@ function Caption({ caption, hovered }) {
         <React.Fragment>
             {caption}
             <div className={css.arrow}>
-                <ArrowIcon color={hovered ? colors.primarySelect : colors.gameText} />
+                <ArrowIcon color={hovered ? colors.primarySelect : 'white'} />
             </div>
         </React.Fragment>
     );

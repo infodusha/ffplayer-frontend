@@ -1,4 +1,4 @@
-@value footerBg, footerText, footerHoverLink, footerLogoBg, footerLogoText from 'ui/colors.css';
+@value footerBg, footerText, footerLogoBg from 'ui/colors.css';
 @value for-tablet-portrait-down, for-tablet-landscape-down from 'ui/breakpoints.css';
 
 .footer {
@@ -10,7 +10,7 @@
     user-select: none;
 }
 .footer a:hover {
-    color: footerHoverLink;
+    color: white;
 }
 .top {
     padding: 3vh 3vw;
@@ -24,7 +24,7 @@
     height: 45px;
     border-radius: 10px;
     background-color: footerLogoBg;
-    color: footerLogoText;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center; 

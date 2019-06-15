@@ -1,4 +1,4 @@
-@value headerBg, headerText from 'ui/colors.css';
+@value headerBg from 'ui/colors.css';
 @value for-phone-only from 'ui/breakpoints.css';
 
 .header {
@@ -15,7 +15,7 @@
     align-items: center;
     transition: height 200ms;
     background-color: headerBg;
-    color: headerText;
+    color: white;
     z-index: 10;
 }
 .scrolled {

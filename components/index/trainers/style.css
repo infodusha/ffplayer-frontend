@@ -1,4 +1,4 @@
-@value trainersBg, trainersBgText from 'ui/colors.css';
+@value trainersBg from 'ui/colors.css';
 @value for-phone-only from 'ui/breakpoints.css';
 
 .trainers {
@@ -21,7 +21,7 @@
     line-height: 23px;
     display: flex;
     align-items: center;
-    color: trainersBgText;
+    color: white;
     margin-right: 0.4em;
 }
 
