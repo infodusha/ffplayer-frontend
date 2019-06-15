@@ -1,4 +1,4 @@
-@value primary, userText, userRateText, userHoverText, userHoverRateText from 'ui/colors.css';
+@value primary, userText, grey2, userHoverText, grey4 from 'ui/colors.css';
 @value for-phone-only from 'ui/breakpoints.css';
 
 .user {
@@ -18,10 +18,6 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.user:hover .pic{
-    /* width: 71px;
-    height: 71px; */
-}
 .info {
     display: flex;
     flex-direction: column;
@@ -34,7 +30,7 @@
     color: userText;
 }
 .rateText {
-    color: userRateText;
+    color: grey2;
 }
 .rate {
     margin-top: 5px;
@@ -59,7 +55,7 @@
     color: userHoverText;
 }
 .hovered .rateText {
-    color: userHoverRateText;
+    color: grey4;
 }
 
 @media for-phone-only {

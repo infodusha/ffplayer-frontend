@@ -1,5 +1,11 @@
 @value primary: #FED95A;
 @value primarySelect: #F3CE44;
+/* @value black: #000000;
+@value white: #FFFFFF; */
+@value grey1: #3D4257;
+@value grey2: #464C61;
+@value grey3: #6A7286;
+@value grey4: #ABB1C0;
 
 /* Body */
 @value bodyBg: #1D2230;
@@ -22,10 +28,6 @@
 @value trainersBg: linear-gradient(180deg, #222837 0%, #1D2230 47.4%, #1D2230 100%);
 @value trainersBgText: #FFFFFF;
 
-/* Scroll */
-@value scrollLineBg: #3D4257; /* Grey 1 */
-@value scrollTriggerBg: linear-gradient(214.33deg, #CFD5E3 14.87%, #F1F5FD 86.32%);
-
 /* Button */
 @value buttonHoverText: #303543;
 
@@ -35,24 +37,13 @@
 /* Welcome */
 @value welcomeBg: linear-gradient(180deg, rgba(25, 28, 37, 0.3) 0%, rgba(34, 39, 50, 0) 71.87%);
 
-/* Select Game */
-@value selectGame: #ABB1C0; /* Grey 4 */
-
-/* Tip */
-@value tipBg: #3D4257; /* Grey 1 */
-@value tipHoverBg: #6A7286; /* Grey 3 */
-
 /* User */
 @value userText: #EEEDFB; /* Light Purple */
-@value userRateText: #464C61; /* Grey 2 */
 @value userHoverText: #FFFFFF;
-@value userHoverRateText: #ABB1C0; /* Grey 4 */
 
 /* Footer */
 @value footerBg: #191E2B;
-@value footerText: #ABB1C0; /* Grey 4 */
 @value footerHoverLink: #FFFFFF;
-@value footerCopyText: #6A7286; /* Grey 3 */
 
 /* Footer Logo */
 @value footerLogoBg: #1F232E;

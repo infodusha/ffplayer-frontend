@@ -10,7 +10,7 @@ function Tip({ flex, caption, icon: Icon }) {
     let ref = useRef();
     let hovered = useHovered(ref);
 
-    let color = hovered ? colors.tipHoverBg : colors.tipBg;
+    let color = hovered ? colors.grey3 : colors.grey1;
 
     let className = cn(css.tip, {
         [css.flex1]: flex === 1,

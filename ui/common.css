@@ -1,11 +1,11 @@
-@value primary, scrollLineBg from 'ui/colors.css';
+@value primary, grey1 from 'ui/colors.css';
 
 .useScroll {
     overflow-y: hidden;
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     scrollbar-width: thin;
-    scrollbar-color: primary scrollLineBg;
+    scrollbar-color: primary grey1;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 25px;
 }
@@ -13,7 +13,7 @@
     height: 5px;
 }
 .useScroll::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px scrollLineBg;
+    box-shadow: inset 0 0 6px grey1;
 }
 .useScroll::-webkit-scrollbar-thumb {
     background-color: primary;

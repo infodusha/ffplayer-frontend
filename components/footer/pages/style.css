@@ -1,4 +1,4 @@
-@value footerText from 'ui/colors.css';
+@value grey4 from 'ui/colors.css';
 
 .pages {
     padding: 0px;
@@ -14,5 +14,5 @@
     font-size: 14px;
     line-height: 16px;
     padding-top: 20px;
-    color: footerText;
+    color: grey4;
 }

@@ -1,4 +1,4 @@
-@value footerCopyText from 'ui/colors.css';
+@value grey4 from 'ui/colors.css';
 @value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .copy {
@@ -11,7 +11,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    color: footerCopyText;
+    color: grey4;
 }
 .copyrights {
     width: 350px;

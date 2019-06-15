@@ -1,4 +1,4 @@
-@value welcomeBg, selectGame, primarySelect from 'ui/colors.css';
+@value welcomeBg, grey4, primarySelect from 'ui/colors.css';
 @value for-phone-only, for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .welcome {
@@ -31,7 +31,7 @@
     font-size: 17px;
     line-height: 26px;
     text-align: center;
-    color: selectGame;
+    color: grey4;
 }
 .train {
     color: primarySelect;
