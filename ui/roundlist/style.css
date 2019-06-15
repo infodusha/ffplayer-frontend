@@ -3,6 +3,7 @@
     user-select: none;
     flex-shrink: 0;
     composes: useScroll from 'ui/common.css';
+    scroll-snap-type: x proximity;
 }
 .scroll {
     margin-top: 8px;

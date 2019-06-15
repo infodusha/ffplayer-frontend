@@ -1,12 +1,13 @@
 @value primary, userText, userRateText, userHoverText, userHoverRateText from 'ui/colors.css';
-@value userWidth: 130px;
+@value for-phone-only from 'ui/breakpoints.css';
 
 .user {
-    width: userWidth;
+    width: 130px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: start;
 }
 .pic {
     border: 1px solid;
@@ -56,4 +57,10 @@
 }
 .hovered .rateText {
     color: userHoverRateText;
+}
+
+@media for-phone-only {
+    .user {
+        width: 110px;
+    }
 }
