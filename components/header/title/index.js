@@ -3,7 +3,7 @@ import css from './style.css';
 function Title() {
     return (
         <div className={css.title}>
-            <div className={css.label}>FFP</div>
+            <div className={css.label}></div>
             <div className={css.burger}>
                 <div className={css.burgerIcon} />
             </div>

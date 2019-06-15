@@ -9,10 +9,18 @@
     display: inline;
     line-height: normal;
     text-align: center;
-    padding: 0px 25px;
+    padding: 0;
+    margin: 0px 25px;
     letter-spacing: 0.15em;
 }
 .selected {
+    color: primarySelect;
+}
+.items:hover > .selected {
+    color: unset;
+}
+.items:hover > .selected:hover,
+.item:hover {
     color: primarySelect;
 }
 @media for-tablet-portrait-down {

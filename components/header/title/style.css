@@ -6,17 +6,19 @@
     flex-basis: 250px;
 }
 .burger {
-    margin-left: 2vw;
+    margin-left: 4vw;
 }
 .burgerIcon {
     display: block;
-    width: 28px;
-    height: 13px;
+    width: 30px;
+    height: 10px;
     background-image: url('./burger.svg');
 }
 .label {
     margin-left: 3vw;
-    color: #FFFFFF;
+    background-image: url('./logo.svg');
+    width: 44px;
+    height: 19px;
 }
 
 @media for-tablet-portrait-down {
