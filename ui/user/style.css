@@ -10,14 +10,17 @@
     scroll-snap-align: start;
 }
 .pic {
-    border: 1px solid;
-    box-sizing: border-box;
+    border: 2px solid;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.user:hover .pic{
+    /* width: 71px;
+    height: 71px; */
 }
 .info {
     display: flex;
