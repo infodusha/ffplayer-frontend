@@ -1,4 +1,4 @@
-@value for-phone-only from 'ui/breakpoints.css';
+@value for-phone-only, for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .blocks {
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
-    padding: 6vh 2vw;
+    padding: 2vw;
 }
 .last {
     display: flex;
@@ -40,7 +40,7 @@
     width: 100%;
     height: 100%;
 }
-.online {
+.centerIcon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,9 +55,49 @@
     width: 4vw;
     height: 3vw;
 }
+.newsImg {
+    background-image: url('./news.svg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 4vw;
+    height: 3vw;
+}
+.iconNews {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.topReverser {
+    height: 22.4px;
+}
+
+@media for-tablet-portrait-down {
+    .news {
+        display: none;
+    }
+    .iconNews {
+        display: flex;
+    }
+    .marketTip {
+        font-size: 15px;
+    }
+}
 
 @media for-phone-only {
     .blocks {
-        height: 121vw;
+        height: 103vw;
+    }
+    .onlineImg {
+        width: 7vw;
+        height: 5.25vw;
+    }
+    .newsImg {
+        width: 7vw;
+        height: 5.25vw;
+    } 
+    .marketTip {
+        font-size: 15px;
     }
 }

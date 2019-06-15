@@ -18,6 +18,12 @@ function Blocks() {
                 </div>
             </Block>
             <Block caption="Новости" color="#1686FB">
+                <div className={css.iconNews}>
+                    <div className={css.centerIcon}>
+                        <div className={css.newsImg} />
+                    </div>
+                    <div className={css.topReverser}></div>
+                </div>
                 <div className={css.news}>
                     <NewsItem date={news[0].date}>{news[0].caption}</NewsItem>
                     <NewsItem date={news[1].date}>{news[1].caption}</NewsItem>
@@ -26,9 +32,10 @@ function Blocks() {
             </Block>
             <div className={css.last}>
                 <Block caption="Он-лайн" color="#ED5158" list="top">
-                    <div className={css.online}>
+                    <div className={css.centerIcon}>
                         <div className={css.onlineImg} />
                     </div>
+                    <div className={css.topReverser}></div>
                 </Block>
                 <Block caption="Live Chat" color="#A05AF8" list="bottom">
                     <div className={css.chat}>

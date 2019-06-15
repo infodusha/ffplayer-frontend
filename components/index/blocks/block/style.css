@@ -1,4 +1,4 @@
-@value for-phone-only from 'ui/breakpoints.css';
+@value for-phone-only, for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .block {
     display: flex;
@@ -11,7 +11,6 @@
     height: 23vw;
 }
 .big {
-    padding-bottom: 0;
     width: 46vw;
 }
 .top {
@@ -22,7 +21,7 @@
 .caption {
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 23px;
     letter-spacing: 0.1em;
 }
@@ -39,17 +38,31 @@
     height: 5.5vw;
     justify-content: center;
 }
-.listBottom .caption {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
+
+@media for-tablet-portrait-down {
+    .block {
+        width: 23vw;
+        height: 23.5vw;
+    }
+    .big {
+        width: 48vw;
+    }
+    .caption {
+        font-size: 15px;
+    }
+    .listTop {
+        height: 15vw;
+    }
+    .listBottom {
+        height: 7.5vw;
+    }
 }
 
 @media for-phone-only {
     .block {
         width: 47vw;
         height: 48.5vw;
+        padding: 3vw 4vw;
     }
     .big {
         width: 97vw;
@@ -61,4 +74,10 @@
     .listBottom {
         height: 18vw;
     }
+    .caption {
+        font-size: 15px;
+    }
+}
+.big {
+    padding-bottom: 0;
 }
