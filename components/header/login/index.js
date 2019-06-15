@@ -1,21 +1,18 @@
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { useMaxScroll } from '../../../hooks/useMaxScroll';
 import css from './style.css';
 import ButtonFilled from 'ui/buttons/filled';
 
-function Login({ ...userProps }) {
-    let isScrolled = useMaxScroll(70);
-    let className = cn(css.loginButton, { [css.scrolled]: isScrolled });
+function Login({ scrolled, ...userProps }) {
     return (
-        <div className={css.login}>
-            <ButtonFilled {...userProps} className={className} caption="Войти" />
+        <div className={cn(css.login, { [css.scrolled]: scrolled })}>
+            <ButtonFilled {...userProps} className={css.loginButton} caption="Войти" />
         </div>
     );
 }
 
 Login.propTypes = {
-    className: PropTypes.string,
+    scrolled: PropTypes.bool.isRequired,
 };
 
 export default React.memo(Login);

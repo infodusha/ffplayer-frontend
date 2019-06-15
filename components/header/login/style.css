@@ -1,4 +1,5 @@
 @value primary from 'ui/colors.css';
+@value for-phone-only from 'ui/breakpoints.css';
 
 .login {
     display: flex;
@@ -10,6 +11,15 @@
     padding: 14px 25px !important;
     transition: padding 200ms;
 }
-.scrolled {
+.scrolled .loginButton {
     padding: 6.5px 13px !important;
+}
+
+@media for-phone-only {
+    .loginButton {
+        padding: 8px 22px !important;
+    }
+    .scrolled .loginButton  {
+        padding: 1px 11px !important;
+    }
 }

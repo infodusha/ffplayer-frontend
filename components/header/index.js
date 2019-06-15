@@ -13,9 +13,9 @@ function Header() {
     let className = cn(css.header, { [css.scrolled]: isScrolled });
     return (
         <nav className={className}>
-            <Title />
+            <Title scrolled={isScrolled} />
             <Nav selected={'games'} />
-            {isLoginned ? <Profile balance={234} nickname={'Greg'} /> : <Login onClick={() => setIsLoginned(true)} />}
+            {isLoginned ? <Profile scrolled={isScrolled} balance={234} nickname={'Greg'} /> : <Login scrolled={isScrolled} onClick={() => setIsLoginned(true)} />}
         </nav>
     );
 }

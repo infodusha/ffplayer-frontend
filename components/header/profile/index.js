@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import css from './style.css';
+import cn from 'classnames';
 
-function Profile({ balance, nickname }) {
+function Profile({ scrolled, balance, nickname }) {
     return (
-        <div className={css.profile}>
+        <div className={cn(css.profile, { [css.scrolled]: scrolled })}>
             <span className={css.balance}>₽ {balance}</span>
             <div className={css.info}>
                 <span className={css.nickname}>{nickname}</span>
@@ -17,8 +18,9 @@ function Profile({ balance, nickname }) {
 }
 
 Profile.propTypes = {
+    scrolled: PropTypes.bool.isRequired,
     balance: PropTypes.number.isRequired,
     nickname: PropTypes.string.isRequired,
 };
 
-export default React.memo(Profile);
+export default Profile;

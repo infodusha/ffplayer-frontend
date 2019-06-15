@@ -1,4 +1,4 @@
-@value for-tablet-portrait-down from 'ui/breakpoints.css';
+@value for-phone-only, for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .title {
     display: flex;
@@ -14,15 +14,29 @@
     height: 10px;
     background-image: url('./burger.svg');
 }
-.label {
+.logo {
+    cursor: pointer;
     margin-left: 3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-image: url('./logo.svg');
     width: 44px;
     height: 19px;
+    transition: width 200ms, height 200ms;
 }
 
 @media for-tablet-portrait-down {
     .title {
         flex-basis: unset;
+    }
+}
+
+@media for-phone-only {
+    .burger {
+        margin-left: 10vw;
+    }
+    .scrolled .logo {
+        width: 29px;
+        height: 13px;
     }
 }

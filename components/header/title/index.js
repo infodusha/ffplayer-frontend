@@ -1,9 +1,14 @@
 import css from './style.css';
+import cn from 'classnames';
+import PropTypes from 'prop-types';
+import Link from 'next/link';
 
-function Title() {
+function Title({ scrolled }) {
     return (
-        <div className={css.title}>
-            <div className={css.label}></div>
+        <div className={cn(css.title, { [css.scrolled]: scrolled })}>
+            <Link href="/">
+                <div className={css.logo}></div>
+            </Link>
             <div className={css.burger}>
                 <div className={css.burgerIcon} />
             </div>
@@ -11,4 +16,8 @@ function Title() {
     );
 }
 
-export default React.memo(Title);
+Title.propTypes = {
+    scrolled: PropTypes.bool.isRequired,
+};
+
+export default Title;
