@@ -1,5 +1,5 @@
 @value headerBg, headerText from 'ui/colors.css';
-@value for-mobile-only from 'ui/breakpoints.css';
+@value for-phone-only from 'ui/breakpoints.css';
 
 .header {
     font-size: 15px;
@@ -22,7 +22,7 @@
     height: 45px;
 }
 
-@media for-mobile-only {
+@media for-phone-only {
     .header {
         height: 45px;
     }

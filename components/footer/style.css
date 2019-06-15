@@ -1,5 +1,5 @@
 @value footerBg, footerText, footerHoverLink, footerLogoBg, footerLogoText from 'ui/colors.css';
-@value for-phone-only, for-tablet-portrait-down, for-tablet-landscape-down from 'ui/breakpoints.css';
+@value for-tablet-portrait-down, for-tablet-landscape-down from 'ui/breakpoints.css';
 
 .footer {
     display: flex;
@@ -57,8 +57,6 @@
         flex-basis: 100%;
         order: 2;
     }
-}
-@media for-phone-only {
     .footer {
         margin-bottom: 50px;
     }

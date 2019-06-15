@@ -1,3 +1,5 @@
+@value for-phone-only, for-tablet-portrait-down from 'ui/breakpoints.css';
+
 .tips {
     display: flex;
     align-content: space-between;
@@ -5,26 +7,14 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 950px) {
+@media for-tablet-portrait-down {
     .tips {
-        height: 230px;
+        height: 35vw;
     }
 }
 
-@media (max-width: 537px) {
+@media for-phone-only {
     .tips {
-        height: 340px;
-    }
-}
-
-@media (max-width: 375px) {
-    .tips {
-        height: 460px;
-    }
-}
-
-@media (max-width: 350px) {
-    .tips {
-        height: 600px;
+        height: 150vw;
     }
 }
