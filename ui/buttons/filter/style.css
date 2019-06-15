@@ -1,4 +1,5 @@
 @value primarySelect, filterText, filterSelectedText, filterHoverText from 'ui/colors.css';
+@value for-phone-only from 'ui/breakpoints.css';
 
 .button {
     display: flex;
@@ -25,4 +26,13 @@
 .button:focus {
     box-shadow: 0 0 0 1px #6A7286;
     outline: unset;
+}
+
+@media for-phone-only {
+    .button {
+        padding: 5px 9px;
+    }
+    .caption {
+        margin-left: 4px;
+    }
 }
