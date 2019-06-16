@@ -1,4 +1,4 @@
-@value for-phone-only, for-tablet-portrait-down from 'ui/breakpoints.css';
+@value for-phone-only, for-tablet-landscape-down from 'ui/breakpoints.css';
 
 .blocks {
     display: flex;
@@ -73,7 +73,7 @@
     height: 22.4px;
 }
 
-@media for-tablet-portrait-down {
+@media for-tablet-landscape-down {
     .news {
         display: none;
     }
