@@ -22,20 +22,25 @@
 .items:hover > .selected:hover, .item:hover {
     color: primarySelect;
 }
+.itemsBottom {
+    display: none;
+}
 
 @media for-tablet-portrait-down {
     .items {
-        position: fixed;
+        display: none;
+    }
+    .itemsBottom {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
         bottom: 0;
         height: 40px;
-        padding-top: 5px;
+        padding-top: calc(100vh - 40px);
         width: 100%;
         background: headerBg;
     }
-    .item {
+    .itemsBottom > .item {
         padding: 0 0;
     }
 }

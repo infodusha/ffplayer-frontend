@@ -9,9 +9,9 @@ const items = [
     { key: 'chat', caption: 'Чат', href: '#' },
 ];
 
-function Nav({ selected }) {
+function Nav({ selected, bottom = false }) {
     return (
-        <ul className={css.items}>
+        <ul className={cn(css.items, { [css.itemsBottom]: bottom })}>
             {items.map((item) => (
                 <li key={item.key} className={cn(css.item, { [css.selected]: selected === item.key })}>
                     <Link href={item.href} prefetch>

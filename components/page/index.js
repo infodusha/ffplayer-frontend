@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
-import css from './style.css';
 import 'normalize.css';
 import './global.css';
 
@@ -13,9 +12,7 @@ function Page({ title, children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
                 <link rel="shortcut icon" href="/favicon.png" type="image/png" />
             </Head>
-            <div className={css.showBar}>
-                {children}
-            </div>
+            {children}
         </React.Fragment>
     );
 }

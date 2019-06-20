@@ -1,0 +1,30 @@
+@value for-phone-only, for-tablet-portrait-down from 'ui/breakpoints.css';
+
+.content {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    transition: top 200ms;
+}
+.scrolled {
+    top: 45px;
+}
+
+@media for-tablet-portrait-down {
+    .content {
+        bottom: 40px;
+    }
+}
+@media for-phone-only {
+    .content {
+        top: 45px;
+    }
+    .scrolled {
+        top: 25px;
+    }
+}
