@@ -25,6 +25,7 @@ function Nav({ selected, bottom = false }) {
 
 Nav.propTypes = {
     selected: PropTypes.string,
+    bottom: PropTypes.bool,
 };
 
 export default Nav;
