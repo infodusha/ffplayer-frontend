@@ -2,6 +2,7 @@
 
 @value bodyBg from 'ui/colors.css';
 
+html,
 body {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -9,6 +10,8 @@ body {
     color: white;
     background-color: bodyBg;
     overscroll-behavior: contain;
+    position: fixed;
+    overflow: hidden;
 }
 
 a {
