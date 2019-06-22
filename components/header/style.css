@@ -1,5 +1,5 @@
 @value headerBg from 'ui/colors.css';
-@value for-phone-only from 'ui/breakpoints.css';
+@value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .header {
     font-size: 15px;
@@ -19,7 +19,7 @@
     height: 45px;
 }
 
-@media for-phone-only {
+@media for-tablet-portrait-down {
     .header {
         height: 45px;
     }

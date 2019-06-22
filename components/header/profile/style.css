@@ -1,5 +1,5 @@
 @value primary from 'ui/colors.css';
-@value for-phone-only from 'ui/breakpoints.css';
+@value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .profile {
     flex-basis: 250px;
@@ -50,7 +50,7 @@
     left: 29px;
 }
 
-@media for-phone-only {
+@media for-tablet-portrait-down {
     .profileIcon {
         width: 30px;
         height: 30px;

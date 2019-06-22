@@ -8,6 +8,7 @@ body {
     font-weight: normal;
     color: white;
     background-color: bodyBg;
+    overscroll-behavior: contain;
 }
 
 a {

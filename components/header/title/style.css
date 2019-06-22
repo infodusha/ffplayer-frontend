@@ -1,4 +1,4 @@
-@value for-phone-only, for-tablet-portrait-down from 'ui/breakpoints.css';
+@value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .title {
     display: flex;
@@ -29,9 +29,6 @@
     .title {
         flex-basis: unset;
     }
-}
-
-@media for-phone-only {
     .burger {
         margin-left: 10vw;
     }

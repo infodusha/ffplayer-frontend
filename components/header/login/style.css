@@ -1,5 +1,5 @@
 @value primary from 'ui/colors.css';
-@value for-phone-only from 'ui/breakpoints.css';
+@value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .login {
     display: flex;
@@ -15,7 +15,7 @@
     padding: 6.5px 13px !important;
 }
 
-@media for-phone-only {
+@media for-tablet-portrait-down {
     .loginButton {
         padding: 8px 22px !important;
     }
