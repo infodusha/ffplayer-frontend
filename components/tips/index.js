@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './style.css';
 import Tip from './tip';
 import oneIcon from './icons/one';
@@ -14,7 +15,7 @@ const tips = [
     { key: 'five', caption: 'Live Chat смотри и комментируй совместные трансляции', icon: fiveIcon, flex: 3 },
 ];
 
-function Tips() {
+function Tips({ noHover = false }) {
     return (
         <div className={css.tips}>
             {tips.map((tip) => (
@@ -23,10 +24,15 @@ function Tips() {
                     caption={tip.caption}
                     icon={tip.icon}
                     flex={tip.flex}
+                    noHover={noHover}
                 />
             ))}
         </div>
     );
 }
+
+Tips.propTypes = {
+    noHover: PropTypes.bool,
+};
 
 export default Tips;

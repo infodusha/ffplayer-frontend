@@ -1,0 +1,23 @@
+.utp {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    margin-top: 35px;
+}
+
+.button {
+    transition: background-color 200ms;
+}

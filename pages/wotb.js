@@ -1,8 +1,8 @@
 import Page from 'components/page';
 import Content from 'components/content';
 import Header from 'components/header';
+import Banner from 'components/game/banner';
 import Trainers from 'components/index/trainers';
-import Info from 'components/index/info';
 import Footer from 'components/footer';
 import Nav from 'components/nav';
 
@@ -11,7 +11,7 @@ function Index() {
         <Page title="World of Tanks Blitz | FPP">
             <Header />
             <Content>
-                <Info />
+                <Banner game="wotb" />
                 <Trainers />
                 <Footer />
             </Content>

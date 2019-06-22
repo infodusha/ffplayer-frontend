@@ -5,7 +5,7 @@ import css from './style.css';
 import colors from 'ui/colors.css';
 import { useHovered } from 'hooks/useHovered';
 
-function Tip({ flex, caption, icon: Icon }) {
+function Tip({ flex, caption, icon: Icon, noHover }) {
 
     let ref = useRef();
     let hovered = useHovered(ref);
@@ -19,14 +19,15 @@ function Tip({ flex, caption, icon: Icon }) {
     });
 
     return (
-        <div className={className} style={{ color }} ref={ref}>
-            <Icon color={color} />
+        <div className={className} style={{ color: noHover ? colors.grey4 : color }} ref={ref}>
+            <Icon color={noHover ? colors.grey4 : color} />
             <span className={css.caption}>{caption}</span>
         </div>
     );
 }
 
 Tip.propTypes = {
+    noHover: PropTypes.bool.isRequired,
     caption: PropTypes.string.isRequired,
     icon: PropTypes.elementType.isRequired,
     flex: PropTypes.oneOf([1, 2, 3]).isRequired,

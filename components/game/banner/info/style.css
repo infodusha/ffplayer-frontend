@@ -1,0 +1,11 @@
+@value for-phone-only from 'ui/breakpoints.css';
+
+.info {
+    padding: 4vw 15vw 4vw 5vw;
+}
+
+@media for-phone-only {
+    .info {
+        padding: 10vw 5vw;
+    }
+}

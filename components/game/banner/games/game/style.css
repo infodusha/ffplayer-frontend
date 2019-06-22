@@ -1,0 +1,42 @@
+@value primarySelect from 'ui/colors.css';
+
+.game {
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    display: flex;
+    padding: 15px 8px 14px 8px;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.selector {
+    position: relative;
+    top: 1px;
+    height: 1px;
+    width: 100%;
+
+}
+
+.selected {
+    background-color: primarySelect;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.caption {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
