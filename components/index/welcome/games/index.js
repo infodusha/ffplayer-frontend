@@ -16,6 +16,7 @@ function Games() {
             {games.map((game) => (
                 <Game
                     key={game.key}
+                    href={game.key}
                     caption={game.caption}
                     image={game.image}
                 />
