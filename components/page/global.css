@@ -10,10 +10,6 @@ body {
     color: white;
     background-color: bodyBg;
     overscroll-behavior: contain;
-    position: fixed;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
 }
 
 a {
