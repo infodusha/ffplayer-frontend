@@ -3,8 +3,10 @@
     flex-direction: column;
     justify-content: space-between;
     height: 70vh;
+    max-height: 780px;
+    min-height: 480px;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 0 50px;
 }
