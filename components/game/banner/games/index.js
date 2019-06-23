@@ -1,9 +1,11 @@
+import { useRef } from 'react';
 import css from './style.css';
 import PropTypes from 'prop-types';
 import Game from './game';
 import wotbIcon from './wotb.png';
 import frtnIcon from './frtn.png';
 import pubgIcon from './pubg.png';
+import { useHovered } from 'hooks/useHovered';
 
 const games = [
     { key: 'wotb', caption: 'World of Tanks Blitz', icon: wotbIcon },
@@ -12,15 +14,19 @@ const games = [
 ];
 
 function Games({ selected }) {
+
+    let ref = useRef();
+    let hovered = useHovered(ref);
+
     return (
-        <div className={css.games}>
+        <div className={css.games} ref={ref}>
             {games.map((game) => (
                 <Game
                     key={game.key}
                     href={game.key}
                     caption={game.caption}
                     icon={game.icon}
-                    selected={selected === game.key}
+                    selected={hovered ? false : selected === game.key}
                 />
             ))}
         </div>

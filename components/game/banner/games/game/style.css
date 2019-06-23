@@ -45,3 +45,11 @@
 .selectedCaption {
     color: primarySelect;
 }
+
+.data:hover {
+    color: primarySelect;
+}
+
+.data:hover + .selector {
+    background-color: primarySelect;
+}
