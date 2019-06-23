@@ -10,6 +10,8 @@
     padding: 15px 8px 14px 8px;
     align-items: center;
     margin: 0 12px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .selector {
@@ -17,10 +19,9 @@
     top: 1px;
     height: 1px;
     width: 100%;
-
 }
 
-.selected {
+.selectedSelector {
     background-color: primarySelect;
 }
 
@@ -39,4 +40,8 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
+}
+
+.selectedCaption {
+    color: primarySelect;
 }

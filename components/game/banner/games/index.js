@@ -17,6 +17,7 @@ function Games({ selected }) {
             {games.map((game) => (
                 <Game
                     key={game.key}
+                    href={game.key}
                     caption={game.caption}
                     icon={game.icon}
                     selected={selected === game.key}
