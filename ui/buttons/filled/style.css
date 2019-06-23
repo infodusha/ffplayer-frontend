@@ -11,6 +11,7 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
+    cursor: pointer;
 }
 .button:hover {
     padding: 13px 19px;

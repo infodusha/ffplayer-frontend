@@ -18,4 +18,5 @@
     border: unset;
     color: buttonHoverText;
     background-color: primary;
+    cursor: pointer;
 }
