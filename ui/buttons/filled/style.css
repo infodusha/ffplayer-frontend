@@ -1,7 +1,6 @@
 @value primary, buttonHoverText from 'ui/colors.css';
 
 .button {
-    text-align: center;
     border-radius: 7px;
     padding: 14px 20px;
     border: 0px;
@@ -14,6 +13,7 @@
     line-height: 15px;
 }
 .button:hover {
+    padding: 13px 19px;
     border: 1px solid primary;
     color: primary;
     background-color: unset;

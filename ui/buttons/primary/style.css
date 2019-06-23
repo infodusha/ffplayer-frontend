@@ -14,6 +14,8 @@
     background-color: unset;
 }
 .button:hover {
+    padding: 15px 21px;
+    border: unset;
     color: buttonHoverText;
     background-color: primary;
 }
