@@ -14,7 +14,7 @@ const pages1 = [
 
 const pages2 = [
     { key: 'error', caption: 'Сообщить об ошибке', href: '#' },
-    { key: 'advice', caption: 'Предложите улучшение сервиса', href: '#' },
+    { key: 'improvement', caption: 'Что можно улучшить?', href: '#' },
 ];
 
 function Footer() {
