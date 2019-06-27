@@ -2,6 +2,7 @@
     position: relative;
     height: 150px;
     left: -10px;
+    width: 1040px;
 }
 
 .skill {
@@ -35,7 +36,7 @@
 .skill4 {
     background-image: url('./skill4.png');
     width: 257px;
-    left: 680px;
+    left: 682px;
     border-radius: 0 15px 15px 0;
 }
 
