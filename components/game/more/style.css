@@ -1,0 +1,63 @@
+@value grey3 from 'ui/colors.css';
+
+.more {
+    display: flex;
+    padding: 5vw 2vw;
+    justify-content: space-between;
+}
+
+.slills {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+
+.subslills {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: grey3;
+    margin-top: 20px;
+}
+
+.game {
+    width: 310px;
+    margin-right: 4vw;
+}
+
+.text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 150%;
+    margin-top: 7px;
+    margin-bottom: 23px;
+    color: grey3;
+}
+
+.download {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E96D3;
+}
+
+.logo {
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 102px;
+    height: 82px;
+}

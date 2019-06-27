@@ -2,6 +2,7 @@ import Page from 'components/page';
 import Content from 'components/content';
 import Header from 'components/header';
 import Banner from 'components/game/banner';
+import More from 'components/game/more';
 import Trainers from 'components/index/trainers';
 import Footer from 'components/footer';
 import Nav from 'components/nav';
@@ -12,6 +13,7 @@ function Index() {
             <Header />
             <Content>
                 <Banner game="wotb" />
+                <More />
                 <Trainers />
                 <Footer />
             </Content>

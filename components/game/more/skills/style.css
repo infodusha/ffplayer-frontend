@@ -1,0 +1,54 @@
+.skills {
+    position: relative;
+    height: 150px;
+    left: -10px;
+}
+
+.skill {
+    position: absolute;
+    top: 0;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.skill1 {
+    background-image: url('./skill1.png');
+    width: 257px;
+    left: 10px;
+    border-radius: 15px 0 0 15px;
+}
+.skill2 {
+    background-image: url('./skill2.png');
+    width: 296px;
+    left: 207px;
+}
+.skill3 {
+    background-image: url('./skill3.png');
+    width: 296px;
+    left: 445px;
+}
+.skill4 {
+    background-image: url('./skill4.png');
+    width: 257px;
+    left: 680px;
+    border-radius: 0 15px 15px 0;
+}
+
+.caption {
+    padding-left: 35px;
+    padding-bottom: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    background: linear-gradient(180deg, rgba(75, 75, 75, 0) 0%, rgba(31, 31, 31, 0.3) 100%);
+}
+
+.skill1 .caption {
+    padding-left: 20px;
+}
