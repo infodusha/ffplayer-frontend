@@ -10,9 +10,15 @@ function Utp() {
                 <br />
                 в World of Tanks Blitz
             </div>
+            <div className={css.mText}>
+                Обучайся и Прокачивай скил в
+            </div>
+            <div className={css.mGame}>
+                WORLD<br />OF TANKS<br />BLITZ
+            </div>
             <div className={css.actions}>
-                <ButtonFilled caption="Быстрая тренировка" className={css.button} />
-                <Button caption="Забронировать" className={css.button} />
+                <ButtonFilled caption="Начать тренировку" className={css.button1} />
+                <Button caption="Забронировать" className={css.button2} />
             </div>
         </div>
     );

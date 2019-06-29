@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { dynamic } from 'lib/dynamic';
+const RouteSpy = dynamic(() => import('lib/routeSpy'));
 import PropTypes from 'prop-types';
 import 'normalize.css';
 import './global.css';
@@ -12,6 +14,7 @@ function Page({ title, children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
                 <link rel="shortcut icon" href="/favicon.png" type="image/png" />
             </Head>
+            <RouteSpy />
             {children}
         </React.Fragment>
     );

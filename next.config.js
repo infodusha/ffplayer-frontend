@@ -7,11 +7,12 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = withImages(withCSS({
     distDir: 'dist',
     cssModules: true,
+    useFileSystemPublicRoutes: false,
+    poweredByHeader: false,
     cssLoaderOptions: {
         importLoaders: 1,
         localIdentName: '[local]___[hash:base64:10]',
     },
-    poweredByHeader: false,
     webpack(config, { dev }) {
         if(!dev) {
             if(!Array.isArray(config.optimization.minimizer))

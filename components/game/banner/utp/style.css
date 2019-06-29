@@ -1,3 +1,5 @@
+@value for-phone-only from 'ui/breakpoints.css';
+
 .utp {
     display: flex;
     flex-direction: column;
@@ -15,7 +17,56 @@
     margin-top: 35px;
 }
 
-.button {
+.button1, .button2 {
     transition: background-color 200ms;
+}
+
+.button1 {
     margin-right: 20px;
+}
+
+.mText {
+    margin-top: 27px;
+    display: none;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+}
+.mGame {
+    margin-top: 10px;
+    display: none;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+}
+
+@media for-phone-only {
+    .utp {
+        padding: 0 17px;
+    }
+    .mGame, .mText {
+        display: unset;
+    }
+    .text {
+        display: none;
+    }
+    .button1, .button2 {
+        padding: 14px;
+    }
+    .button1:hover {
+        padding: 13px;
+    }
+    .button2:hover {
+        padding: 15px;
+    }
+    .button1 {
+        margin-right: 15px; 
+    }
+    .button1 {
+        flex-grow: 1.1;
+    }
+    .button2 {
+        flex-grow: 1;
+    }
 }

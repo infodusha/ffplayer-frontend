@@ -7,12 +7,12 @@ import Trainers from 'components/index/trainers';
 import Footer from 'components/footer';
 import Nav from 'components/nav';
 
-function WOTB() {
+function FRTN() {
     return (
-        <Page title="World of Tanks Blitz | FPP">
+        <Page title="Fortnite | FPP">
             <Header />
             <Content>
-                <Banner game="wotb" />
+                <Banner game="frtn" />
                 <More />
                 <Trainers />
                 <Footer />
@@ -22,4 +22,4 @@ function WOTB() {
     );
 }
 
-export default WOTB;
+export default FRTN;

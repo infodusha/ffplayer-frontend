@@ -1,3 +1,5 @@
+@value for-phone-only from 'ui/breakpoints.css';
+
 .banner {
     display: flex;
     flex-direction: column;
@@ -9,4 +11,46 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 50px;
+}
+
+.mImage {
+    position: relative;
+    display: none;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    border-radius: 0 0 20px 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    height: 24.12vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.back {
+    width: 9px;
+    height: 17px;
+    position: absolute;
+    top: 23px;
+    left: 6vw;
+}
+
+@media for-phone-only {
+    .banner {
+        justify-content: flex-start;
+        padding: 0;
+        height: 140vw;
+        background-image: unset !important;
+    }
+    .mImage {
+        display: unset;
+    }
 }

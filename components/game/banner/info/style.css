@@ -6,6 +6,6 @@
 
 @media for-phone-only {
     .info {
-        padding: 10vw 5vw;
+        display: none;
     }
 }
