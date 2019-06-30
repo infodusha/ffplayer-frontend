@@ -1,4 +1,4 @@
-@value for-big-desktop-up, for-desktop-down, for-tablet-landscape-down from 'ui/breakpoints.css';
+@value for-big-desktop-up, for-desktop-down, for-tablet-landscape-down, for-tablet-portrait-down, for-phone-only from 'ui/breakpoints.css';
 
 .skills {
     display: flex;
@@ -71,6 +71,29 @@
     }
     .caption {
         bottom: 25px;
+        font-size: 11px;
+    }
+}
+
+@media for-tablet-portrait-down {
+    .skills {
+        height: 110px;
+        width: 300vw;
+    }
+    .caption {
+        bottom: 35px;
+        font-size: 11px;
+    }
+}
+
+@media for-phone-only {
+    .skills {
+        height: 110px;
+        width: 300vw;
+        
+    }
+    .caption {
+        bottom: 35px;
         font-size: 11px;
     }
 }

@@ -7,7 +7,7 @@
     justify-content: space-between;
 }
 
-.slills {
+.skills {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -23,7 +23,7 @@
     margin-bottom: 50px;
 }
 
-.subslills {
+.subskills {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -65,7 +65,13 @@
 }
 
 @media for-phone-only {
-    .slills {
+    .skills {
+        composes: useScroll from 'ui/common.css';
+    }
+    .subskills {
+        display: none;
+    }
+    .game {
         display: none;
     }
 }

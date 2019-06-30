@@ -4,10 +4,10 @@ import Skills from './skills';
 function More() {
     return (
         <div className={css.more}>
-            <div className={css.slills}>
+            <div className={css.skills}>
                 <div className={css.title}>Прокачивай<br />навыки с тренером</div>
                 <Skills />
-                <div className={css.subslills}>Настройка управления, Оборудка, Стрельба, Пробитие, Танкование, Разъезды на картах, Победные танки, Стратегия</div>
+                <div className={css.subskills}>Настройка управления, Оборудка, Стрельба, Пробитие, Танкование, Разъезды на картах, Победные танки, Стратегия</div>
             </div>
             <div className={css.game}>
                 <div className={css.logo}></div>
