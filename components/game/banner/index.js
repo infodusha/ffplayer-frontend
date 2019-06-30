@@ -5,25 +5,13 @@ import Utp from './utp';
 import Info from './info';
 import Router from 'next/router';
 import { getPrevious } from 'lib/routeSpy';
-import WotbMain from '../images/wotb/main.jpg';
-import WotbMobile from '../images/wotb/mobile.jpg';
-import WotbLogo from '../images/wotb/logo.png';
 import ArrowIcon from './arrow';
 
-function getImagesForGame(game) {
-    switch(game) {
-        case 'wotb': return [WotbMain, WotbMobile, WotbLogo];
-        case 'frtn': return [WotbMain, WotbMobile, WotbLogo];
-    }
-}
+function Banner({ selected, mainImage, mobileImage, logoImage }) {
 
-function Banner({ game }) {
-
-    let images = getImagesForGame(game);
-
-    let styleMain = { backgroundImage: `url(${images[0]})` };
-    let mStyleMobile = { backgroundImage: `url(${images[1]})` };
-    let styleLogo = { backgroundImage: `url(${images[2]})` };
+    let styleMain = { backgroundImage: `url(${mainImage})` };
+    let mStyleMobile = { backgroundImage: `url(${mobileImage})` };
+    let styleLogo = { backgroundImage: `url(${logoImage})` };
 
     function goBack() {
         let url = getPrevious() || '/';
@@ -38,7 +26,7 @@ function Banner({ game }) {
                 </div>
                 <div className={css.logo} style={styleLogo}></div>
             </div>
-            <Games selected={game} />
+            <Games selected={selected} />
             <Utp />
             <Info />
         </div>
@@ -46,7 +34,10 @@ function Banner({ game }) {
 }
 
 Banner.propTypes = {
-    game: PropTypes.string.isRequired,
+    selected: PropTypes.string.isRequired,
+    mainImage: PropTypes.string.isRequired,
+    mobileImage: PropTypes.string.isRequired,
+    logoImage: PropTypes.string.isRequired,
 };
 
 export default Banner;

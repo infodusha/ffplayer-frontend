@@ -10,12 +10,12 @@ import mainImage from 'components/game/images/wotb/main.jpg';
 import mobileImage from 'components/game/images/wotb/mobile.jpg';
 import logoImage from 'components/game/images/wotb/logo.png';
 
-function WOTB() {
+function PUBG() {
     return (
-        <Page title="World of Tanks Blitz | FPP">
+        <Page title="PlayerUnknown’s Battlegrounds Mobile | FPP">
             <Header />
             <Content>
-                <Banner selected="wotb" mainImage={mainImage} mobileImage={mobileImage} logoImage={logoImage} />
+                <Banner selected="pubg" mainImage={mainImage} mobileImage={mobileImage} logoImage={logoImage} />
                 <More />
                 <Trainers />
                 <Footer />
@@ -25,4 +25,4 @@ function WOTB() {
     );
 }
 
-export default WOTB;
+export default PUBG;
