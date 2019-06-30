@@ -1,4 +1,5 @@
 @value grey3 from 'ui/colors.css';
+@value for-phone-only from 'ui/breakpoints.css';
 
 .more {
     display: flex;
@@ -10,6 +11,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    overflow: hidden;
 }
 
 .title {
@@ -31,7 +33,7 @@
 }
 
 .game {
-    width: 310px;
+    width: 25vw;
     margin-right: 4vw;
 }
 
@@ -60,4 +62,10 @@
     background-position: center;
     width: 102px;
     height: 82px;
+}
+
+@media for-phone-only {
+    .slills {
+        display: none;
+    }
 }

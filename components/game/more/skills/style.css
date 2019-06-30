@@ -1,47 +1,41 @@
+@value for-big-desktop-up, for-desktop-down, for-tablet-landscape-down from 'ui/breakpoints.css';
+
 .skills {
-    position: relative;
-    height: 150px;
-    left: -10px;
-    width: 1040px;
+    display: flex;
 }
 
 .skill {
-    position: absolute;
-    top: 0;
-    height: 150px;
+    flex-grow: 1;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: flex-end;
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .skill1 {
     background-image: url('./skill1.png');
-    width: 257px;
-    left: 10px;
     border-radius: 15px 0 0 15px;
 }
 .skill2 {
+    transform: translateX(-20%);
     background-image: url('./skill2.png');
-    width: 296px;
-    left: 207px;
 }
 .skill3 {
+    transform: translateX(-40%);
     background-image: url('./skill3.png');
-    width: 296px;
-    left: 445px;
 }
 .skill4 {
+    transform: translateX(-60%);
     background-image: url('./skill4.png');
-    width: 257px;
-    left: 682px;
     border-radius: 0 15px 15px 0;
 }
 
 .caption {
-    padding-left: 35px;
-    padding-bottom: 8px;
+    position: absolute;
+    left: 35px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -50,5 +44,33 @@
 }
 
 .skill1 .caption {
-    padding-left: 20px;
+    left: 20px;
+}
+
+@media for-big-desktop-up {
+    .skills {
+        height: 170px;
+    }
+    .caption {
+        bottom: 16px;
+    }
+}
+
+@media for-desktop-down {
+    .skills {
+        height: 150px;
+    }
+    .caption {
+        bottom: 20px;
+    }
+}
+
+@media for-tablet-landscape-down {
+    .skills {
+        height: 130px;
+    }
+    .caption {
+        bottom: 25px;
+        font-size: 11px;
+    }
 }
