@@ -1,5 +1,5 @@
 @value grey3 from 'ui/colors.css';
-@value for-phone-only from 'ui/breakpoints.css';
+@value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .more {
     display: flex;
@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    overflow: hidden;
 }
 
 .title {
@@ -64,8 +63,9 @@
     height: 82px;
 }
 
-@media for-phone-only {
-    .skills {
+@media for-tablet-portrait-down {
+    .skillsList {
+        width: 100vw;
         composes: useScroll from 'ui/common.css';
     }
     .subskills {

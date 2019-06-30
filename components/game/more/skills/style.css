@@ -77,8 +77,8 @@
 
 @media for-tablet-portrait-down {
     .skills {
-        height: 110px;
-        width: 300vw;
+        height: 170px;
+        width: 200vw;
     }
     .caption {
         bottom: 35px;
