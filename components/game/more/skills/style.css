@@ -77,20 +77,8 @@
 
 @media for-tablet-portrait-down {
     .skills {
-        height: 170px;
+        height: 30vw;
         width: 200vw;
-    }
-    .caption {
-        bottom: 35px;
-        font-size: 11px;
-    }
-}
-
-@media for-phone-only {
-    .skills {
-        height: 110px;
-        width: 300vw;
-        
     }
     .caption {
         bottom: 35px;
