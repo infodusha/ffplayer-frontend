@@ -1,4 +1,5 @@
 @value primary, grey1 from 'ui/colors.css';
+@value hasTouch from 'ui/breakpoints.css';
 
 .useScroll {
     overflow-y: hidden;
@@ -19,11 +20,13 @@
     background-color: primary;
 }
 
-.hideScrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    padding-bottom: unset;
-}
-.hideScrollbar::-webkit-scrollbar {
-    display: none;
+@media hasTouch {
+    .useScroll {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        padding-bottom: unset;
+    }
+    .useScroll::-webkit-scrollbar {
+        display: none;
+    }
 }
