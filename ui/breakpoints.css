@@ -1,3 +1,4 @@
+@value hasTouch: (pointer: coarse);
 @value for-phone-only: only screen and (max-width: 599px);
 @value for-tablet-portrait-down: only screen and (max-width: 899px);
 @value for-tablet-landscape-down: only screen and (max-width: 1199px);
