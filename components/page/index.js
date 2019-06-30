@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import { dynamic } from 'lib/dynamic';
-const RouteSpy = dynamic(() => import('lib/routeSpy'));
+import RouteSpy from 'lib/routeSpy';
 import PropTypes from 'prop-types';
 import 'normalize.css';
 import './global.css';

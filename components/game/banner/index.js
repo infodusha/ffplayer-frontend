@@ -4,7 +4,7 @@ import Games from './games';
 import Utp from './utp';
 import Info from './info';
 import Router from 'next/router';
-import { getPrevious, getHisory } from 'lib/routeSpy';
+import { getPrevious } from 'lib/routeSpy';
 import WotbMain from '../images/wotb/main.jpg';
 import WotbMobile from '../images/wotb/mobile.jpg';
 import WotbLogo from '../images/wotb/logo.png';
@@ -26,9 +26,8 @@ function Banner({ game }) {
     let styleLogo = { backgroundImage: `url(${images[2]})` };
 
     function goBack() {
-        console.log(getHisory())
         let url = getPrevious() || '/';
-        //Router.push(url);
+        Router.push(url);
     }
 
     return (
