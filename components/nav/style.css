@@ -6,6 +6,7 @@
     margin: 0px;
 }
 .item {
+    pointer-events: auto;
     display: inline;
     line-height: normal;
     text-align: center;
