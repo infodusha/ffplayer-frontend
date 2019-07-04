@@ -15,6 +15,7 @@ body {
     right: 0;
     bottom: 0;
     overflow: hidden;
+    -webkit-text-size-adjust: none;
 }
 
 a {

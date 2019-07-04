@@ -25,6 +25,7 @@
 
 @media for-tablet-portrait-down {
     .items {
+        pointer-events: none;
         position: fixed;
         display: flex;
         justify-content: space-around;
