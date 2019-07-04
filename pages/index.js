@@ -6,7 +6,6 @@ import Trainers from 'components/index/trainers';
 import Blocks from 'components/index/blocks';
 import Info from 'components/index/info';
 import Footer from 'components/footer';
-import Nav from 'components/nav';
 
 function Index() {
     return (
@@ -19,7 +18,6 @@ function Index() {
                 <Info />
                 <Footer />
             </Content>
-            <Nav bottom />
         </Page>
     );
 }

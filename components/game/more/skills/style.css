@@ -61,16 +61,16 @@
         height: 150px;
     }
     .caption {
-        bottom: 20px;
+        bottom: 22px;
     }
 }
 
 @media for-tablet-landscape-down {
     .skills {
-        height: 130px;
+        height: 150px;
     }
     .caption {
-        bottom: 25px;
+        bottom: 40px;
         font-size: 11px;
     }
 }

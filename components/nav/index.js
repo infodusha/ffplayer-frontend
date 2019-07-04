@@ -9,9 +9,9 @@ const items = [
     { key: 'chat', caption: 'Чат', href: '#' },
 ];
 
-function Nav({ selected, bottom = false }) {
+function Nav({ selected }) {
     return (
-        <ul className={cn(css.items, { [css.itemsBottom]: bottom })}>
+        <ul className={css.items}>
             {items.map((item) => (
                 <li key={item.key} className={cn(css.item, { [css.selected]: selected === item.key })}>
                     <Link href={item.href} prefetch>
@@ -25,7 +25,6 @@ function Nav({ selected, bottom = false }) {
 
 Nav.propTypes = {
     selected: PropTypes.string,
-    bottom: PropTypes.bool,
 };
 
 export default Nav;

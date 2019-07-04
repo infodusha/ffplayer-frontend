@@ -22,16 +22,10 @@
 .items:hover > .selected:hover, .item:hover {
     color: primarySelect;
 }
-.itemsBottom {
-    display: none;
-}
 
 @media for-tablet-portrait-down {
     .items {
-        display: none;
-    }
-    .itemsBottom {
-        position: absolute;
+        position: fixed;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
@@ -43,7 +37,7 @@
         padding-bottom: 40px;
 	    transform: translateY(40px);
     }
-    .itemsBottom > .item {
+    .items > .item {
         padding: 0 0;
     }
 }

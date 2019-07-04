@@ -5,7 +5,6 @@ import Banner from 'components/game/banner';
 import More from 'components/game/more';
 import Trainers from 'components/index/trainers';
 import Footer from 'components/footer';
-import Nav from 'components/nav';
 import mainImage from 'components/game/images/wotb/main.jpg';
 import mobileImage from 'components/game/images/wotb/mobile.jpg';
 import logoImage from 'components/game/images/wotb/logo.png';
@@ -20,7 +19,6 @@ function FRTN() {
                 <Trainers />
                 <Footer />
             </Content>
-            <Nav bottom />
         </Page>
     );
 }
