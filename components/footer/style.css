@@ -57,4 +57,7 @@
         flex-basis: 100%;
         order: 2;
     }
+    .startTrain {
+        max-width: 115px;
+    }
 }

@@ -21,10 +21,10 @@
 
 @media for-tablet-portrait-down {
     .copy {
-        padding: 0 3vw 2vh 3vw;
+        padding: 40px 3vw 30px 3vw;
     }
     .copyrights {
-        margin-top: 1.7vw;
+        margin-top: 12px;
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 100%;

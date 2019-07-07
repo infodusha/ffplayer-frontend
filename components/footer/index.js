@@ -34,7 +34,7 @@ function Footer() {
                     <Pages items={pages2} />
                 </div>
                 <div className={css.train}>
-                    <Button caption="Начать тренировку" />
+                    <Button className={css.startTrain} caption="Начать тренировку" />
                 </div>
             </div>
             <Copy />
