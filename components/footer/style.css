@@ -1,5 +1,5 @@
 @value footerBg, footerText, footerLogoBg from 'ui/colors.css';
-@value for-tablet-portrait-down, for-tablet-landscape-down from 'ui/breakpoints.css';
+@value for-tablet-portrait-down, for-tablet-landscape-down, for-phone-only from 'ui/breakpoints.css';
 
 .footer {
     display: flex;
@@ -42,12 +42,17 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
 @media for-tablet-landscape-down {
     .nav {
         display: none;
     }
 }
+
 @media for-tablet-portrait-down {
+    .top {
+        padding: 3vh 4vw 0;
+    }
     .pagesFirst {
         margin-top: 2vh;
     }
@@ -57,7 +62,20 @@
         flex-basis: 100%;
         order: 2;
     }
+    .logo {
+        position: relative;
+        left: -14px;
+    }
+}
+
+@media for-phone-only {
+    .top {
+        padding: 3vh 6vw;
+    }
+    /*
+    TODO: on iphone5
     .startTrain {
         max-width: 115px;
     }
+    */
 }

@@ -4,7 +4,7 @@ import Link from 'next/link';
 function Copy() {
     return (
         <div className={css.copy}>
-            <div>
+            <div className={css.polytics}>
                 <Link href="#">
                     <a>Политика конфиденциальности</a>
                 </Link>
@@ -13,7 +13,7 @@ function Copy() {
                 <div>
                     2019 © ffplayer.pro
                 </div>
-                <div className={css.copyright}>
+                <div className={css.copyright2}>
                     2019 © wargaming.net
                 </div>
             </div>
