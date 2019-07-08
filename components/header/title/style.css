@@ -12,8 +12,8 @@
 }
 .burgerIcon {
     display: block;
-    width: 30px;
-    height: 10px;
+    width: 35px;
+    height: 14px;
     background-image: url('./burger.svg');
 }
 .logo {
