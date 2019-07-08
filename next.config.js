@@ -7,7 +7,6 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = withImages(withCSS({
     distDir: 'dist',
     cssModules: true,
-    useFileSystemPublicRoutes: false,
     poweredByHeader: false,
     cssLoaderOptions: {
         importLoaders: 1,
