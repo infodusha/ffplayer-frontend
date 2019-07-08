@@ -1,5 +1,6 @@
 apps:
-  - script: server.js
+  - script: npm
+    args: start
     name: frontend
     env:
       PORT: 3000
