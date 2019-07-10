@@ -13,7 +13,7 @@ function Game({ href, image, caption }) {
 
     let imageStyle = { backgroundImage: `url(${image})` };
     return (
-        <Link href={href} prefetch>
+        <Link href={href}>
             <div className={css.game} ref={ref}>
                 <div className={css.image} style={imageStyle}>
                     <div className={cn(css.innerCaption, { [css.selected]: hovered })}>

@@ -7,7 +7,7 @@ function Game({ caption, href, icon, selected }) {
     let style = { backgroundImage: `url(${icon})` };
     return (
         <div className={css.game}>
-            <Link href={href} prefetch>
+            <Link href={href}>
                 <div className={css.data}>
                     <div className={css.icon} style={style}></div>
                     <div className={cn(css.caption, { [css.selectedCaption]: selected })}>{caption}</div>

@@ -14,7 +14,7 @@ function Nav({ selected }) {
         <ul className={css.items}>
             {items.map((item) => (
                 <li key={item.key} className={cn(css.item, { [css.selected]: selected === item.key })}>
-                    <Link href={item.href} prefetch>
+                    <Link href={item.href}>
                         <a>{item.caption}</a>
                     </Link>
                 </li>
