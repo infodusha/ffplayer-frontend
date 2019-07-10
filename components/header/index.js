@@ -1,21 +1,15 @@
 import { useState } from 'react';
-import cn from 'classnames';
 import css from './style.css';
 import Profile from './profile';
-import Nav from 'components/nav';
 import Login from './login';
 import Title from './title';
-import { useMaxScroll } from 'hooks/useMaxScroll';
 
 function Header() {
     let [isLoginned, setIsLoginned] = useState(false);
-    let isScrolled = useMaxScroll(70);
-    let className = cn(css.header, { [css.scrolled]: isScrolled });
     return (
-        <nav className={className}>
-            <Title scrolled={isScrolled} />
-            <Nav selected={'games'} />
-            {isLoginned ? <Profile scrolled={isScrolled} balance={234} nickname={'Greg'} /> : <Login scrolled={isScrolled} onClick={() => setIsLoginned(true)} />}
+        <nav className={css.header}>
+            <Title />
+            {isLoginned ? <Profile balance={234} nickname={'Greg'} /> : <Login onClick={() => setIsLoginned(true)} />}
         </nav>
     );
 }

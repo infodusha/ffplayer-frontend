@@ -2,8 +2,17 @@
 @value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .items {
+    position: fixed;
+    height: 70px;
+    width: 300px;
     padding: 0px;
     margin: 0px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 15;
 }
 .item {
     pointer-events: auto;
@@ -11,35 +20,54 @@
     line-height: normal;
     text-align: center;
     padding: 0;
-    margin: 0px 25px;
+    margin: 0 25px;
     letter-spacing: 0.15em;
 }
 .selected {
     color: primarySelect;
 }
-.items:hover > .selected {
+.items:hover .selected {
     color: unset;
 }
-.items:hover > .selected:hover, .item:hover {
+.items:hover .selected:hover, .item:hover {
     color: primarySelect;
+}
+.icon, .item:last-of-type {
+    display: none;
 }
 
 @media for-tablet-portrait-down {
     .items {
         pointer-events: none;
-        position: fixed;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        height: 40px;
-        padding-top: 5px;
-        bottom: 40px;
+        height: 56px;
+        top: unset;
+        left: unset;
+        transform: unset;
+        bottom: 56px;
         width: 100%;
         background: headerBg;
-        padding-bottom: 40px;
-	    transform: translateY(40px);
+	    transform: translateY(56px);
     }
-    .items > .item {
-        padding: 0 0;
+    .items .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex: 1;
+    }
+    .items:hover .selected .link, .selected .icon, .link {
+        display: none;
+    }
+    .items:hover .selected .icon, .selected .link, .icon {
+        display: unset;
+    }
+    .items:hover .selected:hover .link, .item:hover .link {
+        display: unset;
+    }
+    .items:hover .selected:hover .icon, .item:hover .icon {
+        display: none;
+    }
+    .items:last-child {
+        display: unset;
     }
 }

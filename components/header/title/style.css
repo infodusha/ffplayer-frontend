@@ -4,7 +4,6 @@
     pointer-events: auto;
     display: flex;
     align-items: center;
-    flex-basis: 250px;
 }
 .burger {
     pointer-events: auto;
@@ -28,14 +27,7 @@
 }
 
 @media for-tablet-portrait-down {
-    .title {
-        flex-basis: unset;
-    }
     .burger {
         margin-left: 10vw;
-    }
-    .scrolled .logo {
-        width: 29px;
-        height: 13px;
     }
 }

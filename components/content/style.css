@@ -15,7 +15,7 @@
 
 @media for-tablet-portrait-down {
     .content {
-        padding-top: 45px;
-        padding-bottom: 40px;
+        padding-top: 0;
+        padding-bottom: 56px;
     }
 }

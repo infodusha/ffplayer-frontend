@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 import css from './style.css';
-import cn from 'classnames';
 
-function Profile({ scrolled, balance, nickname }) {
+function Profile({ balance, nickname }) {
     return (
-        <div className={cn(css.profile, { [css.scrolled]: scrolled })}>
+        <div className={css.profile}>
             <span className={css.balance}>₽ {balance}</span>
             <div className={css.info}>
                 <span className={css.nickname}>{nickname}</span>
@@ -18,7 +17,6 @@ function Profile({ scrolled, balance, nickname }) {
 }
 
 Profile.propTypes = {
-    scrolled: PropTypes.bool.isRequired,
     balance: PropTypes.number.isRequired,
     nickname: PropTypes.string.isRequired,
 };

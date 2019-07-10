@@ -1,11 +1,9 @@
 import css from './style.css';
-import cn from 'classnames';
-import PropTypes from 'prop-types';
 import Link from 'next/link';
 
-function Title({ scrolled }) {
+function Title() {
     return (
-        <div className={cn(css.title, { [css.scrolled]: scrolled })}>
+        <div className={css.title}>
             <Link href="/">
                 <div className={css.logo}></div>
             </Link>
@@ -15,9 +13,5 @@ function Title({ scrolled }) {
         </div>
     );
 }
-
-Title.propTypes = {
-    scrolled: PropTypes.bool.isRequired,
-};
 
 export default Title;
