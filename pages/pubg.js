@@ -12,7 +12,7 @@ import logoImage from 'components/game/images/wotb/logo.png';
 function PUBG() {
     return (
         <Page title="PlayerUnknown’s Battlegrounds Mobile | FPP">
-            <Header />
+            <Header back={true} />
             <Nav selected={'games'} />
             <Banner selected="pubg" mainImage={mainImage} mobileImage={mobileImage} logoImage={logoImage} />
             <More />

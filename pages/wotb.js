@@ -12,7 +12,7 @@ import logoImage from 'components/game/images/wotb/logo.png';
 function WOTB() {
     return (
         <Page title="World of Tanks Blitz | FPP">
-            <Header />
+            <Header back={true} />
             <Nav selected={'games'} />
             <Banner selected="wotb" mainImage={mainImage} mobileImage={mobileImage} logoImage={logoImage} />
             <More />

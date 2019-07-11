@@ -10,10 +10,9 @@
     margin-left: 4vw;
 }
 .burgerIcon {
-    display: block;
     width: 35px;
     height: 14px;
-    background-image: url('./burger.svg');
+    background-image: url('../burger.svg');
 }
 .logo {
     cursor: pointer;
@@ -24,7 +23,14 @@
     width: 70px;
     height: 37px;
     border-radius: 15px;
-    /* transition: width 200ms, height 200ms; */
+}
+.back {
+    position: absolute;
+    display: none;
+    width: 13px;
+    height: 22px;
+    top: 13px;
+    left: 22px;
 }
 
 @media for-tablet-portrait-down {
@@ -36,5 +42,8 @@
     }
     .burger {
         display: none;
+    }
+    .back {
+        display: unset;
     }
 }

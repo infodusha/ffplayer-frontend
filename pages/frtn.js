@@ -12,7 +12,7 @@ import logoImage from 'components/game/images/wotb/logo.png';
 function FRTN() {
     return (
         <Page title="Fortnite | FPP">
-            <Header />
+            <Header back={true} />
             <Nav selected={'games'} />
             <Banner selected="frtn" mainImage={mainImage} mobileImage={mobileImage} logoImage={logoImage} />
             <More />

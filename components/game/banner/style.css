@@ -35,14 +35,6 @@
     background-repeat: no-repeat;
 }
 
-.back {
-    width: 9px;
-    height: 17px;
-    position: absolute;
-    top: 23px;
-    left: 6vw;
-}
-
 @media for-phone-only {
     .banner {
         justify-content: flex-start;
