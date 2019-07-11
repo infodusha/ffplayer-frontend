@@ -5,6 +5,7 @@
     position: fixed;
     height: 70px;
     width: 300px;
+    justify-content: space-around;
     padding: 0px;
     margin: 0px;
     top: 0;
@@ -19,8 +20,6 @@
     display: inline;
     line-height: normal;
     text-align: center;
-    padding: 0;
-    margin: 0 25px;
     letter-spacing: 0.15em;
 }
 .selected {
@@ -52,7 +51,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0;
         flex: 1;
     }
     .items:hover .selected .link, .selected .icon, .link {

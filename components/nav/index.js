@@ -5,13 +5,13 @@ import Link from 'next/link';
 import gamesIcon from './games.svg';
 import marketIcon from './market.svg';
 import chatIcon from './chat.svg';
-import profileIcon from './profile.svg';
+import accountIcon from './account.svg';
 
 const items = [
     { key: 'games', caption: 'Игры', href: '/', icon: gamesIcon },
-    { key: 'store', caption: 'Маркет', href: '/store', icon: marketIcon },
+    { key: 'store', caption: 'Маркет', href: '/market', icon: marketIcon },
     { key: 'chat', caption: 'Чат', href: '/chat', icon: chatIcon },
-    { key: 'profile', caption: 'Профиль', href: '/profile', icon: profileIcon },
+    { key: 'account', caption: 'Аккаунт', href: '/account', icon: accountIcon },
 ];
 
 function Nav({ selected }) {
