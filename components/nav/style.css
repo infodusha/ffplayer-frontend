@@ -52,6 +52,7 @@
 	    transform: translateY(56px);
     }
     .items .item {
+        pointer-events: auto;
         display: flex;
         justify-content: center;
         align-items: center;

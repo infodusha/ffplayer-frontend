@@ -25,6 +25,7 @@
     border-radius: 15px;
 }
 .back {
+    pointer-events: auto;
     position: absolute;
     display: none;
     width: 13px;
