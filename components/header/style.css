@@ -24,6 +24,7 @@
 
 @media for-tablet-portrait-down {
     .header {
+        position: absolute;
         height: 0;
     }
 }

@@ -29,9 +29,10 @@
 
 @media for-tablet-portrait-down {
     .logo {
-        position: fixed;
+        position: absolute;
         top: 10px;
         left: 15px;
+        margin-left: 0;
     }
     .burger {
         display: none;
