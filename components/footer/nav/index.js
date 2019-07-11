@@ -2,7 +2,7 @@ import css from './style.css';
 import Link from 'next/link';
 
 const items = [
-    { key: 'games', caption: 'Игры', href: '/' },
+    { key: 'games', caption: 'Игры', href: '/ind' },
     { key: 'store', caption: 'Маркет', href: '/market' },
     { key: 'chat', caption: 'Чат', href: '/chat' },
 ];

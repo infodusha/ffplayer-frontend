@@ -9,7 +9,7 @@ import accountIcon from './account.svg';
 import { useMaxScroll } from 'hooks/useMaxScroll';
 
 const items = [
-    { key: 'games', caption: 'Игры', href: '/', icon: gamesIcon },
+    { key: 'games', caption: 'Игры', href: '/ind', icon: gamesIcon },
     { key: 'store', caption: 'Маркет', href: '/market', icon: marketIcon },
     { key: 'chat', caption: 'Чат', href: '/chat', icon: chatIcon },
     { key: 'account', caption: 'Аккаунт', href: '/account', icon: accountIcon },

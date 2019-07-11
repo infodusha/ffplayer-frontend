@@ -6,7 +6,7 @@ import css from './style.css';
 function Back() {
 
     function goBack() {
-        let url = getPrevious() || '/';
+        let url = getPrevious() || '/ind';
         Router.push(url);
     }
 
