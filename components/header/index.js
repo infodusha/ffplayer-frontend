@@ -19,7 +19,7 @@ function Header({ back }) {
 }
 
 Header.propTypes = {
-    back: PropTypes.boolean,
+    back: PropTypes.bool,
 };
 
 export default React.memo(Header);

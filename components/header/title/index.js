@@ -15,7 +15,7 @@ function Title({ back = false }) {
 }
 
 Title.propTypes = {
-    back: PropTypes.boolean,
+    back: PropTypes.bool,
 };
 
 export default Title;
