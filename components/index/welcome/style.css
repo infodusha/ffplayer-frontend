@@ -36,9 +36,6 @@
 .train {
     color: primarySelect;
 }
-.scrolled {
-    margin-top: 25px;
-}
 @media for-tablet-portrait-down {
     .welcome {
         height: 80vw;
@@ -59,8 +56,5 @@
     }
     .select, .train {
         display: none;
-    }
-    .scrolled {
-        margin-top: 20px;
     }
 }
