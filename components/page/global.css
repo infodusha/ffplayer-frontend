@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
-
+@value for-tablet-portrait-down from 'ui/breakpoints.css';
 @value bodyBg from 'ui/colors.css';
 
 html,
@@ -9,12 +9,6 @@ body {
     font-weight: normal;
     color: white;
     background-color: bodyBg;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
     -webkit-text-size-adjust: none;
 }
 
@@ -25,4 +19,20 @@ a {
 
 * {
     box-sizing: border-box;
+}
+body {
+    padding-top: 70px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    transition: padding 200ms;
+}
+
+@media for-tablet-portrait-down {
+    body {
+        padding-top: 0;
+        padding-bottom: 56px;
+    }
 }

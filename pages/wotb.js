@@ -1,5 +1,4 @@
 import Page from 'components/page';
-import Content from 'components/content';
 import Header from 'components/header';
 import Nav from 'components/nav';
 import Banner from 'components/game/banner';
@@ -15,12 +14,10 @@ function WOTB() {
         <Page title="World of Tanks Blitz | FPP">
             <Header />
             <Nav selected={'games'} />
-            <Content>
-                <Banner selected="wotb" mainImage={mainImage} mobileImage={mobileImage} logoImage={logoImage} />
-                <More />
-                <Trainers />
-                <Footer />
-            </Content>
+            <Banner selected="wotb" mainImage={mainImage} mobileImage={mobileImage} logoImage={logoImage} />
+            <More />
+            <Trainers />
+            <Footer />
         </Page>
     );
 }

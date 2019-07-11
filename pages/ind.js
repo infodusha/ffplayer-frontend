@@ -1,5 +1,4 @@
 import Page from 'components/page';
-import Content from 'components/content';
 import Header from 'components/header';
 import Nav from 'components/nav';
 import Welcome from 'components/index/welcome';
@@ -13,13 +12,11 @@ function Index() {
         <Page title="FPP">
             <Header />
             <Nav selected={'games'} />
-            <Content>
-                <Welcome />
-                <Trainers />
-                <Blocks />
-                <Info />
-                <Footer />
-            </Content>
+            <Welcome />
+            <Trainers />
+            <Blocks />
+            <Info />
+            <Footer />
         </Page>
     );
 }
