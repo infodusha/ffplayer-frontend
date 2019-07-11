@@ -14,9 +14,9 @@
 
 @media for-tablet-portrait-down {
     .loginButton {
-        display: fixed;
+        position: fixed;
         top: 13px;
         right: 20px;
-        padding: 8px 22px !important;
+        padding: 4px 10px !important;
     }
 }

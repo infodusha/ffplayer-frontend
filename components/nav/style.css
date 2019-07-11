@@ -4,6 +4,7 @@
 .items {
     position: fixed;
     height: 70px;
+    transition: height 200ms;
     width: 300px;
     justify-content: space-around;
     padding: 0px;
@@ -33,6 +34,9 @@
 }
 .icon, .item:last-of-type {
     display: none;
+}
+.scrolled {
+    height: 45px;
 }
 
 @media for-tablet-portrait-down {

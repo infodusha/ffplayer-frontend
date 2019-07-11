@@ -20,14 +20,20 @@
     margin-left: 3vw;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('./logo.svg');
-    width: 44px;
-    height: 19px;
-    transition: width 200ms, height 200ms;
+    background-image: url('./logo.png');
+    width: 70px;
+    height: 37px;
+    border-radius: 15px;
+    /* transition: width 200ms, height 200ms; */
 }
 
 @media for-tablet-portrait-down {
+    .logo {
+        position: fixed;
+        top: 10px;
+        left: 15px;
+    }
     .burger {
-        margin-left: 10vw;
+        display: none;
     }
 }

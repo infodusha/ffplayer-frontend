@@ -6,6 +6,7 @@ import gamesIcon from './games.svg';
 import marketIcon from './market.svg';
 import chatIcon from './chat.svg';
 import accountIcon from './account.svg';
+import { useMaxScroll } from 'hooks/useMaxScroll';
 
 const items = [
     { key: 'games', caption: 'Игры', href: '/', icon: gamesIcon },
@@ -15,8 +16,9 @@ const items = [
 ];
 
 function Nav({ selected }) {
+    let isScrolled = useMaxScroll(70);
     return (
-        <ul className={css.items}>
+        <ul className={cn(css.items, { [css.scrolled]: isScrolled })}>
             {items.map((item) => (
                 <li key={item.key} className={cn(css.item, { [css.selected]: selected === item.key })}>
                     <Link href={item.href}>

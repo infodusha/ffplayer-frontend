@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import Link from 'next/link';
 import css from './style.css';
 import Copy from './copy';
 import Nav from './nav';
@@ -21,9 +22,9 @@ function Footer() {
     return (
         <div className={css.footer}>
             <div className={css.top}>
-                <div className={css.logo}>
-                    FFP
-                </div>
+                <Link href="/">
+                    <div className={css.logo}>FFP</div>
+                </Link>
                 <div className={css.nav}>
                     <Nav />
                 </div>

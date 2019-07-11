@@ -1,4 +1,4 @@
-@value footerBg, footerText, footerLogoBg from 'ui/colors.css';
+@value footerBg, footerText from 'ui/colors.css';
 @value for-tablet-portrait-down, for-tablet-landscape-down, for-phone-only from 'ui/breakpoints.css';
 
 .footer {
@@ -20,16 +20,17 @@
     align-items: baseline;
 }
 .logo {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0);
     width: 75px;
     height: 45px;
     border-radius: 10px;
-    background-color: footerLogoBg;
-    color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./logo.png');
     display: flex;
     justify-content: center;
-    align-items: center; 
-    font-weight: bold;
-    font-size: 25px;
+    align-items: center;
 }
 .nav {
     display: flex;

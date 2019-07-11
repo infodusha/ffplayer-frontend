@@ -13,17 +13,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* transition: height 200ms; */
+    transition: height 200ms;
     background-color: headerBg;
     color: white;
     z-index: 10;
 }
-/* .scrolled {
+.scrolled {
     height: 45px;
-} */
+}
 
 @media for-tablet-portrait-down {
     .header {
-        display: none;
+        height: 0;
     }
 }
