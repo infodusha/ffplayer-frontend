@@ -12,6 +12,9 @@ module.exports = withImages(withCSS({
         importLoaders: 1,
         localIdentName: '[local]___[hash:base64:10]',
     },
+    experimental: {
+        publicDirectory: true,
+    },
     webpack(config, { dev }) {
         if(!dev) {
             if(!Array.isArray(config.optimization.minimizer))
