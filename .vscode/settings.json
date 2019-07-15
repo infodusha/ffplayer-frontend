@@ -4,5 +4,6 @@
         "**/dist": true
     },
     "css.lint.unknownAtRules": "ignore",
-    "css.lint.unknownProperties": "ignore"
+    "css.lint.unknownProperties": "ignore",
+    "todo-tree.excludedWorkspaces": ["/node_modules/"]
 }

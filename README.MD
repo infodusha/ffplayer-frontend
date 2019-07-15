@@ -19,10 +19,12 @@
 - [GitLens][gitlens]
 - [IntelliCode][intellicode]
 - [Auto Rename Tag][autorenametag]
+- [Todo Tree][todotree]
 
 [gitlens]: <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens>
 [intellicode]: <https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode>
 [autorenametag]: <https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag>
+[todotree]: <https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree>
 
 ## Scripts
 - `dev` start development server
