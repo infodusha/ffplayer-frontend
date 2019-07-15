@@ -1,0 +1,53 @@
+@value headerBg, filterStreamer from 'ui/colors.css';
+
+.burger {
+    pointer-events: all;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+}
+.blocker {
+    flex: 1;
+}
+.data {
+    flex-shrink: 0;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 15px 15px 0 0;
+    color: headerBg;
+    padding: 20px 30px;
+}
+.info {
+    height: 55px;
+    align-items: flex-start;
+}
+.close {
+    margin: 0 auto;
+}
+.line {
+    background-color: #D2D3D6;
+    height: 1px;
+}
+.menu {
+    list-style: none;
+    flex: 1;
+}
+.item {
+    margin: 0 19px;
+}
+.balance {
+    float: right;
+    color: #3EC28F;
+}
+.logout {
+    color: filterStreamer;
+}
