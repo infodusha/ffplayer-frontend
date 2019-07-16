@@ -1,0 +1,59 @@
+@value bodyBg, grey1, grey3 from 'ui/colors.css';
+@value for-phone-only from 'ui/breakpoints.css';
+
+.info {
+    display: none;
+}
+
+@media for-phone-only {
+    .info {
+        display: block;
+        padding: 6vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block {
+        color: bodyBg;
+        border: 1px solid grey1;
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .image {
+        margin-bottom: 16px;
+        opacity: 0.7;
+        width: 102px;
+        height: 82px;
+        background-image: url(./logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        color: grey3;
+    }
+    .download {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #7E96D3;
+    }
+    .bottom {
+        margin-top: 4px;
+        height: 1px;
+        background: grey1;
+    }
+    .bottom1 {
+        width: 76vw;
+    }
+    .bottom2 {
+        width: 72vw;
+    }
+}

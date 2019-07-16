@@ -6,6 +6,7 @@
 
 @media for-phone-only {
     .games {
+        margin-top: 15vw;
         padding-left: 6vw;
         display: block;
     }

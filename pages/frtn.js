@@ -4,6 +4,7 @@ import Nav from 'components/nav';
 import Banner from 'components/game/banner';
 import More from 'components/game/more';
 import Trainers from 'components/index/trainers';
+import Info from 'components/game/info';
 import Games from 'components/game/games';
 import Footer from 'components/footer';
 import mainImage from 'components/game/images/wotb/main.jpg';
@@ -18,6 +19,7 @@ function FRTN() {
             <Banner selected="frtn" mainImage={mainImage} mobileImage={mobileImage} logoImage={logoImage} />
             <More />
             <Trainers />
+            <Info />
             <Games />
             <Footer />
         </Page>
