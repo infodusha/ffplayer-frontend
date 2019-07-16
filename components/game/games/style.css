@@ -6,7 +6,7 @@
 
 @media for-phone-only {
     .games {
-        padding: 0 6vw;
+        padding-left: 6vw;
         display: block;
     }
     .data {

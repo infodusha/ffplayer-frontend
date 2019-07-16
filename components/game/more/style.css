@@ -1,18 +1,16 @@
 @value grey3 from 'ui/colors.css';
-@value for-tablet-portrait-down from 'ui/breakpoints.css';
+@value for-tablet-portrait-down, for-phone-only from 'ui/breakpoints.css';
 
 .more {
     display: flex;
     padding: 5vw 2vw;
     justify-content: space-between;
 }
-
 .skills {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-
 .title {
     font-style: normal;
     font-weight: 500;
@@ -21,7 +19,6 @@
     letter-spacing: 0.1em;
     margin-bottom: 50px;
 }
-
 .subskills {
     font-style: normal;
     font-weight: normal;
@@ -30,12 +27,10 @@
     color: grey3;
     margin-top: 20px;
 }
-
 .game {
     width: 25vw;
     margin-right: 4vw;
 }
-
 .text {
     font-style: normal;
     font-weight: normal;
@@ -45,7 +40,6 @@
     margin-bottom: 23px;
     color: grey3;
 }
-
 .download {
     font-style: normal;
     font-weight: normal;
@@ -53,7 +47,6 @@
     line-height: 16px;
     color: #7E96D3;
 }
-
 .logo {
     background-image: url(../images/wotb/logo.png);
     background-repeat: no-repeat;
@@ -73,5 +66,11 @@
     }
     .game {
         display: none;
+    }
+}
+
+@media for-phone-only {
+    .more {
+        padding: 5vw 6vw;
     }
 }
