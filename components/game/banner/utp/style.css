@@ -36,8 +36,10 @@
     margin-top: 10px;
     display: none;
     font-weight: 500;
-    font-size: 27px;
-    line-height: 32px;
+    font-size: 35px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
     letter-spacing: 0.1em;
 }
 
