@@ -1,0 +1,43 @@
+@value for-phone-only from 'ui/breakpoints.css';
+
+@media for-phone-only {
+    .games {
+        padding: 0 2vw;
+    }
+    .data {
+        display: flex;
+        justify-content: flex-start;
+        composes: useScroll from 'ui/common.css';
+    }
+    .game {
+        height: 25vw;
+        width: 38vw;
+        margin-right: 15px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        border-radius: 15px;
+        flex-shrink: 0;
+    }
+    .bg {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        height: 70%;
+        background: linear-gradient(180deg, rgba(34, 39, 50, 0) 0%, rgba(33, 39, 54, 0.5) 100%);
+    }
+    .caption {
+        position: absolute;
+        text-align: center;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 130%;
+        z-index: 1;
+    }
+}
