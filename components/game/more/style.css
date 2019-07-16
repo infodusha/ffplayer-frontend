@@ -58,7 +58,7 @@
 
 @media for-tablet-portrait-down {
     .skillsList {
-        width: 98vw;
+        width: 94vw;
         composes: useScroll from 'ui/common.css';
     }
     .subskills {
