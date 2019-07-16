@@ -14,6 +14,7 @@ const games = [
 function Games() {
     return (
         <div className={css.games}>
+            <div className={css.title}>Другие игры</div>
             <div className={css.data}>
                 {games.map((game) => (
                     <Link key={game.key} href={game.key}>

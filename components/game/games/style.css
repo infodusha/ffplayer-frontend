@@ -9,6 +9,15 @@
         padding-left: 6vw;
         display: block;
     }
+    .title {
+        margin-bottom: 8vw;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
     .data {
         display: flex;
         justify-content: flex-start;
@@ -38,7 +47,7 @@
         bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
-        width: 80%;
+        width: 130px;
         font-style: normal;
         font-weight: 500;
         font-size: 15px;
