@@ -1,8 +1,13 @@
 @value for-phone-only from 'ui/breakpoints.css';
 
+.games {
+    display: none;
+}
+
 @media for-phone-only {
     .games {
-        padding: 0 2vw;
+        padding: 0 6vw;
+        display: unset;
     }
     .data {
         display: flex;
