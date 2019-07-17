@@ -7,6 +7,7 @@
 @media for-phone-only {
     .games {
         margin-top: 15vw;
+        margin-bottom: 22vw;
         display: block;
     }
     .title {
@@ -26,12 +27,12 @@
         composes: useScroll from 'ui/common.css';
     }
     .item {
-        width: 44vw;
+        width: 46vw;
         flex-shrink: 0;
     }
     .game {
-        height: 25vw;
-        width: 38vw;
+        height: 27vw;
+        width: 40vw;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
