@@ -7,10 +7,10 @@
 @media for-phone-only {
     .games {
         margin-top: 15vw;
-        padding-left: 6vw;
         display: block;
     }
     .title {
+        margin-left: 6vw;
         margin-bottom: 8vw;
         font-style: normal;
         font-weight: 500;
@@ -20,20 +20,23 @@
         color: #FFFFFF;
     }
     .data {
+        padding-left: 6vw;
         display: flex;
         justify-content: flex-start;
         composes: useScroll from 'ui/common.css';
     }
+    .item {
+        width: 44vw;
+        flex-shrink: 0;
+    }
     .game {
         height: 25vw;
         width: 38vw;
-        margin-right: 15px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
         border-radius: 15px;
-        flex-shrink: 0;
     }
     .bg {
         position: absolute;

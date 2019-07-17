@@ -17,12 +17,14 @@ function Games() {
             <div className={css.title}>Другие игры</div>
             <div className={css.data}>
                 {games.map((game) => (
-                    <Link key={game.key} href={game.key}>
-                        <div className={css.game} style={{ backgroundImage: `url(${game.icon})` }}>
-                            <div className={css.caption}>{game.caption}</div>
-                            <div className={css.bg} />
-                        </div>
-                    </Link>
+                    <div key={game.key} className={css.item}>
+                        <Link href={game.key}>
+                            <div className={css.game} style={{ backgroundImage: `url(${game.icon})` }}>
+                                <div className={css.caption}>{game.caption}</div>
+                                <div className={css.bg} />
+                            </div>
+                        </Link>
+                    </div>
                 ))}
             </div>
         </div>
