@@ -20,4 +20,4 @@ deploy:
     path: /root/frontend/
     pre-setup: apt-get install git -y; ls -la
     post-setup: ls -la
-    post-deploy: npm install --prod && npm audit fix && npm run build && npm run start:pm2
+    post-deploy: npm install --prod && npm run build && npm run start:pm2
