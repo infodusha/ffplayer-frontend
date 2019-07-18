@@ -2,7 +2,6 @@
 @value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .header {
-    pointer-events: none;
     position: fixed;
     top: 0;
     font-size: 15px;

@@ -17,7 +17,6 @@
     z-index: 15;
 }
 .item {
-    pointer-events: auto;
     display: inline;
     line-height: normal;
     text-align: center;
@@ -41,7 +40,6 @@
 
 @media for-tablet-portrait-down {
     .items {
-        pointer-events: none;
         height: 56px;
         top: unset;
         left: unset;
@@ -52,7 +50,6 @@
 	    transform: translateY(56px);
     }
     .items .item {
-        pointer-events: auto;
         display: flex;
         justify-content: center;
         align-items: center;

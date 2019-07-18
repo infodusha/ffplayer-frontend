@@ -2,7 +2,6 @@
 @value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .login {
-    pointer-events: auto;
     display: flex;
     justify-content: flex-end;
 }

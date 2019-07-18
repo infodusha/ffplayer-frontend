@@ -1,12 +1,10 @@
 @value for-tablet-portrait-down from 'ui/breakpoints.css';
 
 .title {
-    pointer-events: auto;
     display: flex;
     align-items: center;
 }
 .burger {
-    pointer-events: auto;
     margin-left: 4vw;
 }
 .burgerIcon {
@@ -25,7 +23,6 @@
     border-radius: 15px;
 }
 .back {
-    pointer-events: auto;
     position: absolute;
     display: none;
     width: 13px;

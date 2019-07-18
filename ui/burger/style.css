@@ -1,7 +1,6 @@
 @value headerBg, filterStreamer from 'ui/colors.css';
 
 .burger {
-    pointer-events: all;
     position: fixed;
     top: 0;
     left: 0;
