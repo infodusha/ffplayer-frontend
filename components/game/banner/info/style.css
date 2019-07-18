@@ -1,7 +1,13 @@
-@value for-phone-only from 'ui/breakpoints.css';
+@value for-phone-only, for-tablet-landscape-down from 'ui/breakpoints.css';
 
 .info {
     padding: 4vw 15vw 4vw 5vw;
+}
+
+@media for-tablet-landscape-down {
+    .info {
+        padding: 4vw 3vw;
+    }
 }
 
 @media for-phone-only {
