@@ -8,7 +8,6 @@
     scrollbar-width: thin;
     scrollbar-color: primary grey1;
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
     padding-bottom: 25px;
 }
 .useScroll::-webkit-scrollbar {

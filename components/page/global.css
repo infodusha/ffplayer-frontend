@@ -24,9 +24,6 @@ body {
     padding-top: 70px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
     transition: padding 200ms;
 }
 
