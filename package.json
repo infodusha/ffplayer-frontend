@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
-    "eslint": "^6.0.1",
-    "eslint-plugin-react": "^7.14.2",
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.6.1",
     "pm2": "^3.5.1"
   }
