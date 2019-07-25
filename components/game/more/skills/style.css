@@ -1,6 +1,11 @@
 @value for-big-desktop-up, for-desktop-down, for-tablet-landscape-down, for-tablet-portrait-down, for-phone-only from 'ui/breakpoints.css';
 
+.sizer {
+    overflow: hidden;
+}
+
 .skills {
+    width: 117%;
     display: flex;
 }
 
@@ -77,9 +82,11 @@
 }
 
 @media for-tablet-portrait-down {
+    .sizer {
+        width: 300vw;
+    }
     .skills {
         height: 40vw;
-        width: 300vw;
     }
     .caption {
         bottom: 15px;
@@ -91,7 +98,6 @@
 @media for-phone-only {
     .skills {
         height: 40vw;
-        width: 300vw;
     }
     .caption {
         bottom: 15px;
