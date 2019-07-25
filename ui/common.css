@@ -1,4 +1,4 @@
-@value primary, grey1 from 'ui/colors.css';
+@value grey1 from 'ui/colors.css';
 @value hasTouch from 'ui/breakpoints.css';
 
 .useScroll {
@@ -6,18 +6,15 @@
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     scrollbar-width: thin;
-    scrollbar-color: primary grey1;
+    scrollbar-color: #101322 rgba(0, 0, 0, 0);
     -webkit-overflow-scrolling: touch;
     padding-bottom: 25px;
 }
 .useScroll::-webkit-scrollbar {
-    height: 5px;
-}
-.useScroll::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px grey1;
+    height: 2px;
 }
 .useScroll::-webkit-scrollbar-thumb {
-    background-color: primary;
+    background-color: #101322;
 }
 
 @media hasTouch {
