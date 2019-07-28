@@ -71,6 +71,12 @@
 
 @media for-phone-only {
     .more {
-        padding: 5vw 6vw;
+        padding: 5vw 0;
+    }
+    .title {
+        padding-left: 6vw;
+    }
+    .skillsList {
+        width: 100vw;
     }
 }
