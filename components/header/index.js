@@ -13,7 +13,7 @@ function Header({ back }) {
     return (
         <nav className={cn(css.header, { [css.scrolled]: isScrolled })}>
             <Title back={back} />
-            {isLoginned ? <Account balance={234} nickname={'Greg'} /> : <Login onClick={() => setIsLoginned(true)} />}
+            {isLoginned ? <Account balance={234} nickname={'Greg'} /> : <Login scrolled={isScrolled} onClick={() => setIsLoginned(true)} />}
         </nav>
     );
 }

@@ -10,12 +10,18 @@
     padding: 14px 25px !important;
     transition: padding 200ms;
 }
+.scrolled .loginButton {
+    padding: 6.5px 13px !important;
+}
 
 @media for-tablet-portrait-down {
     .loginButton {
         position: fixed;
         top: 13px;
         right: 20px;
+        padding: 4px 10px !important;
+    }
+    .scrolled .loginButton {
         padding: 4px 10px !important;
     }
 }
