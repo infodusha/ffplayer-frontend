@@ -1,11 +1,10 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import css from './style.css';
 import PropTypes from 'prop-types';
 import Game from './game';
 import wotbIcon from './wotb.png';
 import frtnIcon from './frtn.png';
 import pubgIcon from './pubg.png';
-import { useHovered } from 'hooks/useHovered';
 
 const games = [
     { key: 'wotb', caption: 'World of Tanks Blitz', icon: wotbIcon },
@@ -16,7 +15,28 @@ const games = [
 function Games({ selected }) {
 
     let ref = useRef();
-    let hovered = useHovered(ref);
+    let [hovered, setHovered] = useState(false);
+
+    useEffect(() => {
+
+        let item = ref.current;
+
+        function move({ target }) {
+            setHovered(target !== item);
+        }
+
+        function leave() {
+            setHovered(false);
+        }
+
+        item.addEventListener('mousemove', move);
+        item.addEventListener('mouseleave', leave);
+
+        return () => {
+            item.removeEventListener('mousemove', move);
+            item.addEventListener('mouseleave', leave);
+        };
+    }, [ref]);
 
     return (
         <div className={css.games} ref={ref}>
