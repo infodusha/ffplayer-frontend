@@ -46,7 +46,7 @@
 
 @media for-phone-only {
     .utp {
-        padding: 0 6vw;
+        padding: 0 3vw;
     }
     .mGame, .mText {
         display: unset;

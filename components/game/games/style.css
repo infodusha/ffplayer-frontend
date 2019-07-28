@@ -11,7 +11,7 @@
         display: block;
     }
     .title {
-        margin-left: 6vw;
+        margin-left: 3vw;
         margin-bottom: 8vw;
         font-style: normal;
         font-weight: 500;
@@ -21,13 +21,13 @@
         color: #FFFFFF;
     }
     .data {
-        padding-left: 6vw;
+        padding-left: 3vw;
         display: flex;
         justify-content: flex-start;
         composes: useScroll from 'ui/common.css';
     }
     .item {
-        width: 46vw;
+        width: 43vw;
         flex-shrink: 0;
     }
     .game {

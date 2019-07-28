@@ -98,7 +98,7 @@
 @media for-phone-only {
     .skills {
         height: 40vw;
-        padding-left: 6vw;
+        padding-left: 3vw;
     }
     .caption {
         bottom: 15px;
@@ -106,6 +106,6 @@
         line-height: 20px;
     }
     .skill4 {
-        margin-right: 6vw;
+        margin-right: 3vw;
     }
 }
