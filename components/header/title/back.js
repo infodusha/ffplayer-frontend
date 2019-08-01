@@ -1,13 +1,15 @@
-import Router from 'next/router';
+import { useRouter } from 'next/router';
 import { getPrevious } from 'lib/routeSpy';
 import ArrowIcon from './arrow';
 import css from './style.css';
 
 function Back() {
 
+    let router = useRouter();
+
     function goBack() {
         let url = getPrevious() || '/ind';
-        Router.push(url);
+        router.push(url);
     }
 
     return (
