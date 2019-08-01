@@ -22,10 +22,10 @@ function Nav({ selected }) {
             {items.map((item) => (
                 <li key={item.key} className={cn(css.item, { [css.selected]: selected === item.key })}>
                     <Link href={item.href}>
-                        <a className={css.link}>{item.caption}</a>
-                    </Link>
-                    <Link href={item.href}>
-                        <img className={css.icon} src={item.icon} />
+                        <div>
+                            <a className={css.link}>{item.caption}</a>
+                            <img className={css.icon} src={item.icon} />
+                        </div>
                     </Link>
                 </li>
             ))}
