@@ -4,7 +4,7 @@
     display: flex;
     user-select: none;
     flex-shrink: 0;
-    composes: useScroll from 'ui/common.css';
+    /* composes: useScroll from 'ui/common.css'; */
     scroll-snap-type: x proximity;
 }
 .scroll {

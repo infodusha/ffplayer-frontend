@@ -24,7 +24,7 @@
         padding-left: 3vw;
         display: flex;
         justify-content: flex-start;
-        composes: useScroll from 'ui/common.css';
+        /* composes: useScroll from 'ui/common.css'; */
     }
     .item {
         width: 43vw;

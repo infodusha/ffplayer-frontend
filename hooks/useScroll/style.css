@@ -1,0 +1,56 @@
+@value primary, grey1 from 'ui/colors.css';
+@value hasTouch from 'ui/breakpoints.css';
+
+.scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: thin;
+    scrollbar-color: primary grey1;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 25px;
+}
+.scroll::-webkit-scrollbar {
+    height: 5px;
+}
+.scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px grey1;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background-color: primary;
+}
+
+@media hasTouch {
+    .touch {
+        padding-bottom: 15px;
+        scrollbar-width: thin;
+        scrollbar-color: red transparent;
+    }
+    .touch::-webkit-scrollbar-track {
+        box-shadow: none;
+    }
+    .touch::-webkit-scrollbar {
+        height: 2px;
+    }
+    .scroll::-webkit-scrollbar-thumb {
+        background-color: red;
+    }
+    .hidden {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    @keyframes colorhide {
+        0% { background-color: rgba(255, 0, 0, 1); }
+        25% { background-color: rgba(255, 0, 0, 0.75); }
+        50% { background-color: rgba(255, 0, 0, 0.5);}
+        75% { background-color: rgba(255, 0, 0, 0.25); }
+        100% { background-color: transparent; }
+    }
+    .hidden::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        animation-name: colorhide;
+        animation-duration: 300ms;
+        animation-iteration-count: 0;
+        animation-direction: alternate;
+    }
+}

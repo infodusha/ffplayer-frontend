@@ -2,10 +2,14 @@ import { useRef, useEffect } from 'react';
 import css from './style.css';
 import PropTypes from 'prop-types';
 import User from 'ui/user';
+import cn from 'classnames';
+import { useScroll } from 'hooks/useScroll';
 
 function Roundlist({ users, emptyCaption }) {
 
     let ref = useRef();
+
+    let scrollClassName = useScroll(ref);
 
     useEffect(() => {
         ref.current.scrollLeft = 0;
@@ -24,7 +28,7 @@ function Roundlist({ users, emptyCaption }) {
     }
 
     return (
-        <div className={css.roundlist} ref={ref}>
+        <div className={cn(css.roundlist, scrollClassName)} ref={ref}>
             {users.map((user) => (
                 <User
                     key={user.id}
