@@ -1,3 +1,5 @@
+import { useReducer } from 'react';
+import { Context, reducer, initialState } from 'store';
 import Head from 'next/head';
 import RouteSpy from 'lib/routeSpy';
 import PropTypes from 'prop-types';
@@ -5,6 +7,7 @@ import 'normalize.css';
 import './global.css';
 
 function Page({ title, children }) {
+    const [state, dispatch] = useReducer(reducer, initialState);
     return (
         <React.Fragment>
             <Head>
@@ -14,7 +17,9 @@ function Page({ title, children }) {
                 <link rel="shortcut icon" href="/favicon.png" type="image/png" />
             </Head>
             <RouteSpy />
-            {children}
+            <Context.Provider value={{state, dispatch}}>
+                {children}
+            </Context.Provider>
         </React.Fragment>
     );
 }

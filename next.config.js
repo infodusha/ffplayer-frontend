@@ -25,6 +25,7 @@ module.exports = withImages(withCSS({
         config.resolve.alias['ui'] = path.join(__dirname, 'ui');
         config.resolve.alias['lib'] = path.join(__dirname, 'lib');
         config.resolve.alias['hooks'] = path.join(__dirname, 'hooks');
+        config.resolve.alias['store'] = path.join(__dirname, 'store');
         return config;
     },
 }));
