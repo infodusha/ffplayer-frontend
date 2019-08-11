@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import css from './style.css';
-import Burger from 'ui/burger'; // TODO: move to page
+import Modal from 'ui/modal';
+import Burger from 'ui/burger';
 
 function Account({ balance, nickname }) {
 
-    let [opened, setOpened] = useState(false);
+    let [burger, setBurger]= useState(false);
 
     return (
         <React.Fragment>
@@ -18,8 +19,14 @@ function Account({ balance, nickname }) {
                     </div>
                 </div>
             </div>
-            <div className={css.burger} onClick={() => setOpened(true)} />
-            <Burger open={opened} onClose={() => setOpened.bind(false)} />
+            <div className={css.burger} onClick={() => setBurger(true)} />
+            <Modal open={burger}>
+                <Burger
+                    name={'infodusha'}
+                    balance={100}
+                    onClose={() => setBurger(false)}
+                />
+            </Modal>
         </React.Fragment>
     );
 

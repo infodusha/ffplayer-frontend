@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './style.css';
 
-function Burger({ open = false, name, balance, pic, onClose }) {
-    if(!open)
-        return null;
+function Burger({ name, balance, pic, onClose }) {
     return (
         <div className={css.burger}>
             <div className={css.blocker} onClick={onClose}></div>
