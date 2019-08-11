@@ -10,6 +10,9 @@ body {
     color: white;
     background-color: bodyBg;
     -webkit-text-size-adjust: none;
+    padding-top: 70px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 a {
@@ -19,12 +22,6 @@ a {
 
 * {
     box-sizing: border-box;
-}
-body {
-    padding-top: 70px;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    transition: padding 200ms;
 }
 
 @media for-tablet-portrait-down {
