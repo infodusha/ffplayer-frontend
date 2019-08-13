@@ -27,26 +27,152 @@
 }
 .info {
     height: 55px;
+    display: flex;
     align-items: flex-start;
+    margin-bottom: 15px;
+}
+.icon {
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
 }
 .close {
-    margin: 0 auto;
+    width: 27px;
+    height: 17px;
+    margin-left: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./icons/close.svg');
+    border: none;
+    padding: 0;
+    background-color: unset;
+}
+.name {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: headerBg;
 }
 .line {
     background-color: #D2D3D6;
     height: 1px;
+    margin: 15px 0;
+    flex-shrink: 0;
 }
 .menu {
     list-style: none;
     flex: 1;
+    margin-top: 5px;
+    margin-bottom: 55px;
+    padding: 0;
 }
 .item {
-    margin: 0 19px;
+    margin: 19px 0;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+}
+.item::before {
+    content: '';
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    margin-right: 10px;
 }
 .balance {
-    float: right;
+    margin-left: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
     color: #3EC28F;
 }
-.logout {
+.signout {
     color: filterStreamer;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+.signout::before {
+    content: '';
+    display: block;
+    background-image: url('./icons/singout.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+.links {
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: headerBg;
+    margin-left: 15px;
+}
+.dot {
+    margin: 0 7px;
+}
+.accountIcon {
+    margin-top: 0;
+}
+.productsIcon {
+    margin-bottom: 0;
+}
+.accountIcon::before {
+    background-image: url('./icons/account.svg');
+    height: 16.34px;
+}
+.financeIcon::before {
+    background-image: url('./icons/finance.svg');
+    height: 16.88px;
+}
+.notificationsIcon::before {
+    background-image: url('./icons/notifications.svg');
+    height: 17.66px;
+}
+.favoritesIcon::before {
+    background-image: url('./icons/favorites.svg');
+    height: 12.25px;
+}
+.productsIcon::before {
+    background-image: url('./icons/products.svg');
+    height: 16.34px;
+}
+.social {
+    display: flex;
+    margin: 15px 0;
+}
+.socialIcon {
+    width: 28px;
+    height: 28px;
+    margin-right: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.socialIconFacebook {
+    background-image: url('./icons/facebook.svg');
+}
+.socialIconInstagram {
+    background-image: url('./icons/instagram.svg');
+}
+.socialIconVk {
+    background-image: url('./icons/vk.svg');
+    margin-right: 0;
 }

@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import css from './style.css';
 import Modal from 'ui/modal';
 import Burger from 'ui/burger';
+import sampleIcon from './sample.png';
 
 function Account({ balance, nickname }) {
 
-    let [burger, setBurger]= useState(false);
+    let [burger, setBurger] = useState(false);
 
     return (
         <React.Fragment>
@@ -24,6 +25,7 @@ function Account({ balance, nickname }) {
                 <Burger
                     name={'infodusha'}
                     balance={100}
+                    icon={sampleIcon}
                     onClose={() => setBurger(false)}
                 />
             </Modal>
