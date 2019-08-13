@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
 @value for-tablet-portrait-down from 'ui/breakpoints.css';
 @value bodyBg from 'ui/colors.css';
 
-html,
 body {
     font-family: Roboto, sans-serif;
     font-style: normal;
