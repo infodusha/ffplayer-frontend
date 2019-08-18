@@ -21,6 +21,7 @@
     line-height: normal;
     text-align: center;
     letter-spacing: 0.15em;
+    cursor: pointer;
 }
 .selected {
     color: primarySelect;
