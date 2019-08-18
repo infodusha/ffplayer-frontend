@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 import css from './style.css';
 import wotbIcon from './wotb.png';
