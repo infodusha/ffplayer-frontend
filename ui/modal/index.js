@@ -6,27 +6,19 @@ function Modal({ open = false, children }) {
     let scroll = useRef(null);
 
     useEffect(() => {
-
-        function lock() {
+        if(open) {
             document.body.style.position = 'fixed';
-            let scrollY = scroll.current;
-            document.body.style.top = `-${scrollY}px`;
+            document.body.style.top = `-${scroll.current}px`;
             document.body.style.right = '0px';
             document.body.style.left = '0px';
-        }
-
-        function unlock() {
-            const scrollY = document.body.style.top;
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.right = '';
-            document.body.style.left = '';
-            window.scrollTo(0, parseInt(scrollY || '0') * -1);
-        }
-
-        if(open) {
-            lock();
-            return unlock;
+            return () => {
+                const scrollY = document.body.style.top;
+                document.body.style.position = '';
+                document.body.style.top = '';
+                document.body.style.right = '';
+                document.body.style.left = '';
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            };
         }
     }, [open]);
 
@@ -41,7 +33,7 @@ function Modal({ open = false, children }) {
     useEffect(() => {
         if(scroll.current === null && open)
             throw new Error('Modal should be closed on first render');
-        scroll.current = window.pageYOffset || window.document.documentElement.scrollTop;;
+        scroll.current = window.pageYOffset || window.document.documentElement.scrollTop;
     }, [open]);
 
     if(!open)
