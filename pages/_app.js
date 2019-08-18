@@ -1,8 +1,8 @@
-import App from 'next/app';
+import NextApp from 'next/app';
 import { ApolloProvider } from '@apollo/react-hooks';
 import withApollo from 'lib/apollo/with';
 
-class MyApp extends App {
+class App extends NextApp {
     render () {
         const { Component, pageProps, apolloClient } = this.props;
         return (
@@ -13,4 +13,4 @@ class MyApp extends App {
     }
 }
 
-export default withApollo(MyApp);
+export default withApollo(App);
