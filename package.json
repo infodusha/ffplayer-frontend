@@ -11,7 +11,8 @@
     "deploy:revert": "pm2 deploy process.yaml production revert 1",
     "deploy": "pm2 deploy process.yaml production",
     "start": "set NODE_ENV=production&& next start",
-    "start:pm2": "pm2 startOrRestart process.yaml --env production"
+    "start:pm2": "pm2 startOrRestart process.yaml --env production",
+    "eslint": "eslint ./components ./hooks ./lib ./pages ./store ./ui"
   },
   "author": "",
   "license": "ISC",
