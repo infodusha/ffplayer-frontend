@@ -11,14 +11,10 @@ function Copy() {
             </div>
             <div className={css.copyrights}>
                 <div>
-                    <Link href="https://ffplayer.pro">
-                        <a>2019 © ffplayer.pro</a>
-                    </Link>
+                    <a href="https://ffplayer.pro" target="_blank" rel="noopener noreferrer">2019 © ffplayer.pro</a>
                 </div>
                 <div className={css.copyright2}>
-                    <Link href="https://wargaming.net">
-                        <a>2019 © wargaming.net</a>
-                    </Link>
+                    <a href="https://wargaming.net" target="_blank" rel="noopener noreferrer">2019 © wargaming.net</a>
                 </div>
             </div>
         </div>
