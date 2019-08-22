@@ -1,3 +1,4 @@
+import withApollo from 'lib/apollo/with';
 import Page from 'components/page';
 import Header from 'components/header';
 import Nav from 'components/nav';
@@ -21,4 +22,4 @@ function Index() {
     );
 }
 
-export default Index;
+export default withApollo(Index);
