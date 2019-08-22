@@ -22,7 +22,7 @@ function Footer() {
     return (
         <div className={css.footer}>
             <div className={css.top}>
-                <Link href="/">
+                <Link href="/ind">
                     <div className={css.logo}>FFP</div>
                 </Link>
                 <div className={css.nav}>

@@ -5,16 +5,20 @@ function Copy() {
     return (
         <div className={css.copy}>
             <div className={css.polytics}>
-                <Link href="#">
+                <Link href="/privacy">
                     <a>Политика конфиденциальности</a>
                 </Link>
             </div>
             <div className={css.copyrights}>
                 <div>
-                    2019 © ffplayer.pro
+                    <Link href="https://ffplayer.pro">
+                        <a>2019 © ffplayer.pro</a>
+                    </Link>
                 </div>
                 <div className={css.copyright2}>
-                    2019 © wargaming.net
+                    <Link href="https://wargaming.net">
+                        <a>2019 © wargaming.net</a>
+                    </Link>
                 </div>
             </div>
         </div>

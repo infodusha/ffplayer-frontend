@@ -1,21 +1,18 @@
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { getPrevious } from 'lib/routeSpy';
 import ArrowIcon from './arrow';
 import css from './style.css';
 
 function Back() {
 
-    let router = useRouter();
-
-    function goBack() {
-        let url = getPrevious() || '/ind';
-        router.push(url);
-    }
+    let url = getPrevious() || '/ind';
 
     return (
-        <div className={css.back} onClick={goBack}>
-            <ArrowIcon />
-        </div>
+        <Link href={url}>
+            <div className={css.back}>
+                <ArrowIcon />
+            </div>
+        </Link>
     );
 }
 
